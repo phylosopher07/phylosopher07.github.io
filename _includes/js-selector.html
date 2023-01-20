@@ -58,25 +58,22 @@
 <script defer src="{{ script | relative_url }}"></script>
 
 {% if page.math %}
-  <!-- MathJax -->
-  <script>
-  /* see: <https://docs.mathjax.org/en/latest/options/input/tex.html#tex-options> */
-  MathJax = {
-    tex: {
-      inlineMath: [              /* start/end delimiter pairs for in-line math */
-        ['$','$'],
-        ['\\(','\\)']
-      ],
-      displayMath: [             /* start/end delimiter pairs for display math */
-        ['$$', '$$'],
-        ['\\[', '\\]']
-      ]
-    }
-  };
-  </script>
-  <script src="{{ site.data.assets[origin].polyfill.js | relative_url }}"></script>
-  <script id="MathJax-script" async src="{{ site.data.assets[origin].mathjax.js | relative_url }}">
-  </script>
+<link rel="stylesheet" href="{{ site.data.assets[origin].katex.css | relative_url }}">
+<script defer src="{{ site.data.assets[origin].katex.js | relative_url }}"></script>
+<script defer src="{{ site.data.assets[origin].katex.contrib.auto-render.js | relative_url }}"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\(', right: '\)', display: false},
+              {left: '\[', right: '\]', display: true}
+          ],
+          throwOnError : false
+        });
+    });
+</script>
 {% endif %}
 
 <!-- commons -->
