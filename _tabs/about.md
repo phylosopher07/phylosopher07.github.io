@@ -4,4 +4,5 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Blog
+> **"Physics" + "Philosophy"** <br> **=** <br> 
+> **"Phylosophy"**
