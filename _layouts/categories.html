@@ -118,10 +118,10 @@ layout: page
             {% if subsub_categories_size > 0 %}
               {{ subsub_categories_size }}
               {% if subsub_categories_size > 1 %}
-                {{ site.data.locales[site.lang].categories.category_measure.plural
+                {{ site.data.locales[site.lang].categories.subcategory_measure.plural
                   | default: site.data.locales[site.lang].categories.category_measure }}
               {% else %}
-                {{ "sub" | append : site.data.locales[site.lang].categories.category_measure.singular
+                {{ site.data.locales[site.lang].categories.subcategory_measure.singular
                   | default: site.data.locales[site.lang].categories.category_measure }}
               {% endif %},
             {% endif %}

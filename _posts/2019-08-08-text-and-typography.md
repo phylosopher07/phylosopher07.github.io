@@ -128,13 +128,13 @@ fi;
 
 ## Mathematics
 
-The mathematics powered by [**MathJax**](https://www.mathjax.org/):
+The mathematics powered by [**Katex**](https://www.mathjax.org/):
 
-$$ \sum_{n=1}^\infty 1/n^2 = \frac{\pi^2}{6} $$
+$ \displaystyle\sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6} $
 
 When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+\[ x = \left(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\right) \]
 
 ## Mermaid SVG
 
