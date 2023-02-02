@@ -59,7 +59,7 @@ post:
   pageview_measure: views
   read_time:
     unit: min
-    prompt: read
+    prompt: to read
   relate_posts: Further Reading
   share: Share
   button:
