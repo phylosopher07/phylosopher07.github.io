@@ -13,7 +13,7 @@ DFS and BFS are both algorithms used for searching graphs, i.e. graph traversal.
 There are other algorithms such as backtracking, but these two are the most useful ones.
 
 Before going on, we should know some common notions in graph theory.
-* $\vert{V}\vert$ the number of vertices
+* $\vert{V}\vert$: the number of vertices
 * $\vert{E}\vert$: the number of edges
 
 ## DFS
@@ -94,6 +94,8 @@ f3-->f8;
 f4-->f9;
 f9-->f10; f9-->f11;
 ```
+
+The graph above is an example result for the DFS algorithm.
 
 The time complexity can be expressed as $ O(|V|+|E|) $ if implemented by using adjacency list,
 since every vertex and every edge will be explored in the worst case.
