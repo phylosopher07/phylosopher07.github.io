@@ -9,7 +9,13 @@ tail_includes:
   - comments
 ---
 
-<h1 data-toc-skip>{{ page.title }}</h1>
+<h1 data-toc-skip>
+  {{ page.title }}
+  {% if page.subtitle %}
+    <br>
+    <span class="subtitle"> <i data-toc-skip>{{ page.subtitle | prepend: " - " }}</i> </span>
+  {% endif %}
+</h1>
 
 <div class="post-meta text-muted">
     <!-- published date -->

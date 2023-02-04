@@ -30,6 +30,10 @@
   margin: 0;
 }
 
+.subtitle {
+  font-size: 20px;
+}
+
 .preview-img {
   @include align-center;
   @extend %preview-margin;
