@@ -50,5 +50,5 @@ It is so easy to prove that the dimension is well-defined; read wikipedia for th
 * For a vector space $V$ on a field $F$, <br>
 $ \card{V}= \begin{cases}
 \card{F}^{\dim{V}} & :\text{finite} \newline
-\max(\card{F},\dim V) & :\text{infintie}
+\max(\card{F},\dim V) & :\text{infinite}
 \end{cases} $
