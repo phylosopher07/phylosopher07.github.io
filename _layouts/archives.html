@@ -25,10 +25,10 @@ layout: page
       {{ post.date | date: df_strftime_m }}
     </span>
     <a href="{{ post.url | relative_url }}">
-      {{ post.title }}
       {% if post.subtitle %}
-        {{ post.subtitle | prepend: " | " }}
+        {{ post.subtitle | prepend: "[" | append: "]" }}
       {% endif %}
+      {{ post.title }}
     </a>
   </li>
 

@@ -45,10 +45,10 @@ layout: page
   <div class="post-preview">
     <h1>
       <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
         {% if post.subtitle %}
-          {{ post.subtitle | prepend: " | " }}
+          {{ post.subtitle | prepend: "[" | append: "]" }}
         {% endif %}
+        {{ post.title }}
       </a>
     </h1>
 
