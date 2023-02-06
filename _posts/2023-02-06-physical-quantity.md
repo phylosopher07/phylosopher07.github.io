@@ -7,6 +7,7 @@ categories: [Learning, Physics, Classical Mechanics]
 tags: [physics, classical mechanics, physical property, physical quantity, SI unit]
 math: true
 ---
+
 ## Physical property
 
 A **physical property** is any property that is _measurable_, whose value describes a state of a physical system.
@@ -40,7 +41,7 @@ A base unit is a unit adopted for measurement of a base quantity.
 A base quantity is one of a conventionally chosen subset of physical quantities,
 where no quantity in the subset can be expressed in terms of the others.
 Any physical unit can be expressed by the product of base units,
-and we define the **dimension** of physical quantity by its exponents.
+and we define the **dimension** of a physical quantity by its exponents of base units.
 
 ### SI unit
 
