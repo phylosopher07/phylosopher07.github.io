@@ -34,13 +34,13 @@ layout: null
 
   {% for category in site.categories %}
     <url>
-      <loc>{{ site.url }}{{ category | first | prepend: "/categories/" }}</loc>
+      <loc>{{ site.url }}/categories/{{ category | first | slugify | url_encode }}</loc>
     </url>
   {% endfor %}
 
   {% for tag in site.tags %}
     <url>
-      <loc>{{ site.url }}{{ tag | first | prepend: "/tags/" }}</loc>
+      <loc>{{ site.url }}/tags/{{ tag | first | slugify | url_encode }}</loc>
     </url>
   {% endfor %}
 </urlset>

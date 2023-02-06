@@ -4,7 +4,7 @@ subtitle: Classical Mechanics 1.3
 author: jiho
 date: 2023-02-06 17:00:00 +0800
 categories: [Learning, Physics, Classical Mechanics]
-tags: [physics, classical mechanics, mass, momentum force]
+tags: [physics, classical mechanics, mass, momentum, force]
 math: true
 ---
 $ \global\def\b{\bold} $
