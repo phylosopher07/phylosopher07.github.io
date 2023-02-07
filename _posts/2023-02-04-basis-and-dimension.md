@@ -27,6 +27,9 @@ An ordering can be done by numbering the basis elements.
 In order to emphasize that an order has been chosen, one speaks of an **ordered basis**,
 which is therefore not simply an unstructured set, but a sequence; an indexed family.
 
+![Basis](https://upload.wikimedia.org/wikipedia/commons/f/f4/3d_two_bases_same_vector.svg)
+_The same vector can be represented in two different bases (purple and red arrows)._
+
 
 ### Properties
 * $L$: a linearly independent subset of a spanning set $S \sube V$ <br>

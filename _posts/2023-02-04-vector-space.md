@@ -36,7 +36,7 @@ In this context, the elements of $V$, an _$F$-vector space_, are commonly called
 | Distributivity of scalar multiplication with respect to field addition | $ (a+b)\bold{v}=a\bold{v}+b\bold{v} $ |
 
 ### Examples
-* Zero vector space, $ \set{0} $
+* Zero vector space, $ \set{ \bold{0} } $
 * Field
 * Coordinate space
 * Matrices
