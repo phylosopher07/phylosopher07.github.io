@@ -47,7 +47,7 @@ but in quantum physics, it doesn't really matter.)
 = \bra{\phi}\left(\hat{A}\ket{\psi}\right) $
 
 If the same state vector appears on both bra and ket side,
-* $ \brktop{\psi}{\hat{A}}{\psi} $
+* $ \langle\hat{A}\rangle \coloneqq \brktop{\psi}{\hat{A}}{\psi} $
 
 then this expression gives the **expectation value**, or mean or average value,
 of the observable represented by operator $\hat{A}$ for the physical system in the state $\ket{\psi}$.
@@ -55,7 +55,7 @@ of the observable represented by operator $\hat{A}$ for the physical system in t
 A convenient way to define linear operators on a Hilbert space is given by the outer product :
 * $ \ket{\phi}\bra{\psi} $
 
-One of the uses of the outer product is to construct projection operators. Given a ket $\ket{\psi}$ of norm 1,
+One of the uses of the outer product is to construct projection operators. Given a ket $\ket{\psi}$ of norm $1$,
 the orthogonal projection onto the subspace spanned by $\ket{\psi}$ is :
 * $ \ket{\psi}\bra{\psi} $
 
@@ -86,6 +86,6 @@ one may define a complex scalar function $\Psi(\b{r})$, known as a **wavefunctio
 
 Let's re-write the properties of state vectors with wavefunctions.
 * $ \dps \brkt{\phi}{\psi} = \int \phi(\b{r})^\ast \psi(\b{r}) d^3\b{r} $
-* $ \dps \brkt{\psi}{\psi} = \int \| \psi(\b{r}) \|^2 d^3\b{r} = 1 $
+* $ \dps \brkt{\psi}{\psi} = \int \| \psi(\b{r}) \|^2 d^3\b{r} \enspace$ ($1$ if _normalized_)
 
 We'll talk about _momentum space_ later.
