@@ -39,6 +39,7 @@ In addition, **normalizble** state vectors satisfy following property:
 ## Operators
 
 Since we can think of ket as a vector and bra as a co-vector, a linear **operator** can be considered a square matrix.
+The _hat_ $\hat{\;\;}$ is often used to indicate an operator.
 (Regarding an operator as a matrix is not corect since the vectors are infinite-dimensional,
 but in quantum physics, it doesn't really matter.)
 

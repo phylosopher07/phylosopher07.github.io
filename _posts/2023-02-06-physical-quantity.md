@@ -56,6 +56,7 @@ and we define the **dimension** of a physical quantity by its exponents of base 
 | $ k $                                                              | Boltzmann constant                               | $ 1.380\,649\times10^{−23}\,\mathrm{J/K} $         |
 | $ N_{\text{A}} $                                                   | Avogadro constant                                | 	$ 6.022\,140\,76\times10^{23}\,\mathrm{mol^{−1}} $ |
 | $ K_{\text{cd}} $ | luminous efficacy of 540 THz radiation | $ 683\,\mathrm{lm/W} $                             |
+{:.center-table}
 
 <br>
 
@@ -71,6 +72,7 @@ and we define the **dimension** of a physical quantity by its exponents of base 
 |Thermodynamic temperature|kelvin|$ \mathrm{K} $|The kelvin is defined by setting the Boltzmann constant $k$, <br> given the definition of the kilogram, the meter, and the second.|$ \mathsf{\Theta} $|
 |Amount of substance|mole|$ \mathrm{mol} $|The amount of substance of exactly $N_{\text{A}}$ elementary entities.|$ \mathsf{N} $|
 |Luminous intensity|candela|$ \mathrm{cd} $|The luminous intensity, in a given direction, of a source that <br> emits monochromatic radiation of frequency $5.4\times10^{14} \mathrm{Hz} $ <br> and that has a radiant intensity in that direction of $\dfrac{1}{K_{\text{cd}}} \mathrm{W/sr}$.|$ \mathsf{K} $|
+{:.center-table}
 
 ![SI units](https://upload.wikimedia.org/wikipedia/commons/a/ab/Unit_relations_in_the_new_SI.svg)
 _A diagram showing the relationship between SI units_
@@ -107,3 +109,4 @@ _A diagram showing the relationship between SI units_
 |yocto|$ \mathrm{y} $|$ 10^{-24} $|
 |ronto|$ \mathrm{r} $|$ 10^{-27} $|
 |quecto|$ \mathrm{q} $|$ 10^{-30} $|
+{:.center-table}

@@ -93,3 +93,8 @@ For any operator $\hat{A}$, all of the following operators are hermitian.
 * $ \hat{A}+\hat{A}^\dag $
 * $ i(\hat{A}-\hat{A}^\dag) $
 * $ \hat{A}\hat{A}^\dag $
+
+Also, there's an property about a commutator:
+* $ [\hat{A},\hat{B}]=0 \Rightarrow \hat{A}\hat{B}=\left(\hat{A}\hat{B}\right)^\dag $
+
+We'll talk about commutators later.
