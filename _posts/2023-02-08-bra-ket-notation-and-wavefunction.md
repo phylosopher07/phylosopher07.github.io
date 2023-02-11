@@ -33,7 +33,7 @@ An inner product is expressed as follows, where $^\ast$ denotes the complex conj
 * $ \brkt{\phi}{c_1\psi_1+c_2\psi_2} = c_1\brkt{\phi}{\psi_1}+c_2\brkt{\phi}{\psi_2} $
 * $ \brkt{c_1\phi_1+c_2\phi_2}{\psi} = c_1^\ast \brkt{\phi_1}{\psi}+c_2^\ast \brkt{\phi_2}{\psi} $
 
-In addition, **normalizble** state vectors satisfy following property:
+In addition, **normalized** state vectors satisfy following property:
 * $ \brkt{\psi}{\psi}=1 $
 
 ## Operators
