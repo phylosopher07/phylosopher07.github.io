@@ -15,6 +15,7 @@ $ \global\def\Brkt#1#2{\Braket{#1\|#2}} $
 $ \global\def\brktop#1#2#3{\braket{#1\|#2\|#3}} $
 $ \global\def\Brktop#1#2#3{\Braket{#1\|#2\|#3}} $
 $ \global\def\com#1#2{[#1,#2]} $
+$ \global\def\acom#1#2{\\{#1,#2\\}} $
 
 ## Commutator
 
@@ -50,3 +51,9 @@ Read [Commutator (ring theory)](https://en.wikipedia.org/wiki/Commutator) for fu
 \\[ \begin{cases} A\psi=a\psi \nl B\psi=b\psi \end{cases} \Rightarrow \com{A}{B}=0 \\]
 
 It's very easy to show.
+
+## Anticommutator
+
+We can also define **anitocommutators**:
+
+* $ \acom{\hat{A}}{\hat{B}} \coloneqq \hat{A}\hat{B}+\hat{B}\hat{A} $
