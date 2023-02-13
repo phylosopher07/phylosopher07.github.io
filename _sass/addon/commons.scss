@@ -778,7 +778,7 @@ $sidebar-display: "sidebar-display";
 
   .site-subtitle {
     font-size: 95%;
-    color: var(--sidebar-muted-color);
+    color: rgba(134, 133, 133, 0.99); //var(--sidebar-muted-color);
     line-height: 1.25rem;
     word-spacing: 1px;
     margin: 0.2rem 1.5rem 0.5rem 1.5rem;
