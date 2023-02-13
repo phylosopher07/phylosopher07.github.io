@@ -2,7 +2,7 @@
 title: A Particle in a Box
 subtitle: Quantum Mechanics 2.2
 author: jiho
-date: 2023-02-12 00:00:30 +0800
+date: 2023-02-12 00:30:00 +0800
 categories: [Learning, Physics, Quantum Mechanics]
 tags: [physics, quantum mechanics, particle in a box, infinite potential wall]
 math: true
@@ -151,7 +151,7 @@ When $n$ becomes very large, the probability at $a<x<b$ converges to:
 
 \\[ \lim_{n\to\infty}\int_a^b P_\text{QM} \,dx = \frac{b-a}{L} \\]
 
-This is indistinguishable with classiacl results; called the **correspondence principle**.
+This is indistinguishable with classical results; called the **correspondence principle**.
 
 ## Higher dimensions
 

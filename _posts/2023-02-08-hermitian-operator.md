@@ -4,7 +4,7 @@ subtitle: Quantum Mechanics 1.3
 author: jiho
 date: 2023-02-08 15:00:00 +0800
 categories: [Learning, Physics, Quantum Mechanics]
-tags: [physics, quantum mechanics, hermitian, self-adjoit, operator, eigenvalue, expectation]
+tags: [physics, quantum mechanics, hermitian, self-adjoint, operator, eigenvalue, expectation]
 math: true
 ---
 $ \global\def\nl{\newline} $
