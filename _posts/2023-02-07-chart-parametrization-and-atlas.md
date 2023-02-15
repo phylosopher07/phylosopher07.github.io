@@ -23,7 +23,7 @@ Then following homeomorphisms $\varphi_\alpha$ exist, by its definition.
 Then we call $\varphi_\alpha$ a **coordinate chart** or a **chart**, and $\varphi_\alpha^{-1}$ a **parametrization**.
 These terms are very intuitive.
 
-Also, we can think of a set which contains the pair of each neighborhood and chart
+Also, we can think of a set which contains the pair of each neighborhood and chart 
 in order to represent the whole manifold.
 
 * $ \dps \mathcal{A} \coloneqq \Set{(U_\alpha,\varphi_\alpha) \| \bigcup_{\alpha\in \Lambda} U_\alpha=M} $

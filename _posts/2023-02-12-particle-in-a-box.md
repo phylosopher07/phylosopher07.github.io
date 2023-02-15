@@ -4,7 +4,7 @@ subtitle: Quantum Mechanics 2.2
 author: jiho
 date: 2023-02-12 00:30:00 +0800
 categories: [Learning, Physics, Quantum Mechanics]
-tags: [physics, quantum mechanics, particle in a box, infinite potential wall]
+tags: [physics, quantum mechanics, particle in a box, schrödinger equation, infinite potential wall]
 math: true
 ---
 $ \global\def\nl{\newline} $
