@@ -4,7 +4,7 @@ subtitle: Unclassified
 author: jiho
 date: 2023-02-16 10:00:00 +0800
 categories: [Learning, Physics, Quantum Mechanics]
-tags: [physics, quantum mechanics, perturbation theory, hydrogen atom]
+tags: [physics, quantum mechanics, perturbation theory, spin-orbit interaction, darwin term, hydrogen atom]
 math: true
 ---
 $ \global\def\nl{\newline} $
