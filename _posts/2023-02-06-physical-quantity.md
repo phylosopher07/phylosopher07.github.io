@@ -47,15 +47,15 @@ and we define the **dimension** of a physical quantity by its exponents of base 
 
 <center><b> 〈SI defining constants〉 </b></center>
 
-| Symbol                                                             | Defining constant                                | Exact Value                                        |
-|--------------------------------------------------------------------|--------------------------------------------------|----------------------------------------------------|
-| $ \Delta\nu_{\text{Cs}} $                                          | hyperfine transition frequency of Cs-133         | $ 9\,192\,631\,770\,\mathrm{Hz}$                   |
-| $ c $                                                              | speed of light                                   | $ 299\,792\,458\,\mathrm{m/s} $                    |
-| $ h $                                                              | Planck constant                                  | $ 6.626\,070\,15\times10^{34}\,\mathrm{J\cdot s} $ |
-| $ e $                                                              | elementary charge                                | 	$ 1.602\,176\,634\times10^{−19}\,\mathrm{C} $     |
-| $ k $                                                              | Boltzmann constant                               | $ 1.380\,649\times10^{−23}\,\mathrm{J/K} $         |
-| $ N_{\text{A}} $                                                   | Avogadro constant                                | 	$ 6.022\,140\,76\times10^{23}\,\mathrm{mol^{−1}} $ |
-| $ K_{\text{cd}} $ | luminous efficacy of 540 THz radiation | $ 683\,\mathrm{lm/W} $                             |
+| Symbol                    | Defining constant                        | Exact Value                                        |
+|---------------------------|------------------------------------------|----------------------------------------------------|
+| $ \Delta\nu_{\text{Cs}} $ | hyperfine transition frequency of Cs-133 | $ 9\,192\,631\,770\,\mathrm{Hz}$                   |
+| $ c $                     | speed of light                           | $ 299\,792\,458\,\mathrm{m/s} $                    |
+| $ h $                     | Planck constant                          | $ 6.626\,070\,15\times10^{34}\,\mathrm{J\cdot s} $ |
+| $ e $                     | elementary charge                        | $ 1.602\,176\,634\times10^{−19}\,\mathrm{C} $      |
+| $ k $                     | Boltzmann constant                       | $ 1.380\,649\times10^{−23}\,\mathrm{J/K} $         |
+| $ N_{\text{A}} $          | Avogadro constant                        | $ 6.022\,140\,76\times10^{23}\,\mathrm{mol^{−1}} $ |
+| $ K_{\text{cd}} $         | luminous efficacy of 540 THz radiation   | $ 683\,\mathrm{lm/W} $                             |
 {:.center-table}
 
 <br>

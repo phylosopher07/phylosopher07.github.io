@@ -62,7 +62,7 @@ With the same logic, let's put the whole term $m_l^2$. Remark that $l$ and $m_l$
 \dps \frac{1}{\Phi}\frac{d^2\Phi}{d\varphi^2} = -m_l^2
 \end{cases} \\]
 
-We then know the solution for $\Phi$ and $\Theta$, where $P_l^{m_l}$ is the **associated Legendre function**.
+We know the solution for $\Phi$ and $\Theta$, where $P_l^{m_l}$ is the **associated Legendre function**.
 
 \\[ \begin{align\*}
 \Phi(\varphi) &\propto e^{im_l\phi} \nl
@@ -145,11 +145,11 @@ Let's get back to the differential equation. By changing the variable as $x \col
 
 This is the equation for **generalized Lagurre function**.
 
-\\[ L=L_{n-l-1}^{2l+1}(x) \\]
+\\[ L \propto L_{n-l-1}^{2l+1}(x) \\]
 
 We finally get the entire solution of $R$.
 
-\\[ R=\frac{1}{r}\rho^{l+1}e^{-\rho}L_{n-l-1}^{2l+1}(2\rho) \\]
+\\[ R \propto \frac{1}{r}\rho^{l+1}e^{-\rho}L_{n-l-1}^{2l+1}(2\rho) \\]
 
 Remember that $\lambda$ was nondimensionalizing variable, we can write $R$ as a function of $r$ where $a_0$ is **Bohr radius**.
 
@@ -179,7 +179,7 @@ Now we should calculate energy, the eigenvalue of the Hamiltonian.
 
 Remember that $\kappa$ contained $E$:
 
-\\[ E-\frac{\hbar^2\kappa^2}{2\mu},\; \kappa = \frac{2Z}{\lambda a_0} \\]
+\\[ E=-\frac{\hbar^2\kappa^2}{2\mu},\; \kappa = \frac{2Z}{\lambda a_0} \\]
 
 We finally get the energy, where $\mathcal{R_y}$ is the **Rydberg unit of energy**.
 
