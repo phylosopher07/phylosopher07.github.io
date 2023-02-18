@@ -3,3 +3,6 @@
 icon: fas fa-book
 order: 4
 ---
+
+1. Minimum Potential Problem at Specific Boundary Conditions (2022)
+2. The Method determining Dyson Slingshot Trajectory of a Spacecraft following a Rectilinear Path using Dynamic Discrete Gradient Descent (2022)
