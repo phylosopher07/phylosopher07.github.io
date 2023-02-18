@@ -24,11 +24,11 @@ $ \global\def\hamiltonian{\mathcal{H}} $
 ## Introduction
 
 The Schrödinger equation allows one to calculate the stationary states and also the time evolution of quantum systems.
-Exact analytical answers are available for the non-relativistic **hydrogen atom**.
+Exact analytical answers are available for the non-relativistic **hydrogen atoms**.
 
 ## Schrödinger equation
 
-The Hamiltonian of the hydrogen-like atom with atomic number $Z$ is the radial kinetic energy operator and Coulomb attraction force
+The Hamiltonian of a hydrogen-like atom with atomic number $Z$ is the radial kinetic energy operator and Coulomb attraction force
 between $Z$ positive protons and a negative electron. Using the time-independent Schrödinger equation, ignoring all spin-coupling interactions and using the reduced mass
 $ \mu=\dfrac{m_em_p}{m_e+m_p} $, the equation is written as:
 
@@ -156,7 +156,7 @@ Remember that $\lambda$ was nondimensionalizing variable, we can write $R$ as a 
 \\[ \begin{align\*}
 \rho &= \frac{r}{\kappa} \nl
 &= \frac{Z\mu e^2}{2\pi\varepsilon_0\hbar^2}\cdot\frac{r}{\lambda} = \frac{Z\mu e^2}{4\pi\varepsilon_0\hbar^2}\cdot\frac{r}{n} \nl
-&= \frac{Zr}{na_0}
+&= \frac{Zr}{na_0} \;\left( a_0=\frac{4\pi\varepsilon_0\hbar^2}{\mu e^2} \right)
 \end{align\*} \\]
 
 \\[ \therefore R(r) = \left(\frac{2Zr}{na_0}\right)^l \exp\left(-\frac{Zr}{na_0}\right) L_{n-l-1}^{2l+1}\left(\frac{2Zr}{na_0}\right)  \\]

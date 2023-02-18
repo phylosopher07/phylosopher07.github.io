@@ -50,7 +50,7 @@ the first order correction to the Hamiltonian is:
 \\[ \hamiltonian\rq_\text{KE} = - \frac{p^4}{2m_e^3c^2} \\]
 
 Using this as a perturbation, we can calculate the first order energy corrections due to relativistic effects.
-Let's think of a hydrogen-like atom of atomic number $Z$.
+Let's think of a hydrogen-like atoms of atomic number $Z$.
 
 \\[ \begin{align\*}
 E_\text{KE}^{(1)} &= \brktop{\psi^{(0)}}{ \hat{\hamiltonian}\rq_\text{KE} }{\psi^{(0)}} \nl
@@ -60,16 +60,16 @@ E_\text{KE}^{(1)} &= \brktop{\psi^{(0)}}{ \hat{\hamiltonian}\rq_\text{KE} }{\psi
 &= -\frac{1}{2m_ec^2} \left[ E_n^2 +2E_n\frac{Ze^2}{4\pi\varepsilon_0}\Expct{\frac{1}{r}} + \left( \frac{Ze^2}{4\pi\varepsilon_0} \right)^2 \Expct{\frac{1}{r^2}} \right] \nl
 \end{align\*} \\]
 
-For the hydrogenic atom,
+For the hydrogenic atoms, as we showed [here](/posts/kramers-relation-and-expectation-value/),
 
 \\[ \Expct{\frac{1}{r}} = \frac{Z}{n^2a_0},\; \Expct{\frac{1}{r^2}} = \frac{Z^2}{ (l+\frac{1}{2})n^3a_0^2 } \\]
 
 where $a_0$ is the Bohr radius, $n$ is the principal quantum number, $l$ is the azimuthal quantum number.
-Remember that the unperturbed energy of the hydrogenic atom is:
+Remember that the unperturbed energy of the hydrogenic atoms is:
 
 \\[ E_n = -\frac{e^2}{8\pi\varepsilon_0a_0} \frac{Z^2}{n^2} \\]
 
-Therefore, the first order relativistic correction for the hydrogenic atom is:
+Therefore, the first order relativistic correction for the hydrogenic atoms is:
 
 \\[ \therefore E^{(1)}_\text{KE} = -\frac{E_n^2}{2m_ec^2} \left( \frac{4n}{l+\frac{1}{2}}-3 \right) \\]
 
@@ -141,11 +141,11 @@ E_\text{SO}^{(1)} &= \brktop{\psi^{(0)}}{ \hamiltonian_\text{SO}\rq }{\psi^{(0)}
 &= \frac{Ze^2}{8\pi\varepsilon_0} \frac{1}{m_e^2c^2} \Expct{\frac{1}{r^3}} \frac{\hbar^2}{2} \Big[ j(j+1)-l(l+1)-s(s+1) \Big]
 \end{align\*} \\]
 
-For the hydrogenic atom,
+For the hydrogenic atoms [(also here)](/posts/kramers-relation-and-expectation-value/),
 
-\\[ \Expct{\frac{1}{r^2}} = \frac{Z^3}{n^3a_0^3} \frac{1}{l(l+\frac{1}{2})(l+1)} \\]
+\\[ \Expct{\frac{1}{r^3}} = \frac{Z^3}{n^3a_0^3} \frac{1}{l(l+\frac{1}{2})(l+1)} \\]
 
-Since the spin of an electron is $\frac{1}{2}$, the first order spin-orbit correction for the hydrogenic atom is:
+Since the spin of an electron is $\frac{1}{2}$, the first order spin-orbit correction for the hydrogenic atoms is:
 
 \\[ \therefore E_\text{SO}^{(1)} = \frac{E_n^2}{m_ec^2} \frac{ n\left[ j(j+1)-l(l+1)-\frac{3}{4} \right] }{ l(l+\frac{1}{2})(l+1) } \\]
 
@@ -175,7 +175,7 @@ Since,
 0 &(l>0)
 \end{cases} \\]
 
-Therefore, the Darwin correction for the hydrogenic atom is:
+Therefore, the Darwin correction for the hydrogenic atoms is:
 
 \\[ \therefore E_\text{Darwin}^{(1)} = \frac{E_n^2}{m_ec^2} 2n\delta_{l0} \\]
 
