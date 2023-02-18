@@ -134,3 +134,11 @@
     }
   }
 }
+
+.date_button {
+  border: 2px solid var(--tag-border) !important;
+  box-shadow: 0 0 3px 0 var(--tag-shadow);
+  span {
+    color: var(--text-color);
+  }
+}
