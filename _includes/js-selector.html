@@ -58,28 +58,7 @@
 <script defer src="{{ script | relative_url }}"></script>
 
 {% if page.math %}
-<link rel="stylesheet" href="{{ site.data.assets[origin].katex.css | relative_url }}">
-<script defer src="{{ site.data.assets[origin].katex.js | relative_url }}"></script>
-<script defer src="{{ site.data.assets[origin].katex.contrib.auto-render.js | relative_url }}"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-          delimiters: [
-              {left: '$$', right: '$$', display: true},
-              {left: '$', right: '$', display: false},
-              {left: '\\(', right: '\\)', display: false},
-              {left: '\\[', right: '\\]', display: true}
-          ],
-          throwOnError : false,
-          trust: (context) => ['\\htmlId', '\\href'].includes(context.command),
-          macros: {
-            "\\eqref": "\\href{###1}{(\\text{#1})}",
-            "\\ref": "\\href{###1}{\\text{#1}}",
-            "\\label": "\\htmlId{#1}{}"
-          }
-        });
-    });
-</script>
+  {% include math.html %}
 {% endif %}
 
 <!-- commons -->

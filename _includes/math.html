@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="{{ site.data.assets[origin].katex.css | relative_url }}">
+<script defer src="{{ site.data.assets[origin].katex.js | relative_url }}"></script>
+<script defer src="{{ site.data.assets[origin].katex.contrib.auto-render.js | relative_url }}"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError : false,
+      trust: (context) => ['\\htmlId', '\\href'].includes(context.command),
+      macros: {
+        // References
+        "\\eqref": "\\href{###1}{(\\text{#1})}",
+        "\\ref": "\\href{###1}{\\text{#1}}",
+        "\\label": "\\htmlId{#1}{}",
+
+        // Fundamentals
+        "\\nl": "\\newline",
+        "\\dps": "\\displaystyle"
+        /*
+        $ \global\def\nl{\newline} $
+$ \global\def\dps{\displaystyle} $
+$ \global\def\abs#1{\left\|#1\right\|} $
+$ \global\def\b{\bold} $
+$ \global\def\bs{\boldsymbol} $
+$ \global\def\cross{\times} $
+$ \global\def\expct#1{\langle#1\rangle} $
+$ \global\def\Expct#1{\left\langle#1\right\rangle} $
+$ \global\def\brkt#1#2{\braket{#1\|#2}} $
+$ \global\def\Brkt#1#2{\Braket{#1\|#2}} $
+$ \global\def\brktop#1#2#3{\braket{#1\|#2\|#3}} $
+$ \global\def\Brktop#1#2#3{\Braket{#1\|#2\|#3}} $
+$ \global\def\com#1#2{[#1,#2]} $
+$ \global\def\acom#1#2{\\{#1,#2\\}} $
+$ \global\def\lagrangian{\mathcal{L}} $
+$ \global\def\hamiltonian{\mathcal{H}} $
+         */
+      }
+    });
+  });
+</script>
