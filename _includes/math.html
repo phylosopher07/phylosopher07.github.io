@@ -13,12 +13,12 @@
       throwOnError : false,
       trust: (context) => ['\\htmlId', '\\href'].includes(context.command),
       macros: {
-        // References
+        /* References */
         "\\eqref": "\\href{###1}{(\\text{#1})}",
         "\\ref": "\\href{###1}{\\text{#1}}",
         "\\label": "\\htmlId{#1}{}",
 
-        // Fundamentals
+        /* Fundamentals */
         "\\nl": "\\newline",
         "\\dps": "\\displaystyle",
         "\\dsum": "\\dps\\sum",
@@ -28,22 +28,22 @@
         "\\bs": "\\boldsymbol",
         "\\cross": "\\times",
 
-        // Mathematics
+        /* Mathematics */
         "\\span": "\\text{span}",
         "\\card": "\\abs{#1}",
 
-        // Physics
+        /* Physics */
         "\\hamiltonian": "\\mathcal{H}",
         "\\lagrangian": "\\mathcal{L}",
         "\\brkt": "\\braket{#1\|#2}",
         "\\Brkt": "\\Braket{#1\|#2}",
-        "\\brktop": "\\braket{#1\|#2\|#3}",                  // Braket with an operator
+        "\\brktop": "\\braket{#1\|#2\|#3}",                  /* Braket with an operator */
         "\\Brktop": "\\Braket{#1\|#2\|#3}",
-        "\\expct": "\\langle#1\\rangle",                     // Expectation value (quantum mechanics)
+        "\\expct": "\\langle#1\\rangle",                     /* Expectation value (quantum mechanics) */
         "\\Expct": "\\left\\langle#1\\right\\rangle",
-        "\\com": "[#1,#2]",                                  // Commutator
+        "\\com": "[#1,#2]",                                  /* Commutator */
         "\\Com": "\\left[#1,#2\\right]",
-        "\\acom": "\\{#1,#2\\}",                             // Anticommutator
+        "\\acom": "\\{#1,#2\\}",                             /* Anticommutator */
         "\\Acom": "\\left\\{#1,#2\\right\\}"
       }
     });
