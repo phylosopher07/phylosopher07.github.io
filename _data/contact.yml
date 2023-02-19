@@ -3,9 +3,15 @@
 -
   type: github
   icon: 'fab fa-github'
+#-
+#  type: twitter
+#  icon: 'fab fa-twitter'
 -
-  type: twitter
-  icon: 'fab fa-twitter'
+  type: facebook
+  icon: 'fab fa-facebook'
+#-
+#  type: instagram
+#  icon: 'fab fa-instagram'
 -
   type: email
   icon: 'fas fa-envelope'

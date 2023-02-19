@@ -35,11 +35,17 @@ github:
 twitter:
   username: twitter_username            # change to your twitter username
 
+facebook:
+  userid: 100078342350761
+
+instagram:
+  username: jihojun_alt
+
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Jiho-Jeon
-  email: gs22091@gs.hs.kr             # change to your email address
+  email: pianoforte0203@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username      # change to your twitter homepage

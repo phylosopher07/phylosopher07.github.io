@@ -9,6 +9,7 @@
     <p>
       {% if page.previous.subtitle %}
         {{ page.previous.subtitle | prepend: "[" | append: "]" }}
+        <br>
       {% endif %}
       {{ page.previous.title }}
     </p>
@@ -26,6 +27,7 @@
     <p>
       {% if page.next.subtitle %}
         {{ page.next.subtitle | prepend: "[" | append: "]" }}
+        <br>
       {% endif %}
       {{ page.next.title }}
     </p>

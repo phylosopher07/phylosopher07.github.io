@@ -54,7 +54,8 @@
   <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
 
     {% unless site.theme_mode %}
-      <button class="mode-toggle btn" aria-label="Switch Mode">
+      <script src="{{ 'assets/js/dist/comments_mode.min.js' | relative_url }}" async></script>
+      <button class="mode-toggle btn" aria-label="Switch Mode" onclick="switchComments()">
         <i class="fas fa-adjust"></i>
       </button>
 
@@ -69,6 +70,10 @@
           https://github.com/{{ site.github.username }}
         {%- elsif entry.type == 'twitter' -%}
           https://twitter.com/{{ site.twitter.username }}
+        {%- elsif entry.type == 'facebook' -%}
+          https://facebook.com/profile.php?id={{ site.facebook.userid }}
+        {%- elsif entry.type == 'instagram' -%}
+          https://instagram.com/{{ site.instagram.username }}
         {%- elsif entry.type == 'email' -%}
           {% assign email = site.social.email | split: '@' %}
           javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
