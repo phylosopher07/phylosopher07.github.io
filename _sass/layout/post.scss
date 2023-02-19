@@ -312,6 +312,17 @@ nav[data-toggle="toc"] {
     text-decoration: none;
   }
 
+  /*
+    Customization: card deck vertical scroll
+  */
+  .card-deck {
+    overflow: scroll;
+    overflow: auto;
+  }
+  .card-deck::-webkit-scrollbar{
+    display: none !important;
+  }
+
   .card {
     border-color: var(--card-border-color);
     background-color: var(--card-bg);

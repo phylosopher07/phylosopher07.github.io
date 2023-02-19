@@ -1,5 +1,5 @@
 ---
-title: Variational method 1) The Ground State of Helium Atom
+title: Variational method | The Ground State of Helium Atom
 subtitle: Unclassified
 author: jiho
 date: 2023-02-19 13:00:00 +0800

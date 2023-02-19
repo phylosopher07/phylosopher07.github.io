@@ -6,7 +6,12 @@
   {% if page.previous.url %}
   <a href="{{ site.baseurl }}{{ page.previous.url }}" class="btn btn-outline-primary"
     prompt="{{ site.data.locales[site.lang].post.button.previous }}">
-    <p>{{ page.previous.title }}</p>
+    <p>
+      {% if page.previous.subtitle %}
+        {{ page.previous.subtitle | prepend: "[" | append: "]" }}
+      {% endif %}
+      {{ page.previous.title }}
+    </p>
   </a>
   {% else %}
   <div class="btn btn-outline-primary disabled"
@@ -18,7 +23,12 @@
   {% if page.next.url %}
   <a href="{{ site.baseurl }}{{page.next.url}}" class="btn btn-outline-primary"
     prompt="{{ site.data.locales[site.lang].post.button.next }}">
-    <p>{{ page.next.title }}</p>
+    <p>
+      {% if page.next.subtitle %}
+        {{ page.next.subtitle | prepend: "[" | append: "]" }}
+      {% endif %}
+      {{ page.next.title }}
+    </p>
   </a>
   {% else %}
   <div class="btn btn-outline-primary disabled"
