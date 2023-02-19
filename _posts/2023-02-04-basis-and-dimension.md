@@ -7,10 +7,6 @@ categories: [Learning, Mathematics, Linear Algebra]
 tags: [mathematics, linear algebra, basis, dimension]
 math: true
 ---
-$ \global\def\b{\bold} $
-$ \global\def\dsum{\displaystyle\sum} $
-$ \global\def\span{\text{span}} $
-$ \global\def\card#1{\|#1\|} $
 
 ## Basis
 

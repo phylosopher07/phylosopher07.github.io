@@ -7,8 +7,6 @@ categories: [Learning, Mathematics, Linear Algebra]
 tags: [mathematics, linear algebra, linear combination, linear independence]
 math: true
 ---
-$ \global\def\b{\bold} $
-$ \global\def\dsum{\displaystyle\sum} $
 
 ## Linear combination
 Given a set S of elements of a $F$-vector space $V$,

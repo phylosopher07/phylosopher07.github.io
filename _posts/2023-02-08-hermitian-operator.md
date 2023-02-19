@@ -7,13 +7,6 @@ categories: [Learning, Physics, Quantum Mechanics]
 tags: [physics, quantum mechanics, hermitian, self-adjoint, operator, eigenvalue, expectation value]
 math: true
 ---
-$ \global\def\nl{\newline} $
-$ \global\def\dps{\displaystyle} $
-$ \global\def\b{\bold} $
-$ \global\def\brkt#1#2{\braket{#1\|#2}} $
-$ \global\def\Brkt#1#2{\Braket{#1\|#2}} $
-$ \global\def\brktop#1#2#3{\braket{#1\|#2\|#3}} $
-$ \global\def\Brktop#1#2#3{\Braket{#1\|#2\|#3}} $
 
 ## Hermitian operator
 

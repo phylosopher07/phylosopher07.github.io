@@ -7,8 +7,6 @@ categories: [Learning, Physics, Classical Mechanics]
 tags: [physics, classical mechanics, space, time, velocity, acceleration]
 math: true
 ---
-$ \global\def\b{\bold} $
-$ \global\def\norm#1{\|\|#1\|\|} $
 
 ## Space
 

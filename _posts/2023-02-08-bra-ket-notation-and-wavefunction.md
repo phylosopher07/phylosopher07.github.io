@@ -7,11 +7,6 @@ categories: [Learning, Physics, Quantum Mechanics]
 tags: [physics, quantum mechanics, bra-ket, state vector, operator, wavefunction]
 math: true
 ---
-$ \global\def\dps{\displaystyle} $
-$ \global\def\b{\bold} $
-$ \global\def\brkt#1#2{\Braket{#1\|\|#2}} $
-$ \global\def\brktop#1#2#3{\braket{#1\|#2\|#3}} $
-$ \global\def\Brktop#1#2#3{\Braket{#1\|#2\|#3}} $
 
 ## Bras & kets
 

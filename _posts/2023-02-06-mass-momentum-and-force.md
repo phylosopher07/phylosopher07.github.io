@@ -7,8 +7,6 @@ categories: [Learning, Physics, Classical Mechanics]
 tags: [physics, classical mechanics, mass, momentum, force]
 math: true
 ---
-$ \global\def\b{\bold} $
-
 
 ## Mass
 

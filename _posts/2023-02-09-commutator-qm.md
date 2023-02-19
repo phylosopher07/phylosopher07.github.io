@@ -7,15 +7,6 @@ categories: [Learning, Physics, Quantum Mechanics]
 tags: [physics, quantum mechanics, commutator]
 math: true
 ---
-$ \global\def\nl{\newline} $
-$ \global\def\dps{\displaystyle} $
-$ \global\def\b{\bold} $
-$ \global\def\brkt#1#2{\braket{#1\|#2}} $
-$ \global\def\Brkt#1#2{\Braket{#1\|#2}} $
-$ \global\def\brktop#1#2#3{\braket{#1\|#2\|#3}} $
-$ \global\def\Brktop#1#2#3{\Braket{#1\|#2\|#3}} $
-$ \global\def\com#1#2{[#1,#2]} $
-$ \global\def\acom#1#2{\\{#1,#2\\}} $
 
 ## Commutator
 

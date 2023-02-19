@@ -7,7 +7,6 @@ categories: [Learning, Mathematics, Differential Geometry]
 tags: [mathematics, differential geometry, chart, parametrization, atlas, transition map]
 math: true
 ---
-$ \global\def\dps{\displaystyle} $
 
 ## Introduction
 

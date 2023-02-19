@@ -7,9 +7,6 @@ categories: [Learning, Mathematics, Linear Algebra]
 tags: [mathematics, linear algebra, linear subspace, linear span]
 math: true
 ---
-$ \global\def\b{\bold} $
-$ \global\def\dsum{\displaystyle\sum} $
-$ \global\def\span{\text{span}} $
 
 ## Linear subspace
 

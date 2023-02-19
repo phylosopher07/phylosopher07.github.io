@@ -20,25 +20,31 @@
 
         // Fundamentals
         "\\nl": "\\newline",
-        "\\dps": "\\displaystyle"
-        /*
-        $ \global\def\nl{\newline} $
-$ \global\def\dps{\displaystyle} $
-$ \global\def\abs#1{\left\|#1\right\|} $
-$ \global\def\b{\bold} $
-$ \global\def\bs{\boldsymbol} $
-$ \global\def\cross{\times} $
-$ \global\def\expct#1{\langle#1\rangle} $
-$ \global\def\Expct#1{\left\langle#1\right\rangle} $
-$ \global\def\brkt#1#2{\braket{#1\|#2}} $
-$ \global\def\Brkt#1#2{\Braket{#1\|#2}} $
-$ \global\def\brktop#1#2#3{\braket{#1\|#2\|#3}} $
-$ \global\def\Brktop#1#2#3{\Braket{#1\|#2\|#3}} $
-$ \global\def\com#1#2{[#1,#2]} $
-$ \global\def\acom#1#2{\\{#1,#2\\}} $
-$ \global\def\lagrangian{\mathcal{L}} $
-$ \global\def\hamiltonian{\mathcal{H}} $
-         */
+        "\\dps": "\\displaystyle",
+        "\\dsum": "\\dps\\sum",
+        "\\abs": "\\left\|#1\\right\|",
+        "\\norm": "\\lVert#1\\rVert",
+        "\\b": "\\bold",
+        "\\bs": "\\boldsymbol",
+        "\\cross": "\\times",
+
+        // Mathematics
+        "\\span": "\\text{span}",
+        "\\card": "\\abs{#1}",
+
+        // Physics
+        "\\hamiltonian": "\\mathcal{H}",
+        "\\lagrangian": "\\mathcal{L}",
+        "\\brkt": "\\braket{#1\|#2}",
+        "\\Brkt": "\\Braket{#1\|#2}",
+        "\\brktop": "\\braket{#1\|#2\|#3}",                  // Braket with an operator
+        "\\Brktop": "\\Braket{#1\|#2\|#3}",
+        "\\expct": "\\langle#1\\rangle",                     // Expectation value (quantum mechanics)
+        "\\Expct": "\\left\\langle#1\\right\\rangle",
+        "\\com": "[#1,#2]",                                  // Commutator
+        "\\Com": "\\left[#1,#2\\right]",
+        "\\acom": "\\{#1,#2\\}",                             // Anticommutator
+        "\\Acom": "\\left\\{#1,#2\\right\\}"
       }
     });
   });
