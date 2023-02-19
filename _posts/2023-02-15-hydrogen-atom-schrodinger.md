@@ -17,7 +17,7 @@ Exact analytical answers are available for the non-relativistic **hydrogen atoms
 
 The Hamiltonian of a hydrogen-like atom with atomic number $Z$ is the radial kinetic energy operator and Coulomb attraction force
 between $Z$ positive protons and a negative electron. Using the time-independent Schrödinger equation, ignoring all spin-coupling interactions and using the reduced mass
-$ \mu=\dfrac{m_em_p}{m_e+m_p} $, the equation is written as:
+$ \mu=\dfrac{m_em_N}{m_e+m_N} $, the equation is written as:
 
 \\[ \left( -\frac{\hbar^2}{2\mu}\nabla^2-\frac{Ze^2}{4\pi\varepsilon_0 r} \right)\psi = E\psi\\]
 
