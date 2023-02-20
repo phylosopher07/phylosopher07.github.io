@@ -360,6 +360,7 @@ nav[data-toggle="toc"] {
   /*
     Customization: card deck vertical scroll
   */
+  /*
   .card-deck {
     overflow: scroll;
     overflow: auto;
@@ -367,6 +368,7 @@ nav[data-toggle="toc"] {
   .card-deck::-webkit-scrollbar{
     display: none !important;
   }
+   */
 
   .card {
     border-color: var(--card-border-color);
