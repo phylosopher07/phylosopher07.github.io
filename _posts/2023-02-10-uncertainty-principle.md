@@ -4,7 +4,7 @@ subtitle: Quantum Mechanics 1.8
 author: jiho
 date: 2023-02-10 16:00:00 +0800
 categories: [Learning, Physics, Quantum Mechanics]
-tags: [physics, quantum mechanics, uncertainty princple, heisenberg limit]
+tags: [physics, quantum mechanics, uncertainty principle, heisenberg limit]
 math: true
 ---
 
@@ -48,7 +48,7 @@ We find that
 &= \expct{\hat{A}\hat{B}}-\expct{\hat{A}}\expct{\hat{B}}
 \end{align\*} \\]
 
-We now substitute this back into equation above and get
+We now substitute this back into the equation above and get
 
 \\[ \begin{align\*}
 \sigma_A^2\sigma_B^2 &\ge \abs{\frac{1}{2}\left[ \expct{\hat{A}\hat{B}}+\expct{\hat{B}\hat{A}}-2\expct{\hat{A}}\expct{\hat{B}} \right]}^2 + \abs{\frac{1}{2}\left[ \expct{\hat{A}\hat{B}}-\expct{\hat{B}\hat{A}} \right]}^2 \nl
@@ -73,12 +73,12 @@ Since $\com{\hat{x}}{\hat{p}}=i\hbar$,
 ## Heisenberg limit
 
 In quantum metrology, and especially interferometry, the **Heisenberg limit** is the optimal rate
-at which the accuracy of a measurement can scale with the energy used inthe measurement.
+at which the accuracy of a measurement can scale with the energy used in the measurement.
 Typically, this is the measurement of a phase (applied to one arm of a beam-splitter)
 and the energy is given by the number of photons used in an interferometer.
 
 ## Simultaneously measurable quantities
 
 By the (Robertson) uncertainty relation, there exists a Heisenberg limit of two physical quantities
-if the the two respective operators are not commutating. However, if the two operators commute, then there isn't
+if the two respective operators are not commutating. However, if the two operators commute, then there isn't
 a Heisenberg limit, which means the two quantities are **simultaneously measurable**.

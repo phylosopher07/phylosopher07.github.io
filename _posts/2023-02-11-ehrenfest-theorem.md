@@ -10,12 +10,12 @@ math: true
 
 ## Ehrenfest's theorem
 
-**Generalized ehrenfest's theorem**:
+**Generalized Ehrenfest's theorem**:
 
 \\[\boxed{  \frac{d}{dt}\expct{\hat{Q}} = \frac{i}{\hbar}\expct{\com{ \hat{\mathcal{H}} }{ \hat{Q} }} +
 \Expct{\frac{\partial \hat{Q}}{\partial t}}  }\\]
 
-The equation is exactly the same as the _Heisenberg image_, but let's derive it from the _Schrödinger image_.
+The equation is the same as the _Heisenberg image_, but let's derive it from the _Schrödinger image_.
 
 \\[ \begin{align\*}
 \frac{d}{dt}\expct{\hat{Q}} &= \frac{d}{dt}\brktop{\psi}{\hat{Q}}{\psi} \nl
@@ -50,5 +50,5 @@ Then we get, time **time-energy uncertainty relation**:
 
 The _'uncertainty' in time_ is expressed as the average time taken, starting in state $\ket{\psi}$,
 for the expectation of some arbitrary observable $\hat{Q}$ to change by its standard deviation.
-This is reasonable as a definition for time uncertainty, because it gives the shortest time scale
+This is reasonable as a definition for time uncertainty because it gives the shortest time scale
 on which we will be able to notice changes by using $\hat{Q}$ in state $\ket{\psi}$.

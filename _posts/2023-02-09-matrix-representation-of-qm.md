@@ -10,7 +10,7 @@ math: true
 
 ## Matrix representation of state vectors
 
-Any state vector can be represented by the sum of eigenvectors for an Hermitian operator $L$.
+Any state vector can be represented by the sum of eigenvectors for a Hermitian operator $L$.
 * $ \dps \ket{\psi}=\sum_n c_n\ket{\psi_n} $
 
 Then, we can use those eigenvectors as a basis, with coordinates $c_n$.
@@ -30,7 +30,7 @@ If we use $[\cdot]$ to denote matrix representation, an inner product is express
 
 ## Matrix representation of operators
 
-An operator can be represented as a matrix similary:
+An operator can be represented as a matrix similarly:
 
 \\[ T \longrightarrow
 \begin{bmatrix}
@@ -40,10 +40,10 @@ An operator can be represented as a matrix similary:
 \vdots & \vdots & \vdots & \ddots
 \end{bmatrix} \\]
 
-Then, an operation at a state vector is identical with general matrix multiplication.
+Then, an operation at a state vector is identical to general matrix multiplication.
 
 * $ \hat{T}\ket{f} \longrightarrow [T][f] $
 * $ \brktop{f}{\hat{T}}{g} \longrightarrow [f]^\dag[T][g] $
 
-Also, following identity is true for any linear operator $T$.
+Also, the following identity is true for any linear operator $T$.
 * $ [T^\dag]=[T]^\dag $

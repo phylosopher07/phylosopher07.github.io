@@ -28,7 +28,7 @@ and the result of acting $\hat{B}$ after acting $\hat{A}$.
 3. Jacobi identity
    * $ \com{\hat{A}}{\com{\hat{B}}{\hat{C}}} + \com{\hat{B}}{\com{\hat{C}}{\hat{A}}} + 
 \com{\hat{C}}{\com{\hat{A}}{\hat{B}}} = 0 $
-4. Additional property
+4. Additional Property
    * $ \com{\hat{A}}{\hat{B}\hat{C}} = \com{\hat{A}}{\hat{B}}\hat{C}+\hat{B}\com{\hat{A}}{\hat{C}} $
    * $ \com{\hat{A}\hat{B}}{\hat{C}} = \hat{A}\com{\hat{B}}{\hat{C}}+\com{\hat{A}}{\hat{C}}\hat{B} $
 
@@ -45,6 +45,6 @@ It's very easy to show.
 
 ## Anticommutator
 
-We can also define **anitocommutators**:
+We can also define **anticommutators**:
 
 * $ \acom{\hat{A}}{\hat{B}} \coloneqq \hat{A}\hat{B}+\hat{B}\hat{A} $

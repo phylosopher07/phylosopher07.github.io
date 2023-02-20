@@ -9,15 +9,15 @@ math: true
 ---
 
 ## Ground state of the helium atom
-Let's approximate the ground state energy of helium atom using the variational method.
-The Hamiltonian of the system is; ignoring the motion of nucleus (Born–Oppenheimer approximation):
+Let's approximate the ground state energy of the helium atom using the variational method.
+The Hamiltonian of the system is; ignoring the motion of the nucleus (Born–Oppenheimer approximation):
 
 $ \global\def\Zef{Z\rq} $
 
 \\[ \hamiltonian = -\frac{\hbar^2}{2m_e}(\nabla_1^2+\nabla_2^2) -\frac{e^2}{4\pi\epzro}\left[ \frac{2}{r_1}+\frac{2}{r_2}-\frac{1}{\abs{\b{r}_1-\b{r}_2}} \right] \\]
 
 Let's set the trial wavefunction as the product of the ground state wavefunction of the hydrogenic atom system,
-ignoring the interaction of electrons, which are regarded identical. Here we add a parameter $\Zef$ for the variation.
+ignoring the interaction of electrons, which are regarded as identical. Here we add a parameter $\Zef$ for the variation.
 
 \\[ \begin{align\*}
 \psi(\b{r}_1,\b{r}_2) &= \psi _{100}(\b{r_1})\psi _{100}(\b{r}_2) \nl
@@ -30,7 +30,7 @@ Then, let's change the Hamiltonian to the following form for simple calculations
 \left( -\frac{\hbar^2}{2m_e}\nabla_1^2-\frac{\Zef e^2}{4\pi\epzro r_1} \right) + \left( -\frac{\hbar^2}{2m_e}\nabla_2^2-\frac{\Zef e^2}{4\pi\epzro r_2} \right)
 +\frac{e^2}{4\pi\epzro}\left[ \frac{\Zef-2}{r_1}+\frac{\Zef-2}{r_2}+\frac{1}{\abs{\b{r}_1-\b{r}_2}} \right] \\]
 
-We see that the term inside parentheses are the Hamiltonian of hydrogen-like atoms of atomic number $\Zef$, respectively.
+We see that the terms inside parentheses are the Hamiltonian of hydrogen-like atoms of atomic number $\Zef$, respectively.
 However, here $\Zef$ doesn't have to be an integer since it's a parameter for the variational method;
 it reflects the **shielding effect** (or **screening effect**) of the electrons.
 Therefore, $\Zef$ is an **effective nuclear charge** $Z_\text{eff}$, and we'll calculate it later.
@@ -94,7 +94,7 @@ An experimental value is $-78.975 \,\eV$, which shows that our approximation is 
 We can also calculate the ionization energy of helium.
 Since the first ionization energy of helium is trivially (and also approximately) $ 4\Ryd=54.423\,\eV $,
 we get the second ionization energy naturally, of which value is $23.066\,\eV$.
-Although this isn't accurate enough (over $5\,\%$ of error to experiments) to use, it still provides us the rough value.
+Although this isn't accurate enough (over $5\,\%$ of the error to experiments) to use, it still provides us the rough value.
 
 Summarizing,
 * $ Z_\text{eff} \approx 1.6875 $
@@ -106,7 +106,7 @@ Summarizing,
 A **two-electron atom** or **helium-like ion** is a quantum mechanical system consisting of
 one nucleus with a charge of $Ze$ and just two electrons. ($\ce{H-}$, $\ce{He}$, $\ce{Li+}$, $\ce{Be^2+}$, ...)
 
-The expectation of Hamiltonian can be computed in same way,
+The expectation of Hamiltonian can be computed in the same way,
 
 \\[ \expct{\hat{\hamiltonian}} =
 \left( -2\Zef^2+\frac{16Z-5}{4}\Zef \right)E_1 \\]
@@ -116,7 +116,7 @@ Therefore,
 * $ E_\text{gs} \approx 2\left(Z-\dfrac{5}{16}\right)^2 E_1 $
 
 This is approximation is quite good, surprisingly!
-Compare with experimental values at tables here.
+Compare with experimental values in the tables here.
 - [Ionization Energy](https://en.wikipedia.org/wiki/Molar_ionization_energies_of_the_elements#All_Ionization_Energies)
 - [Effective Nuclear Charge](https://en.wikipedia.org/wiki/Effective_nuclear_charge#Values)
 

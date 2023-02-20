@@ -28,21 +28,21 @@ An inner product is expressed as follows, where $^\ast$ denotes the complex conj
 * $ \brkt{\phi}{c_1\psi_1+c_2\psi_2} = c_1\brkt{\phi}{\psi_1}+c_2\brkt{\phi}{\psi_2} $
 * $ \brkt{c_1\phi_1+c_2\phi_2}{\psi} = c_1^\ast \brkt{\phi_1}{\psi}+c_2^\ast \brkt{\phi_2}{\psi} $
 
-In addition, **normalized** state vectors satisfy following property:
+In addition, **normalized** state vectors satisfy the following property:
 * $ \brkt{\psi}{\psi}=1 $
 
 ## Operators
 
 Since we can think of ket as a vector and bra as a co-vector, a linear **operator** can be considered a square matrix.
 The _hat_ $\hat{\;\;}$ is often used to indicate an operator.
-(Regarding an operator as a matrix is not corect since the vectors are infinite-dimensional,
-but in quantum physics, it doesn't really matter.)
+(Regarding an operator as a matrix is not correct since the vectors are infinite-dimensional,
+but in quantum physics, it doesn't matter.)
 
 * $ \hat{A}\ket{\Psi} = \ket{\hat{A}\Psi},\; \bra{\Psi}\hat{A} = \bra{\hat{A}^\dagger\Psi} $
 * $ \brktop{\phi}{\hat{A}}{\psi} \coloneqq \left(\bra{\phi}\hat{A}\right)\ket{\psi} 
 = \bra{\phi}\left(\hat{A}\ket{\psi}\right) $
 
-If the same state vector appears on both bra and ket side,
+If the same state vector appears on both the bra and ket sides,
 * $ \langle\hat{A}\rangle \coloneqq \brktop{\psi}{\hat{A}}{\psi} $
 
 then this expression gives the **expectation value**, or mean or average value,
@@ -66,7 +66,7 @@ We can write this using projection operators.
 
 ## Position space and wavefunction
 
-Any vectors that generates the Hilbert space can be a basis.
+Any vectors that generate the Hilbert space can be a basis.
 Let's take a look at **position space** first.
 This label is the eigenvalue of the position operator acting on such a basis state,
 $ \hat{\b{r}}\ket{\b{r}} = \b{r}\ket{\b{r}}$.

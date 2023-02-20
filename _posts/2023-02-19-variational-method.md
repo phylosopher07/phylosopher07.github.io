@@ -11,7 +11,7 @@ math: true
 ## Variational method
 
 **Variational method** is one way of finding approximations to the _ground state_, and some _excited states_.
-This allows calculating approximate wavefunctions such as _molecular orbitals_.
+This allows for calculating approximate wavefunctions such as _molecular orbitals_.
 The basis for this method is the variational principle.
 
 The method consists of choosing a **"trial wavefunction"** depending on one or more parameters,

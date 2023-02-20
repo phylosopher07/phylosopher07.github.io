@@ -38,8 +38,8 @@ The graph above is an example result for the DFS algorithm.
 
 The time and space analysis of DFS differs according to its application area.
 DFS is typically used to traverse an entire graph, and takes time $ O(|V|+|E|) $
-if implemented by using adjacency list. This is linear in the size of the graph.
-In these applications it also uses space $ O(|V|) $ in the worst case to store the stack of vertices 
+if implemented by using an adjacency list. This is linear in the size of the graph.
+In these applications, it also uses space $ O(|V|) $ in the worst case to store the stack of vertices 
 on the current search path as well as the set of already-visited vertices.
 
 * **Time complexity**: $ O(\vert{V}\vert+\vert{E}\vert) $
@@ -78,10 +78,10 @@ void dfs(int now){
 
 
 ## BFS
-**Breadth-first search(BFS)** is an another algorithm for graph searching.
+**Breadth-first search(BFS)** is another algorithm for graph searching.
 It starts at the root and explores all nodes at the present depth prior 
 to moving on to the nodes at the next depth level.
-Extra memory, usually a queue, is needed to keep track of the child nodes that were encountered but not yet explored.
+Extra memory, usually a queue, is needed to track the child nodes encountered but not yet explored.
 
 ### Explanation
 ```mermaid
@@ -151,10 +151,10 @@ void bfs(int root){
 * Finding the shortest path between two nodes
 * Finding the depth of a node
 * Ford–Fulkerson method
-* Testing bipartiteness of a graph
+* Testing the bipartite-ness of a graph
 
 
 ## Conclusion
 
-It's necessary to master these two graph traversing algorithms in order to implement the computation of graph theory.
+It's necessary to master these two graph traversing algorithms to implement graph theory computations.
 Maybe PS will help a lot. 😄

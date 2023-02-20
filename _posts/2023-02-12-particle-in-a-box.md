@@ -18,8 +18,8 @@ The model is mainly used as a hypothetical example to illustrate the differences
 ## One-dimensional solution
 
 The simplest form of the particle in a box model considers a one-dimensional system.
-Here, the particle may only move backwards and forwards along a straight line with impenetrable barriers at either end.
-The walls of a one-dimensional box may be seen as regions of space with an infinitely large potential energy.
+Here, the particle may only move backward and forwards along a straight line with impenetrable barriers at either end.
+The walls of a one-dimensional box may be seen as regions of space with infinitely large potential energy.
 
 The potential energy in this model is given as
 
@@ -33,7 +33,7 @@ Using the time-independent Schrödinger equation,
 
 \\[ -\frac{\hbar^2}{2m}\frac{\partial^2\psi}{\partial x^2}+V\psi=E\psi \\]
 
-The two potential barriers result two boundary conditions:
+The two potential barriers result in two boundary conditions:
 
 \\[ \psi(0)=\psi(L)=0 \\]
 
@@ -42,7 +42,7 @@ the equation becomes simpler:
 
 \\[ -\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2}=E\psi  \\]
 
-The solution of this equation is:
+The solution to this equation is:
 
 \\[  \psi(x)=A\sin kx+B\cos kx \\]
 
@@ -83,7 +83,7 @@ Also, in the **ground state**, the energy of the particle is not zero, meaning t
 Additionally, it is more likely to be found at certain positions than at others, depending on its energy level.
 The particle may never be detected at certain positions, known as spatial **nodes**.
 
-### Exppectation values
+### Expectation values
 
 \\[ \begin{align\*}
 \expct{x} &= \int_0^L \psi^\ast x\psi \,dx \nl
@@ -138,7 +138,7 @@ When $n$ becomes very large, the probability at $a<x<b$ converges to:
 
 \\[ \lim_{n\to\infty}\int_a^b P_\text{QM} \,dx = \frac{b-a}{L} \\]
 
-This is indistinguishable with classical results; called the **correspondence principle**.
+This is indistinguishable from classical results; called the **correspondence principle**.
 
 ## Higher dimensions
 
@@ -176,7 +176,7 @@ _The wavefunction of a 2D well with $(n_x,n_y)=(4,4)$_
 
 ### Three-dimensional solution
 
-It is almost same as previous ones.
+It is almost the same as the previous ones.
 
 \\[ \psi_{n_xn_yn_z}(x,y,z)=\sqrt{\frac{8}{L_xL_yL_z}}\sin\left(\frac{n_x\pi x}{L_x}\right)\sin\left(\frac{n_y\pi y}{L_y}\right)\sin\left(\frac{n_z\pi z}{L_z}\right) \\]
 \\[ E_{n_xn_yn_z}=\frac{\pi^2\hbar^2}{2m}\left[\left(\frac{n_x}{L_x}\right)^2 + \left(\frac{n_y}{L_y}\right)^2 + \left(\frac{n_z}{L_z}\right)^2\right] \\]
@@ -185,7 +185,7 @@ Degeneration occurs in this case, too.
 
 ### Hyperrectangular well
 
-An analogue for higher dimensions of particle-in-a-box problem is as follows:
+An analogue for higher dimensions of the particle-in-a-box problem is as follows:
 
 \\[ \psi_{n_1\cdots n_k}(x_1,\cdots,x_k)=\prod_{i=1}^k \sqrt{\frac{2}{L_i}} \sin\left(\frac{n_i\pi x_i}{L_i}\right) \\]
 \\[ E_{n_1\cdots n_k}=\frac{\pi^2\hbar^2}{2m}\sum_{i=1}^k \left(\frac{n_i}{L_i}\right)^2 \\]
@@ -228,9 +228,9 @@ The differential equation of $\rho$ is:
 \\[ \rho\frac{d}{d\rho}\left(\rho\frac{d\Rho}{d\rho}\right) + (k^2\rho^2-m^2)\Rho = 0 \\]
 
 The solutions of this differential equation are the _Bessel function_ $J_m(k\rho)$ and the _Neumann function_ $Y_m(k\rho)$.
-However, Neumman functions cannot be the solution of this problem since $\dps \lim_{x\to0}Y_m(x)=-\infty$.
+However, Neumman functions cannot be the solution to this problem since $\dps \lim_{x\to0}Y_m(x)=-\infty$.
 
-Therefore, we get the solution for is $\Rho$.
+Therefore, we get the solution for $\Rho$.
 
 \\[ \Rho(\rho)=J_m(k\rho) \\]
 

@@ -10,13 +10,13 @@ math: true
 
 ## Prerequisites
 
-Like photon, the momentum and energy of a quantum-like particle
+Like a photon, the momentum and energy of a quantum-like particle
 with wave-like properties and particle-like properties(i.e., duality) are summarized as follows.
-(Duality derived by De Brogile)
+(Duality derived by De Broglie)
 * $ p=\dfrac{h}{\lambda}=\hbar k $
 * $ E=h\nu=\hbar\omega $
 
-Since we are considering particles with this duality, let's use the wavefunction in classical mechanics.
+Since we are considering particles with this duality, let's use wavefunction in classical mechanics.
 * $ \psi(\b{r},t)=Ae^{i(\b{k}\cdot\b{r}-\omega t)} $
 
 ## Induction of time-dependent Schrödinger equation
@@ -40,7 +40,7 @@ Also,
 * $ \dfrac{\partial\psi}{\partial t} = -i\omega\psi = -\dfrac{i}{\hbar}E\psi $
 * $ E\psi = i\hbar\dfrac{\partial}{\partial t}\psi $
 
-Since the eigenvalue of a Hamiltonian operator is an energy,
+Since the eigenvalue of a Hamiltonian operator is energy,
 we finally get **time-dependent Schrödinger equation**.
 Let's rewrite the wavefunction $\psi$ to the state vector $\ket{\Psi(t)}$.
 
@@ -56,7 +56,7 @@ Then we get **time-independent Schrödinger equation**.
 \\[\boxed{  \hat{\mathcal{H}}\ket{\psi}=E\ket{\psi}  }\\]
 
 The solutions (_eigenfunctions of the Hamiltonian_) obtained through the separation of variables are not all solutions of the Schrödinger equation,
-but all solutions can be expressed by the basis contaning those eigenfunctions.
+but all solutions can be expressed by the basis containing those eigenfunctions.
 
 \\[ \begin{align\*}
 i\hbar\frac{\partial}{\partial t}\ket{\Psi(t)} &= i\hbar\frac{\partial T}{\partial t}\ket{\psi} \nl

@@ -10,7 +10,7 @@ math: true
 
 ## Linear combination
 Given a set S of elements of a $F$-vector space $V$,
-a **linear combinations** of elements of S is an element of V of the following form.
+a **linear combination** of elements of S is an element of V of the following form.
 
 * $ i\in\set{1,\dotsc,n} $
 * $ a_i\in F,\; S=\set{\b{v}_i\in V}\subset V $
@@ -23,7 +23,7 @@ The scalars $ a_i $ are called the coefficients of the linear combination.
 We can then define whether the vectors of $S$ are independent or dependent. <br>
 The elements of a subset $S$ of $V$ are said to be linearly independent if no element of $S$ can be written 
 as a linear combination of the other elements of $S$.
-Equivalently, they are linearly independent if two linear combinations of element of $S$ 
+Equivalently, they are linearly independent if two linear combinations of elements of $S$ 
 define the same element of $V$ if and only if they have the same coefficients.
 
 * **Linearly independent**: $ \dsum_{i=1}^n a_i\b{v}_i=0 \iff \forall a_i=0 $

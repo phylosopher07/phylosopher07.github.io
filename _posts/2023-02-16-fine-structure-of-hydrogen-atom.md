@@ -19,7 +19,7 @@ The gross structure assumes the kinetic energy term of the Hamiltonian takes the
 
 \\[ \hamiltonian_0 = \frac{p^2}{2m_e}+V \\]
 
-However, when considering the _special relativity_, we must use a relativistic form of the kinetic energy, which is way more accurate.
+However, when considering _special relativity_, we must use a relativistic form of kinetic energy, which is way more accurate.
 
 \\[ \begin{align\*}
 T &= \sqrt{p^2c^2+m_e^2c^4}-mc^2 \nl
@@ -28,13 +28,13 @@ T &= \sqrt{p^2c^2+m_e^2c^4}-mc^2 \nl
 \end{align\*} \\]
 
 Although there are an infinite number of terms in this series, the later terms are much smaller than earlier terms,
-and so we can ignore all but the first two. Since the first term above is already part of the classical Hamiltonian,
-the first order correction to the Hamiltonian is:
+so we can ignore all but the first two. Since the first term above is already part of the classical Hamiltonian,
+the first-order correction to the Hamiltonian is:
 
 \\[ \hamiltonian\rq_\text{KE} = - \frac{p^4}{2m_e^3c^2} \\]
 
-Using this as a perturbation, we can calculate the first order energy corrections due to relativistic effects.
-Let's think of a hydrogen-like atoms of atomic number $Z$.
+Using this as a perturbation, we can calculate the first-order energy corrections due to relativistic effects.
+Let's think of hydrogen-like atoms of atomic number $Z$.
 
 \\[ \begin{align\*}
 E_\text{KE}^{(1)} &= \brktop{\psi^{(0)}}{ \hat{\hamiltonian}\rq_\text{KE} }{\psi^{(0)}} \nl
@@ -53,15 +53,15 @@ Remember that the unperturbed energy of the hydrogenic atoms is:
 
 \\[ E_n = -\frac{e^2}{8\pi\epzroa_0} \frac{Z^2}{n^2} \\]
 
-Therefore, the first order relativistic correction for the hydrogenic atoms is:
+Therefore, the first-order relativistic correction for the hydrogenic atoms is:
 
 \\[ \therefore E^{(1)}_\text{KE} = -\frac{E_n^2}{2m_ec^2} \left( \frac{4n}{l+\frac{1}{2}}-3 \right) \\]
 
-## Spin–orbit interaction
+## Spin-orbit interaction
 
 ⚠️[Studying](https://webhome.phy.duke.edu/~rgb/Class/phy319/phy319/node134.html)⚠️
 
-The **spin–orbit interaction** (i.e. **spin-orbit coupling**) can be understood by shifting from the reference where the electron orbits the nucleus
+The **spin-orbit interaction** (i.e. **spin-orbit coupling**) can be understood by shifting from the reference where the electron orbits the nucleus
 into one where the electron is stationary and the nucleus instead orbits it.
 In this case the orbiting nucleus functions as an effective current loop, which in turn will generate a magnetic field.
 However, the electron itself has a magnetic moment due to its intrinsic angular momentum; i.e. _spin_.
@@ -118,7 +118,7 @@ Therefore, a good set of quantum numbers to describe the system is $\Set{l,s,j}$
 \\[ \hamiltonian_\text{SO}\rq = 
 \frac{Ze^2}{8\pi\epzro} \frac{1}{m_e^2c^2r^3} \frac{1}{2}\left( J^2-L^2-S^2 \right) \\]
 
-We can calculate the first order energy corrections due to spin-orbit interaction.
+We can calculate the first-order energy corrections due to spin-orbit interaction.
 
 \\[ \begin{align\*}
 E_\text{SO}^{(1)} &= \brktop{\psi^{(0)}}{ \hamiltonian_\text{SO}\rq }{\psi^{(0)}} \nl
@@ -139,13 +139,13 @@ where $j$ is the total angular momentum quantum number.
 
 **Darwin correction** is impossible to interpret classically and intuitively.
 It should be understood as the $s$ orbital wavefunction overlapping with the nucleus.
-Therefore, every wavefunctions but the $s$ orbital has the contribution of the term zero.
+Therefore, every wavefunction but the $s$ orbital has the contribution of the term zero.
 
-There is one last term in the non-relativistic expansion of the Dirac equation, which called the _Darwin term_, and is given by:
+There is one last term in the non-relativistic expansion of the Dirac equation, which is called the _Darwin term_, and is given by:
 
 \\[ \hamiltonian_\text{Darwin}\rq = \frac{\hbar^2}{8m_e^2c^2} \frac{Ze^2}{4\pi\epzro} 4\pi\delta^3(\b{r}) \\]
 
-We can calculate the first order energy corrections due to the Darwin correction.
+We can calculate the first-order energy corrections due to the Darwin correction.
 
 \\[ \begin{align\*}
 E_\text{Darwin}^{(1)} &= \brktop{\psi^{(0)}}{ \hamiltonian_\text{Darwin}\rq }{\psi^{(0)}}

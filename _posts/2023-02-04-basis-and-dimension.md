@@ -20,7 +20,7 @@ of the vector with respect to $B$. The elements of a basis are called **basis ve
 * $ \span(B)=V $
 
 An ordering can be done by numbering the basis elements.
-In order to emphasize that an order has been chosen, one speaks of an **ordered basis**,
+To emphasize that an order has been chosen, one speaks of an **ordered basis**,
 which is therefore not simply an unstructured set, but a sequence; an indexed family.
 
 ![Basis](https://upload.wikimedia.org/wikipedia/commons/f/f4/3d_two_bases_same_vector.svg)
@@ -30,17 +30,17 @@ _The same vector can be represented in two different bases (purple and red arrow
 ### Properties
 * $L$: a linearly independent subset of a spanning set $S \sube V$ <br>
 basis $ \exist B \;\text{s.t.}\; L \sube B \sube V $
-  + This implies that it is possible to make a basis by choosing and adding some vectors from $V$ properly.
+  + This implies that it is possible to make a basis by properly choosing and adding vectors from $V$.
     The possibility is guaranteed by the _axiom of choice_.
 
 
 ## Dimension
 
-All bases of an arbitary vector space have the same cardinality, which is called the **dimension** of vector space.
+All bases of an arbitrary vector space have the same cardinality, which is called the **dimension** of vector space.
 * $B$ is a basis of $V$ $ \Rightarrow \dim{V}= \card{B} $
-* The defintion apllies equally even when $B$ is an infinite set.
+* The definition applies equally even when $B$ is an infinite set.
 
-It is so easy to prove that the dimension is well-defined; read wikipedia for the details.
+It is so easy to prove that the dimension is well-defined; read Wikipedia for the details.
 * [Steinitz exchange lemma](https://en.wikipedia.org/wiki/Steinitz_exchange_lemma) (for finite dimensions)
 * [Dimension theorem](https://en.wikipedia.org/wiki/Dimension_theorem_for_vector_spaces) (for infinite dimensions)
 

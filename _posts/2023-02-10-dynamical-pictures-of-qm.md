@@ -44,7 +44,7 @@ then the time evolution operator can be written as:
 \\[ \hat{U}(t) = \exp\left( -\frac{i}{\hbar}\int_0^t\hat{\mathcal{H}}(t\rq)dt\rq  \right) \\]
 
 If the Hamiltonian is dependent on time, but the Hamiltonians at different times do not commute,
-then the time evolution operator can be written as following form 
+then the time evolution operator can be written in following form 
 where $\mathcal{T}$ is **time-ordering operator**, which is sometimes known as the **Dyson series**.
 
 \\[ \hat{U}(t) = \mathcal{T}\exp\left( -\frac{i}{\hbar}\int_0^t\hat{\mathcal{H}}(t\rq)dt\rq  \right) \\]

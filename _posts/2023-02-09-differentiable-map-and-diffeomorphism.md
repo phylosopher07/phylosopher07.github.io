@@ -25,8 +25,8 @@ For example,
 
 ## Diffeomorphism
 
-In the same situation as above, let's continue discussing obout the function $f$.
-If $f$ satisfies following properties, we call it a **diffeomorphism**.
+In the same situation as above, let's continue discussing about the function $f$.
+If $f$ satisfies the following properties, we call it a **diffeomorphism**.
 * $f$ is a _bijection_
 * $f$ is _differentiable_
 * $f^{-1}$ is _differentialbe_

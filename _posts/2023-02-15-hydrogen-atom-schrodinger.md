@@ -16,8 +16,8 @@ Exact analytical answers are available for the non-relativistic **hydrogen atoms
 
 ## Schrödinger equation
 
-The Hamiltonian of a _hydrogen-like atom_ with atomic number $Z$ is the radial kinetic energy operator and Coulomb attraction force
-between $Z$ positive protons and a negative electron. Using the time-independent Schrödinger equation, ignoring all spin-coupling interactions and using the reduced mass
+The Hamiltonian of a _hydrogen-like atom_ with the atomic number $Z$ is the radial kinetic energy operator and Coulomb attraction force
+between $Z$ positive protons and a negative electron. Using the time-independent Schrödinger equation, ignoring all spin-coupling interactions, and using the reduced mass
 $ \mu=\dfrac{m_em_N}{m_e+m_N} $, the equation is written as:
 
 \\[ \left( -\frac{\hbar^2}{2\mu}\nabla^2-\frac{Ze^2}{4\pi\epzro r} \right)\psi = E\psi\\]
@@ -28,7 +28,7 @@ Expanding the Laplacian in spherical coordinates:
 \frac{1}{r^2\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right) +
 \frac{1}{r^2\sin^2\theta}\frac{\partial^2}{\partial\varphi^2} \right\\} - \frac{Ze^2}{4\pi\epzro r} \right] \psi = E\psi  \\]
 
-This is a separable, partial differential equation which can be solved in terms of special functions. When the wavefunction is separated as product of functions
+This is a separable, partial differential equation that can be solved in terms of special functions. When the wavefunction is separated as a product of functions
 $R(r)$, $\Theta(\theta)$ and $\Phi(\varphi)$ three independent differential functions appears:
 
 \\[ \psi(r,\theta,\varphi) = CR(r)Y(\theta,\varphi)=CR(r)\Theta(\theta)\Phi(\varphi) \\]
@@ -37,7 +37,7 @@ $R(r)$, $\Theta(\theta)$ and $\Phi(\varphi)$ three independent differential func
 -\frac{1}{Y}\left[ \frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial Y}{\partial \theta}\right) + 
 \frac{1}{\sin^2\theta}\frac{\partial^2 Y}{\partial \varphi^2} \right]  \\]
 
-Since left and right side consist of only variable respectively, the whole term is constant. Let's put it $l(l+1)$.
+Since the left and right sides consist of only variables respectively, the whole term is constant. Let's put it $l(l+1)$.
 
 \\[ \frac{1}{\Theta}\left[\sin\theta\frac{d}{d\theta}\left(\sin\theta\frac{d\Theta}{d\theta}\right)\right] + l(l+1)\sin^2\theta = 
 -\frac{1}{\Phi}\frac{d^2\Phi}{d\varphi^2} \\]
@@ -68,7 +68,7 @@ Therefore, $Y(\theta,\varphi)$ becomes the **spherical harmonic function** by se
 
 \\[ \therefore Y(\theta,\varphi) = DP_l^{m_l}(\cos\theta)e^{im_l\varphi} = Y_l^{m_l}(\theta,\varphi) \\]
 
-Let's then take a look for $R$.
+Let's then take a look at $R$.
 
 \\[ \frac{d}{dr}\left(r^2\frac{dR}{dr}\right) - \frac{2\mu r^2}{\hbar^2}\left( -\frac{Ze^2}{4\pi\epzro r} -E\right)R = l(l+1)R  \\]
 
@@ -98,11 +98,11 @@ Therefore, it is possible to reset $u$ using a new function $L(\rho)$.
 
 \\[ u \equiv \rho^{l+1}e^{-\rho}L(\rho) \\]
 
-We then get a differential equation about $L$.
+We then get a differential equation of $L$.
 
 \\[ \rho\frac{d^2L}{d\rho^2} + 2(l+1-\rho)\frac{dL}{d\rho} + \left\\{\lambda-2(l+1)\right\\}L = 0 \\]
 
-Let's use the _frobenius method_ to solve this equation.
+Let's use the _Frobenius method_ to solve this equation.
 
 \\[ L=\sum_{j=0}^\infty c_j\rho^j \\]
 
@@ -118,8 +118,8 @@ It seems to be good to use an asymptotic analysis again.
 &\Rightarrow c_0\rho^{l+1}e^\rho
 \end{align\*} \\]
 
-The solution diverges, so it cannot be a right function describing the system.
-Therefore, we could guess that the recurrence relation has to be ***cut off***, after particular term.
+The solution diverges, so it cannot be the right function describing the system.
+Therefore, we could guess that the recurrence relation has to be ***cut off***, after a particular term.
 This implies the condition for $\lambda$.
 
 \\[ \begin{align\*}
@@ -131,7 +131,7 @@ Let's get back to the differential equation. By changing the variable as $x \col
 
 \\[ x\frac{d^2L}{dx^2} + (2l+2-x)\frac{dL}{dx} + (n-l-1)L = 0 \\]
 
-This is the equation for **generalized Lagurre function**.
+This is the equation for **generalized Laguerre function**.
 
 \\[ L \propto L_{n-l-1}^{2l+1}(x) \\]
 
@@ -139,7 +139,7 @@ We finally get the entire solution of $R$.
 
 \\[ R \propto \frac{1}{r}\rho^{l+1}e^{-\rho}L_{n-l-1}^{2l+1}(2\rho) \\]
 
-Remember that $\lambda$ was nondimensionalizing variable, we can write $R$ as a function of $r$ where $a_0$ is **Bohr radius**.
+Remember that $\lambda$ was a nondimensionalizing variable, we can write $R$ as a function of $r$ where $a_0$ is **Bohr radius**.
 
 \\[ \begin{align\*}
 \rho &= \frac{r}{\kappa} \nl

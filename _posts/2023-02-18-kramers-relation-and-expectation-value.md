@@ -38,7 +38,7 @@ If we multiply both sides by $r^s$, then we’ll get exactly the powers of $r$ t
 \\[ r^s u\rq\rq=\left[ l(l+1)r^{s-2}-\frac{2Z}{a_0}r^{s-1}+\frac{Z^2}{n^2a_0^2}r^s \right]u \\]
 
 Now what we need to do is multiply both sides by $u^\ast=u$ and integrate.
-We'll get the expectation value on RHS since variables are seperated, and each are normalized.
+We'll get the expected value on RHS since variables are separated, and each is normalized.
 
 \\[ \int_0^\infty ur^su\rq\rq dr = l(l+1)\expct{r^{s-2}}-\frac{2Z}{a_0}\expct{r^{s-1}}+\frac{Z^2}{n^2a_0^2}\expct{r^s}     \label{2}\tag{2}\\]
 
@@ -137,7 +137,7 @@ By using **Hellmann–Feynman theorem** and **Kramers' relation**, we can induce
   <br><br>
 4. $ \expct{r} = \dfrac{1}{2}\Big[ 3n^2-l(l+1) \Big]\dfrac{a_0}{Z} $
   <br><br>
-  It can be similarly showed by the Kramers' relation.
+  It can be similarly shown by the Kramers' relation.
   <br><br>
 5. $ \expct{r^2} = \dfrac{1}{2}\Big[ 5n^2+1-3l(l+1) \Big]\dfrac{n^2a_0^2}{Z^2} $
   <br><br>
