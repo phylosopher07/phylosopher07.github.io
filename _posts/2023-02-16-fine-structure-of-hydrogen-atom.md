@@ -41,7 +41,7 @@ E_\text{KE}^{(1)} &= \brktop{\psi^{(0)}}{ \hat{\hamiltonian}\rq_\text{KE} }{\psi
 &= -\frac{1}{8m_e^3c^2} \brktop{\psi^{(0)}}{ \hat{p}^4 }{\psi^{(0)}} \nl
 &= -\frac{1}{8m_e^3c^2} \Brktop{\psi^{(0)}}{ \left[ 2m(E_n-\hat{V}) \right]^2 }{\psi^{(0)}} \nl
 &= -\frac{1}{2m_ec^2} \left[ E_n^2 -2E_n\expct{V} + \expct{V^2} \right] \nl
-&= -\frac{1}{2m_ec^2} \left[ E_n^2 +2E_n\frac{Ze^2}{4\pi\varepsilon_0}\Expct{\frac{1}{r}} + \left( \frac{Ze^2}{4\pi\varepsilon_0} \right)^2 \Expct{\frac{1}{r^2}} \right] \nl
+&= -\frac{1}{2m_ec^2} \left[ E_n^2 +2E_n\frac{Ze^2}{4\pi\epzro}\Expct{\frac{1}{r}} + \left( \frac{Ze^2}{4\pi\epzro} \right)^2 \Expct{\frac{1}{r^2}} \right] \nl
 \end{align\*} \\]
 
 For the hydrogenic atoms, as we showed [here](/posts/kramers-relation-and-expectation-value/),
@@ -51,7 +51,7 @@ For the hydrogenic atoms, as we showed [here](/posts/kramers-relation-and-expect
 where $a_0$ is the Bohr radius, $n$ is the principal quantum number, $l$ is the azimuthal quantum number.
 Remember that the unperturbed energy of the hydrogenic atoms is:
 
-\\[ E_n = -\frac{e^2}{8\pi\varepsilon_0a_0} \frac{Z^2}{n^2} \\]
+\\[ E_n = -\frac{e^2}{8\pi\epzroa_0} \frac{Z^2}{n^2} \\]
 
 Therefore, the first order relativistic correction for the hydrogenic atoms is:
 
@@ -79,7 +79,7 @@ Considering only the first-term for $\bs{\beta}$,
 \b{B} &\approx -\bs{\beta}\cross\b{E} \nl
 &= -\frac{\b{p}}{m_ec} \cross \left( -\frac{d\Phi}{dr}\hat{\b{r}} \right) \nl
 &= \frac{1}{m_ec}\left( \frac{1}{r} \frac{d\Phi}{dr} \right) \b{L} \nl
-&= \frac{1}{m_ec}\left( -\frac{Ze}{4\pi\varepsilon_0 r^3} \right) \b{L}
+&= \frac{1}{m_ec}\left( -\frac{Ze}{4\pi\epzro r^3} \right) \b{L}
 \end{align\*} \\]
 
 Then we can calculate the perturbed Hamiltonian (implying the _Larmor precession_), as below,
@@ -87,8 +87,8 @@ Then we can calculate the perturbed Hamiltonian (implying the _Larmor precession
 \\[ \begin{align\*}
 \hamiltonian_\text{Larmor}\rq
 &= -\bs{\mu}_\text{S} \cdot \b{B} \nl
-&= \left( -\frac{g _\text{s} e}{2m_e} \b{S} \right) \cdot \left( -\frac{1}{m_ec} \frac{Ze}{4\pi\varepsilon_0 r^3} \b{L} \right) \nl
-&= \frac{Ze^2}{4\pi\varepsilon_0} \frac{g _\text{s}}{2m_e^2c^2} \frac{ \b{L}\cdot\b{S} }{r^2}
+&= \left( -\frac{g _\text{s} e}{2m_e} \b{S} \right) \cdot \left( -\frac{1}{m_ec} \frac{Ze}{4\pi\epzro r^3} \b{L} \right) \nl
+&= \frac{Ze^2}{4\pi\epzro} \frac{g _\text{s}}{2m_e^2c^2} \frac{ \b{L}\cdot\b{S} }{r^2}
 \end{align\*} \\]
 
 where $g_\text{s}$ is the _spin g-factor_.
@@ -98,15 +98,15 @@ We're not done yet. We should also consider the _Thomas precession_ which derive
 \hamiltonian_\text{Thomas}\rq
 &= \omega_\text{T} \cdot \b{S} \nl
 & \quad \vdots \nl
-&= -\frac{Ze^2}{4\pi\varepsilon_0} \frac{1}{2m_e^2c^2} \frac{ \b{L}\cdot\b{S} }{r^3}
+&= -\frac{Ze^2}{4\pi\epzro} \frac{1}{2m_e^2c^2} \frac{ \b{L}\cdot\b{S} }{r^3}
 \end{align\*} \\]
 
 The entire perturbation is the sum of two Hamiltonians. Let's assume that the spin g-factor $g_\text{s}$ is $2$.
 
 \\[ \begin{align\*}
 \hamiltonian_\text{SO}\rq &= \hamiltonian_\text{Larmor}\rq + \hamiltonian_\text{Thomas}\rq \nl
-&= \frac{Ze^2}{4\pi\varepsilon_0} \frac{g _\text{s}-1}{2m_e^2c^2} \frac{ \b{L}\cdot\b{S} }{r^3} \nl
-&= \frac{Ze^2}{8\pi\varepsilon_0} \frac{1}{m_e^2c^2} \frac{ \b{L}\cdot\b{S} }{r^3}
+&= \frac{Ze^2}{4\pi\epzro} \frac{g _\text{s}-1}{2m_e^2c^2} \frac{ \b{L}\cdot\b{S} }{r^3} \nl
+&= \frac{Ze^2}{8\pi\epzro} \frac{1}{m_e^2c^2} \frac{ \b{L}\cdot\b{S} }{r^3}
 \end{align\*} \\]
 
 The perturbed Hamiltonian $\hamiltonian_\text{SO}\rq$ does not commute with orbital angular momentum operator $\b{L}$
@@ -116,13 +116,13 @@ Also, it doesn't commute with total angular momentum operator $\b{J}=\b{L}+\b{S}
 Therefore, a good set of quantum numbers to describe the system is $\Set{l,s,j}$. Let's rewrite the Hamiltonian.
 
 \\[ \hamiltonian_\text{SO}\rq = 
-\frac{Ze^2}{8\pi\varepsilon_0} \frac{1}{m_e^2c^2r^3} \frac{1}{2}\left( J^2-L^2-S^2 \right) \\]
+\frac{Ze^2}{8\pi\epzro} \frac{1}{m_e^2c^2r^3} \frac{1}{2}\left( J^2-L^2-S^2 \right) \\]
 
 We can calculate the first order energy corrections due to spin-orbit interaction.
 
 \\[ \begin{align\*}
 E_\text{SO}^{(1)} &= \brktop{\psi^{(0)}}{ \hamiltonian_\text{SO}\rq }{\psi^{(0)}} \nl
-&= \frac{Ze^2}{8\pi\varepsilon_0} \frac{1}{m_e^2c^2} \Expct{\frac{1}{r^3}} \frac{\hbar^2}{2} \Big[ j(j+1)-l(l+1)-s(s+1) \Big]
+&= \frac{Ze^2}{8\pi\epzro} \frac{1}{m_e^2c^2} \Expct{\frac{1}{r^3}} \frac{\hbar^2}{2} \Big[ j(j+1)-l(l+1)-s(s+1) \Big]
 \end{align\*} \\]
 
 For the hydrogenic atoms [(also here)](/posts/kramers-relation-and-expectation-value/),
@@ -143,13 +143,13 @@ Therefore, every wavefunctions but the $s$ orbital has the contribution of the t
 
 There is one last term in the non-relativistic expansion of the Dirac equation, which called the _Darwin term_, and is given by:
 
-\\[ \hamiltonian_\text{Darwin}\rq = \frac{\hbar^2}{8m_e^2c^2} \frac{Ze^2}{4\pi\varepsilon_0} 4\pi\delta^3(\b{r}) \\]
+\\[ \hamiltonian_\text{Darwin}\rq = \frac{\hbar^2}{8m_e^2c^2} \frac{Ze^2}{4\pi\epzro} 4\pi\delta^3(\b{r}) \\]
 
 We can calculate the first order energy corrections due to the Darwin correction.
 
 \\[ \begin{align\*}
 E_\text{Darwin}^{(1)} &= \brktop{\psi^{(0)}}{ \hamiltonian_\text{Darwin}\rq }{\psi^{(0)}}
-&= \frac{\hbar^2\pi}{2m_e^2c^2} \frac{Ze^2}{4\pi\varepsilon_0} \abs{\psi(\b{0})}^2
+&= \frac{\hbar^2\pi}{2m_e^2c^2} \frac{Ze^2}{4\pi\epzro} \abs{\psi(\b{0})}^2
 \end{align\*} \\]
 
 Since,
@@ -177,7 +177,7 @@ The total effect, obtained by summing the three perturbations up, is given by th
 &= \frac{E_n^2}{2m_ec^2} \left[ 3+4n\left( \delta_{l0}-\frac{1}{j+\frac{1}{2}} \right)\right]
 \end{align\*} \\]
 
-Expression with the _fine structure constant_ $ \alpha = \dfrac{e^2}{4\pi\varepsilon_0\hbar c} $ is:
+Expression with the _fine structure constant_ $ \alpha = \dfrac{e^2}{4\pi\epzro\hbar c} $ is:
 
 \\[ \Delta E_\text{fs} = E_n \left(\frac{Z\alpha}{2n}\right)^2 \left[ 4n\left( \frac{1}{j+\frac{1}{2}}-\delta_{l0} \right)-3 \right] \\]
 

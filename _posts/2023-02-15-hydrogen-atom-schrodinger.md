@@ -11,28 +11,29 @@ math: true
 ## Introduction
 
 The Schrödinger equation allows one to calculate the stationary states and also the time evolution of quantum systems.
-Exact analytical answers are available for the non-relativistic **hydrogen atoms**.
+Exact analytical answers are available for the non-relativistic **hydrogen atoms** and also for the **hydrogen-like atoms**
+(atom or ion consisting an only electron), such as $\ce{H}$, $\ce{He+}$, $\ce{Li^2+}$, $\ce{Be^3+}$, etc.
 
 ## Schrödinger equation
 
-The Hamiltonian of a hydrogen-like atom with atomic number $Z$ is the radial kinetic energy operator and Coulomb attraction force
+The Hamiltonian of a _hydrogen-like atom_ with atomic number $Z$ is the radial kinetic energy operator and Coulomb attraction force
 between $Z$ positive protons and a negative electron. Using the time-independent Schrödinger equation, ignoring all spin-coupling interactions and using the reduced mass
 $ \mu=\dfrac{m_em_N}{m_e+m_N} $, the equation is written as:
 
-\\[ \left( -\frac{\hbar^2}{2\mu}\nabla^2-\frac{Ze^2}{4\pi\varepsilon_0 r} \right)\psi = E\psi\\]
+\\[ \left( -\frac{\hbar^2}{2\mu}\nabla^2-\frac{Ze^2}{4\pi\epzro r} \right)\psi = E\psi\\]
 
 Expanding the Laplacian in spherical coordinates:
 
 \\[ \left[ -\frac{\hbar^2}{2\mu}\left\\{ \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r}\right) +
 \frac{1}{r^2\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right) +
-\frac{1}{r^2\sin^2\theta}\frac{\partial^2}{\partial\varphi^2} \right\\} - \frac{Ze^2}{4\pi\varepsilon_0 r} \right] \psi = E\psi  \\]
+\frac{1}{r^2\sin^2\theta}\frac{\partial^2}{\partial\varphi^2} \right\\} - \frac{Ze^2}{4\pi\epzro r} \right] \psi = E\psi  \\]
 
 This is a separable, partial differential equation which can be solved in terms of special functions. When the wavefunction is separated as product of functions
 $R(r)$, $\Theta(\theta)$ and $\Phi(\varphi)$ three independent differential functions appears:
 
 \\[ \psi(r,\theta,\varphi) = CR(r)Y(\theta,\varphi)=CR(r)\Theta(\theta)\Phi(\varphi) \\]
 
-\\[ \frac{1}{R}\frac{d}{dr}\left(r^2\frac{dR}{dr}\right) - \frac{2\mu r^2}{\hbar^2}\left(-\frac{Ze^2}{4\pi\varepsilon_0 r}-E\right) = 
+\\[ \frac{1}{R}\frac{d}{dr}\left(r^2\frac{dR}{dr}\right) - \frac{2\mu r^2}{\hbar^2}\left(-\frac{Ze^2}{4\pi\epzro r}-E\right) = 
 -\frac{1}{Y}\left[ \frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial Y}{\partial \theta}\right) + 
 \frac{1}{\sin^2\theta}\frac{\partial^2 Y}{\partial \varphi^2} \right]  \\]
 
@@ -44,7 +45,7 @@ Since left and right side consist of only variable respectively, the whole term 
 With the same logic, let's put the whole term $m_l^2$. Remark that $l$ and $m_l$ are complex numbers. We finally get three differential equations:
 
 \\[ \therefore \begin{cases}
-\dps \frac{1}{R}\frac{d}{dr}\left(r^2\frac{dR}{dr}\right) - \frac{2\mu r^2}{\hbar^2}\left(-\frac{Ze^2}{4\pi\varepsilon_0 r}-E\right) = l(l+1) \nl\nl
+\dps \frac{1}{R}\frac{d}{dr}\left(r^2\frac{dR}{dr}\right) - \frac{2\mu r^2}{\hbar^2}\left(-\frac{Ze^2}{4\pi\epzro r}-E\right) = l(l+1) \nl\nl
 \dps \frac{1}{\Theta}\left[\sin\theta\frac{d}{d\theta}\left(\sin\theta\frac{d\Theta}{d\theta}\right)\right] + l(l+1)\sin^2\theta = m_l^2 \nl\nl
 \dps \frac{1}{\Phi}\frac{d^2\Phi}{d\varphi^2} = -m_l^2
 \end{cases} \\]
@@ -69,17 +70,17 @@ Therefore, $Y(\theta,\varphi)$ becomes the **spherical harmonic function** by se
 
 Let's then take a look for $R$.
 
-\\[ \frac{d}{dr}\left(r^2\frac{dR}{dr}\right) - \frac{2\mu r^2}{\hbar^2}\left( -\frac{Ze^2}{4\pi\varepsilon_0 r} -E\right)R = l(l+1)R  \\]
+\\[ \frac{d}{dr}\left(r^2\frac{dR}{dr}\right) - \frac{2\mu r^2}{\hbar^2}\left( -\frac{Ze^2}{4\pi\epzro r} -E\right)R = l(l+1)R  \\]
 
 Let's define a new function $u(r) \coloneqq rR(r)$:
 
-\\[ -\frac{\hbar^2}{2\mu}\frac{d^2u}{dr^2} + \left[ -\frac{Ze^2}{4\pi\varepsilon_0 r}+\frac{\hbar^2}{2\mu}\frac{l(l+1)}{r^2} \right]u = Eu \\]
+\\[ -\frac{\hbar^2}{2\mu}\frac{d^2u}{dr^2} + \left[ -\frac{Ze^2}{4\pi\epzro r}+\frac{\hbar^2}{2\mu}\frac{l(l+1)}{r^2} \right]u = Eu \\]
 
 We can simplify the equation by _nondimensionalization_:
 
 \\[ \begin{align\*}
 \kappa &\coloneqq \frac{\sqrt{-2\mu E}}{\hbar} \nl
-\lambda &\coloneqq \frac{Z\mu e^2}{2\pi\varepsilon_0\hbar^2\kappa} \nl
+\lambda &\coloneqq \frac{Z\mu e^2}{2\pi\epzro\hbar^2\kappa} \nl
 \rho & \coloneqq \kappa r
 \end{align\*} \\]
 
@@ -142,8 +143,8 @@ Remember that $\lambda$ was nondimensionalizing variable, we can write $R$ as a 
 
 \\[ \begin{align\*}
 \rho &= \frac{r}{\kappa} \nl
-&= \frac{Z\mu e^2}{2\pi\varepsilon_0\hbar^2}\cdot\frac{r}{\lambda} = \frac{Z\mu e^2}{4\pi\varepsilon_0\hbar^2}\cdot\frac{r}{n} \nl
-&= \frac{Zr}{na_0} \;\left( a_0=\frac{4\pi\varepsilon_0\hbar^2}{\mu e^2} \right)
+&= \frac{Z\mu e^2}{2\pi\epzro\hbar^2}\cdot\frac{r}{\lambda} = \frac{Z\mu e^2}{4\pi\epzro\hbar^2}\cdot\frac{r}{n} \nl
+&= \frac{Zr}{na_0} \;\left( a_0 \coloneqq \frac{4\pi\epzro\hbar^2}{\mu e^2} \right)
 \end{align\*} \\]
 
 \\[ \therefore R(r) = \left(\frac{2Zr}{na_0}\right)^l \exp\left(-\frac{Zr}{na_0}\right) L_{n-l-1}^{2l+1}\left(\frac{2Zr}{na_0}\right)  \\]
@@ -168,11 +169,11 @@ Remember that $\kappa$ contained $E$:
 
 \\[ E=-\frac{\hbar^2\kappa^2}{2\mu},\; \kappa = \frac{2Z}{\lambda a_0} \\]
 
-We finally get the energy, where $\mathcal{R_y}$ is the **Rydberg unit of energy**.
+We finally get the energy, where $\Ryd$ is the **Rydberg unit of energy**.
 
 \\[ \begin{align\*}
 \therefore E_n &= -\frac{\hbar^2}{2\mu}\frac{Z^2}{n^2a_0^2} \nl
-&= -\frac{Z^2}{n^2}\mathcal{R_y} \;\left( \mathcal{R_y} = \frac{e^2}{8\pi\varepsilon_0 a_0} \right)
+&= -\frac{Z^2}{n^2}\Ryd \;\left( \Ryd \coloneqq \frac{e^2}{8\pi\epzro a_0} \right)
 \end{align\*} \\]
 
 Let's summarize.
@@ -180,7 +181,7 @@ Let's summarize.
 \\[ \psi_{nlm_l}(r,\theta,\varphi) = \sqrt{\left(\frac{2Z}{na_0}\right)^3 \frac{(n-l-1)!}{2n \cdot (n+l)!}}
 \left(\frac{2Zr}{na_0}\right)^l \exp\left(-\frac{Zr}{na_0}\right) L_{n-l-1}^{2l+1}\left(\frac{2Zr}{na_0}\right) Y_l^{m_l}(\theta,\varphi) \\]
 
-\\[ E_n = -\frac{Z^2}{n^2}\mathcal{R_y} \\]
+\\[ E_n = -\frac{Z^2}{n^2}\Ryd \\]
 
 ![Hello](https://upload.wikimedia.org/wikipedia/commons/e/e7/Hydrogen_Density_Plots.png)
 

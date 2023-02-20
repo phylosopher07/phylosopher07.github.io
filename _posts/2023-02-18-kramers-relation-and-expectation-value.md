@@ -23,11 +23,11 @@ that have higher negative powers of $r$. Having this relation handy makes a lot 
 
 Let's remind how we solved the Schrödinger equation for hydrogen-like atoms; the radial differential equation is typically written as:
 
-\\[ -\frac{\hbar^2}{2\mu}\frac{\partial^2u}{\partial r^2} + \left[ \frac{\hbar^2l(l+1)}{2\mu r^2}-\frac{Ze^2}{4\pi\varepsilon_0r} \right]u = Eu \\]
+\\[ -\frac{\hbar^2}{2\mu}\frac{\partial^2u}{\partial r^2} + \left[ \frac{\hbar^2l(l+1)}{2\mu r^2}-\frac{Ze^2}{4\pi\epzro r} \right]u = Eu \\]
 
 where $u=rR(r)$. Since
 
-\\[ a_0=\frac{4\pi\varepsilon_0\hbar^2}{\mu e^2} ,\; E=-\frac{\hbar^2}{2\mu}\frac{Z^2}{n^2a_0^2} \\]
+\\[ a_0=\frac{4\pi\epzro\hbar^2}{\mu e^2} ,\; E=-\frac{\hbar^2}{2\mu}\frac{Z^2}{n^2a_0^2} \\]
 
 we can simplify the equation:
 
@@ -47,7 +47,7 @@ Let's integrate $\ref{2}$ in parts.
 \\[ \begin{align\*}
 \int_0^\infty ur^su\rq\rq dr
 &= \bigg[ ur^s u\rq \bigg]_0^\infty -\int_0^\infty \left( u\rq r^s+sur^{s-1} \right)u\rq dr \nl
-&= \underbrace{ -\int_0^\infty u\rq r^s u\rq dr } _{I_1} + \underbrace{ -s\int_0^\infty ur^{s-1}u\rq dr } _{I_2}
+&= \underbrace{ -\int_0^\infty u\rq r^s u\rq dr } _{\dps I_1} + \underbrace{ -s\int_0^\infty ur^{s-1}u\rq dr } _{\dps I_2}
 \end{align\*} \\]
 
 Let's calculate $I_1$ integrating by parts.
@@ -90,18 +90,18 @@ By using **Hellmann–Feynman theorem** and **Kramers' relation**, we can induce
 1. $ \Expct{\dfrac{1}{r}} = \dfrac{Z}{n^2a_0}     \label{1.}$
   <br><br>
   Let's use the fundamental charge $e$ as a parameter for the Hellman-Feynman theorem.
-  \\[ \hat{\hamiltonian}(e) = -\frac{\hbar^2}{2\mu}\nabla^2 - \frac{Ze^2}{4\pi\varepsilon_0r} \\]
+  \\[ \hat{\hamiltonian}(e) = -\frac{\hbar^2}{2\mu}\nabla^2 - \frac{Ze^2}{4\pi\epzro r} \\]
   Then,
-  \\[ \frac{\partial\hat{\hamiltonian}}{\partial e} = -\frac{Ze}{2\pi\varepsilon_0r} \\]
+  \\[ \frac{\partial\hat{\hamiltonian}}{\partial e} = -\frac{Ze}{2\pi\epzro r} \\]
   The energy of the electron dependent on $e$ is:
-  \\[ E_n(e) = -\frac{\mu}{2\hbar^2}\left( \frac{Ze^2}{4\pi\varepsilon_0} \right)^2 \\]
+  \\[ E_n(e) = -\frac{\mu}{2\hbar^2}\left( \frac{Ze^2}{4\pi\epzro} \right)^2 \\]
   Then,
-  \\[ \frac{\partial E_n}{\partial e} = -\frac{1}{2\pi\varepsilon_0}\frac{Z^2}{n^2a_0} \\]
+  \\[ \frac{\partial E_n}{\partial e} = -\frac{1}{2\pi\epzro}\frac{Z^2}{n^2a_0} \\]
   By the Hellmann-Feynman theorem, we get:
   \\[ \begin{align\*}
   \frac{\partial E_n}{\partial e} 
   &= \Expct{\frac{\partial\hat{\hamiltonian}}{\partial e}} \nl
-  &= -\frac{Ze}{2\pi\varepsilon_0}\Expct{\frac{1}{r}}
+  &= -\frac{Ze}{2\pi\epzro}\Expct{\frac{1}{r}}
   \end{align\*} \\]
   Therefore,
   \\[ \therefore \Expct{\frac{1}{r}} = \frac{Z}{n^2a_0} \\]
@@ -110,7 +110,7 @@ By using **Hellmann–Feynman theorem** and **Kramers' relation**, we can induce
 2. $ \Expct{\dfrac{1}{r^2}} = \dfrac{2Z^2}{(2l+1)n^3a_0^2} $
   <br><br>
   Let's use the angular momentum quantum number $l$ as a parameter for the Hellman-Feynman theorem.
-  \\[ \hat{\hamiltonian}(l) = \frac{\hbar^2}{2\mu r}\frac{\partial^2}{\partial r^2}r + \frac{\hbar^2l(l+1)}{2\mu r^2} - \frac{Ze^2}{4\pi\varepsilon_0r} \\]
+  \\[ \hat{\hamiltonian}(l) = \frac{\hbar^2}{2\mu r}\frac{\partial^2}{\partial r^2}r + \frac{\hbar^2l(l+1)}{2\mu r^2} - \frac{Ze^2}{4\pi\epzro r} \\]
   Then,
   \\[ \frac{\partial\hat{\hamiltonian}}{\partial l} = \frac{\hbar^2(2l+1)}{2\mu r^2} \\]
   We showed that the principle quantum number $n$ and the angular momentum quantum number $l$
@@ -143,15 +143,15 @@ By using **Hellmann–Feynman theorem** and **Kramers' relation**, we can induce
   <br><br>
   Either.
   <br><br>
-6. $ \Expct{\hamiltonian} = -\dfrac{Z^2e^2}{8\pi\varepsilon_0n^2a_0} $
+6. $ \Expct{\hamiltonian} = -\dfrac{Z^2e^2}{8\pi\epzro n^2a_0} $
   <br><br>
   We showed it _[here](/posts/hydrogen-atom-schrodinger/)_.
   <br><br>
-7. $ \Expct{V} = -\dfrac{Z^2e^2}{4\pi\varepsilon_0n^2a_0} $
+7. $ \Expct{V} = -\dfrac{Z^2e^2}{4\pi\epzro n^2a_0} $
   <br><br>
   It is trivial from 1.
   <br><br>
-8. $ \Expct{T} = \dfrac{Z^2e^2}{8\pi\varepsilon_0n^2a_0} $
+8. $ \Expct{T} = \dfrac{Z^2e^2}{8\pi\epzro n^2a_0} $
   <br><br>
   It is trivial from 6 and 7.
 
