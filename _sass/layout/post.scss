@@ -101,7 +101,10 @@ html::-webkit-scrollbar-thumb {
   height: 19px;
 }
 .katex-display > .katex::-webkit-scrollbar-track {
-  border-radius: 1px;
+  background-clip: padding-box;
+  border: 5px solid transparent;
+  border-radius: 7px;
+  background-color: var(--scrollbar-bg-color);
 }
 .katex-display > .katex::-webkit-scrollbar-thumb {
   background-clip: padding-box;
