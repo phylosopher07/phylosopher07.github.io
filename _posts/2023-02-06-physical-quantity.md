@@ -62,8 +62,8 @@ and we define the **dimension** of a physical quantity by its exponents of base 
 
 <center><b> 〈SI base units〉 </b></center>
 
-|Quantity|SI unit|||Dimension symbol|
-||Name|Symbol|Definition|
+|Quantity|SI unit| | |Dimension symbol|
+| |Name|Symbol|Definition|
 |--------|---|---|---|---|
 |Length|meter|$ \mathrm{m} $|The duration of $\Delta\nu_{\text{Cs}}$ periods of the radiation corresponding <br> to the transition between the two hyperfine levels of the <br> ground state of the caesium-133 atom.|$ \mathsf{L} $|
 |Time|second|$ \mathrm{s} $|The distance travelled by light in vacuum in $\dfrac{1}{c}$ seconds.|$ \mathsf{T} $|
@@ -96,7 +96,7 @@ _A diagram showing the relationship between SI units_
 |kilo|$ \mathrm{k} $|$ 10^{3} $|
 |hecto|$ \mathrm{h} $|$ 10^{2} $|
 |deca|$ \mathrm{da} $|$ 10^{1} $|
-|||$ 10^{0} $|
+| | |$ 10^{0} $|
 |deci|$ \mathrm{d} $|$ 10^{-1} $|
 |centi|$ \mathrm{c} $|$ 10^{-2} $|
 |milli|$ \mathrm{m} $|$ 10^{-3} $|
