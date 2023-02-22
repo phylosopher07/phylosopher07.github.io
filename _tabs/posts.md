@@ -1,5 +1,5 @@
 ---
 # the default layout is 'page'
-icon: fas fa-images
-order: 6
+icon: fas fa-note-sticky
+order: 1
 ---
