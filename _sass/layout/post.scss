@@ -463,7 +463,6 @@ add Audio Player
   width: 300px;
 
   //font-family: arial;
-  color: white;
   overflow: hidden;
 
   display: grid;
@@ -486,9 +485,9 @@ add Audio Player
     justify-content: space-between;
     align-items: stretch;
 
-    background-color: #2c2832;
+    background-color: var(--bgm-container-color);
     border-radius: 0.5em;
-    border: 1px solid #6e757c;
+    border: 1px solid var(--text-color);
 
     > * {
       display: flex;
@@ -511,7 +510,7 @@ add Audio Player
     .time {
       display: flex;
       flex: 0.4;
-      color: #afb0b1;
+      color: var(--text-color);
       > * {
         padding: 2px;
       }
@@ -519,7 +518,7 @@ add Audio Player
     .name {
       display: flex;
       flex: 0.8;
-      color: #afb0b1;
+      color: var(--text-color);
     }
     .volume-container {
       flex: 0.2;
