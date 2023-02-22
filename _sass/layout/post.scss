@@ -473,8 +473,10 @@ add Audio Player
     height: 40%;
     position: relative;
     cursor: pointer;
+    background-color: var(--bgm-slider-bg-color);
+    border-radius: 2px;
     .progress {
-      background: #2a59db; //#53F;
+      background: var(--bgm-slider-color);
       width: 0%;
       height: 100%;
       transition: 0.25s;
@@ -542,9 +544,10 @@ add Audio Player
         box-shadow: 0 0 20px #000a;
         transition: .25s;
         border-radius: 0.5em;
+        background-color: var(--bgm-slider-bg-color);
         .volume-percentage {
           border-radius: 0.5em;
-          background: #2a59db; //#53F;
+          background-color: var(--bgm-slider-color); //#53F;
           height: 100%;
           width: 75%;
         }
