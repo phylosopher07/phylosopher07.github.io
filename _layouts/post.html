@@ -178,8 +178,16 @@ tail_includes:
   </div>
   {% endif %}
 
+  <!-- Customization: Applause button -->
+  <br><br>
+  <applause-button class="mb6"
+                   color="rgb(79,177,186)"
+                   url={{ page.url | absolute_url }} >
+  </applause-button>
+  <!-- Till -->
+
   <div class="post-tail-bottom
-    d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+    d-flex justify-content-between align-items-center mt-3 pt-2 pb-2">
     <div class="license-wrapper">
 
       {% if site.data.locales[site.lang].copyright.license.template %}
