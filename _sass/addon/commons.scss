@@ -887,6 +887,10 @@ $sidebar-display: "sidebar-display";
     i {
       font-size: 1.2rem;
       line-height: 1.75rem;
+      @extend %clickable-transition;
+      &:hover {
+        color: var(--sidebar-btn-active-color);
+      }
     }
 
     .mode-toggle {
@@ -903,7 +907,7 @@ $sidebar-display: "sidebar-display";
       }
 
       &:hover > i {
-        color: var(--sidebar-active-color);
+        color: var(--sidebar-btn-active-color);
       }
     }
 
