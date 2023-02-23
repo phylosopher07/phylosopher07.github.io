@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="{{ site.data.assets[origin].katex.css | relative_url }}">
+<script defer src="{{ site.data.assets[origin].katex.js | relative_url }}"></script>
+<script defer src="{{ site.data.assets[origin].katex.contrib.auto-render.js | relative_url }}"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError : false,
+      trust: (context) => ['\\htmlId', '\\href'].includes(context.command),
+      macros: {
+        /* References */
+        "\\eqref": "\\href{###1}{(\\text{#1})}",
+        "\\ref": "\\href{###1}{\\text{#1}}",
+        "\\label": "\\htmlId{#1}{}",
+
+        /* Fundamentals */
+        "\\nl": "\\newline",
+        "\\dps": "\\displaystyle",
+        "\\dsum": "\\dps\\sum",
+        "\\abs": "\\left\|#1\\right\|",
+        "\\norm": "\\lVert#1\\rVert",
+        "\\b": "\\bold",
+        "\\bs": "\\boldsymbol",
+        "\\cross": "\\times",
+        "\\d": "\\mathrm{d}",
+
+        /* Mathematics */
+        "\\span": "\\text{span}",
+        "\\card": "\\abs{#1}",
+
+        /* Physics */
+        "\\hamiltonian": "\\mathcal{H}",
+        "\\lagrangian": "\\mathcal{L}",
+        "\\brkt": "\\braket{#1\|#2}",
+        "\\Brkt": "\\Braket{#1\|#2}",
+        "\\brktop": "\\braket{#1\|#2\|#3}",                  /* Braket with an operator */
+        "\\Brktop": "\\Braket{#1\|#2\|#3}",
+        "\\expct": "\\langle#1\\rangle",                     /* Expectation value (quantum mechanics) */
+        "\\Expct": "\\left\\langle#1\\right\\rangle",
+        "\\com": "[#1,#2]",                                  /* Commutator */
+        "\\Com": "\\left[#1,#2\\right]",
+        "\\acom": "\\{#1,#2\\}",                             /* Anticommutator */
+        "\\Acom": "\\left\\{#1,#2\\right\\}",
+
+        /* Constants */
+        "\\epzro": "\\varepsilon_0",
+        "\\Ryd": "\\mathcal{R}_\\text{y}",
+
+        /* Units */
+        "\\eV": "\\text{eV}"
+      }
+    });
+  });
+</script>
+
+<!-- copy raw code -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/copy-tex.min.js" integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A" crossorigin="anonymous"></script>
+<!-- chemistry -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/mhchem.min.js" integrity="sha384-RTN08a0AXIioPBcVosEqPUfKK+rPp+h1x/izR7xMkdMyuwkcZCWdxO+RSwIFtJXN"  crossorigin="anonymous"></script>
+<!-- katex tag -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>

@@ -1,0 +1,62 @@
+---
+layout: page
+# The layout for Tag page
+---
+<div id="page-tag">
+  <h1 class="pl-lg-2">
+    <i class="fa fa-tag fa-fw text-muted"></i>
+    {{ page.title }}
+    <span class="lead text-muted pl-2">{{ page.posts | size }}</span>
+  </h1>
+
+  <script src="{{ 'assets/js/dist/tag_post_sort.min.js' | relative_url }}" async></script>
+  <div style="text-align:right">
+    <button class="btn hover-btn date_button" onclick="sortP()">
+    <span>
+      <i class="fas fa-calendar-plus"></i>
+       Newest
+    </span>
+    </button>
+    <button class="btn hover-btn date_button" onclick="sortM()">
+    <span>
+      <i class="fas fa-calendar-minus"></i>
+       Oldest
+    </span>
+    </button>
+  </div>
+
+  <ul class="post-content pl-0" id="postsP">
+    {% for post in page.posts %}
+    <li class="d-flex justify-content-between pl-md-3 pr-md-3">
+      <a href="{{ post.url | relative_url }}">
+        {% if post.subtitle %}
+          {{ post.subtitle | prepend: "[" | append: "]" }}
+        {% endif %}
+        {{ post.title }}
+      </a>
+      <span class="dash flex-grow-1"></span>
+      {% include datetime.html date=post.date wrap='span' class='text-muted small' %}
+    </li>
+    {% endfor %}
+  </ul>
+
+  <!--
+  Customization: Date sort
+  -->
+
+  <ul class="post-content pl-0" id="postsM" style="display: none !important;">
+    {% assign posts_reversed = page.posts | reverse %}
+    {% for post in posts_reversed %}
+      <li class="d-flex justify-content-between pl-md-3 pr-md-3">
+        <a href="{{ post.url | relative_url }}">
+          {% if post.subtitle %}
+            {{ post.subtitle | prepend: "[" | append: "]" }}
+          {% endif %}
+          {{ post.title }}
+        </a>
+        <span class="dash flex-grow-1"></span>
+        {% include datetime.html date=post.date wrap='span' class='text-muted small' %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

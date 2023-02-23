@@ -1,22 +1,33 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
-#
-#     bundle exec jekyll serve
-#
-# This will help ensure the proper Jekyll version is running.
-# Happy Jekylling!
-# gem "jekyll", "~> 3.9"
+source "https://rubygems.org"
 
-group :jekyll_plugins do
-  gem 'github-pages'
-  gem 'jekyll-include-cache'
-  gem 'jekyll-compose'
+gemspec
+
+group :test do
+  gem "html-proofer", "~> 3.18"
 end
 
-gem 'wdm' if Gem.win_platform?
-gem 'tzinfo-data' if Gem.win_platform?
+# If you have any plugins, put them here!
+group :jekyll_plugins do
+  gem 'jekyll-spaceship'
+end
 
-gem "webrick", "~> 1.7"
+# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
+# and associated library.
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", ">= 1", "< 3"
+  gem "tzinfo-data"
+end
+
+# Performance-booster for watching directories on Windows
+gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+
+# Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
+# do not have a Java counterpart.
+gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
+
+# Lock jekyll-sass-converter to 2.x on Linux-musl
+if RUBY_PLATFORM =~ /linux-musl/
+  gem "jekyll-sass-converter", "~> 2.0"
+end

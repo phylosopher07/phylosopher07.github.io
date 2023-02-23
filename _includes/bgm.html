@@ -1,0 +1,46 @@
+<!-- add Audio Player-->
+<details class="bgm-container">
+  <summary>
+    BGM
+    <i class="fas fa-compact-disc" id="CD-icon"></i>
+  </summary>
+
+  <script src="{{ '/assets/js/dist/postbgm.min.js' | relative_url }}" async></script>
+  <div class="audio-source">
+    <a id="bgm-url">
+      {% if page.bgm.type == "url" %}
+        {{ page.bgm.src }}
+      {% elsif page.bgm.type == "path" %}
+        {{ '/assets/audio/' | append: page.bgm.src }}
+      {% endif %}
+    </a>
+  </div>
+  <div class="audio-player">
+    <div class="timeline">
+      <div class="progress"></div>
+    </div>
+    <div class="controls">
+      <div class="play-container">
+        <div class="play-button">
+          <i class="fa-solid fa-play"></i>
+        </div>
+      </div>
+      <div class="time">
+        <div class="current">0:00</div>
+        <div class="divider">/</div>
+        <div class="length"></div>
+      </div>
+
+      <div class="name"> <b> {{ page.bgm.title }} </b> </div>
+      <div class="volume-container">
+        <div class="volume-button">
+          <i class="volume fa-solid fa-volume-high"></i>
+        </div>
+
+        <div class="volume-slider">
+          <div class="volume-percentage"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</details>

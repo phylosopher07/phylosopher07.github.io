@@ -1,0 +1,88 @@
+---
+layout: page
+# The Archives of posts.
+---
+<script src="{{ 'assets/js/dist/archive.min.js' | relative_url }}" async></script>
+<div style="text-align:right">
+  <button class="btn hover-btn date_button" onclick="sortP()">
+    <span>
+      <i class="fas fa-calendar-plus"></i>
+       Newest
+    </span>
+  </button>
+  <button class="btn hover-btn date_button" onclick="sortM()">
+    <span>
+      <i class="fas fa-calendar-minus"></i>
+       Oldest
+    </span>
+  </button>
+</div>
+
+{% assign df_strftime_m = site.data.locales[site.lang].df.archives.strftime | default: '/ %m' %}
+{% assign df_dayjs_m = site.data.locales[site.lang].df.archives.dayjs | default: '/ MM' %}
+
+<div id="archives" class="pl-xl-3 archives_P">
+{% for post in site.posts %}
+  {% capture cur_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+
+  {% if cur_year != last_year %}
+    {% unless forloop.first %} </ul> {% endunless %}
+    <div class="year lead">{{ cur_year }}</div>
+    <ul class="list-unstyled">
+    {% assign last_year = cur_year %}
+  {% endif %}
+
+  <li>
+  {% assign ts = post.date | date: '%s' %}
+    <span class="date day" data-ts="{{ ts }}" data-df="DD">{{ post.date | date: "%d" }}</span>
+    <span class="date month small text-muted ml-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
+      {{ post.date | date: df_strftime_m }}
+    </span>
+    <a href="{{ post.url | relative_url }}">
+      {% if post.subtitle %}
+        {{ post.subtitle | prepend: "[" | append: "]" }}
+      {% endif %}
+      {{ post.title }}
+    </a>
+  </li>
+
+  {% if forloop.last %}</ul>{% endif %}
+
+{% endfor %}
+</div>
+
+<!--
+Customization: Date sort reverse
+-->
+
+{% assign last_year = 0 %}
+<div id="archives" class="pl-xl-3 archives_M" style="display: none !important;">
+  {% assign posts_reversed = site.posts | reverse %}
+  {% for post in posts_reversed %}
+    {% capture cur_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+
+    {% if cur_year != last_year %}
+      {% unless forloop.first %} </ul> {% endunless %}
+      <div class="year lead">{{ cur_year }}</div>
+      <ul class="list-unstyled">
+      {% assign last_year = cur_year %}
+    {% endif %}
+
+    <li>
+      {% assign ts = post.date | date: '%s' %}
+      <span class="date day" data-ts="{{ ts }}" data-df="DD">{{ post.date | date: "%d" }}</span>
+      <span class="date month small text-muted ml-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
+      {{ post.date | date: df_strftime_m }}
+    </span>
+      <a href="{{ post.url | relative_url }}">
+        {% if post.subtitle %}
+          {{ post.subtitle | prepend: "[" | append: "]" }}
+        {% endif %}
+        {{ post.title }}
+      </a>
+    </li>
+
+    {% if forloop.last %}</ul>{% endif %}
+
+  {% endfor %}
+</div>
