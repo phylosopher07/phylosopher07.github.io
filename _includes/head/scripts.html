@@ -1,0 +1,35 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics.id }}"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics.id }}');
+    });
+</script>
+
+<script>{% include scripts/load-js.min.js %}{% include scripts/loadCSS.min.js %}{% include scripts/cssrelpreload.min.js %}!function(w) {
+  w._baseURL = '{{    "/"           | relative_url }}';
+  w._publicPath = '{{ "/assets/js/" | relative_url }}';
+  w._noPushState = {{ site.hydejack.no_push_state | default:site.disable_push_state | default:false }};
+  w._noDrawer = {{    site.hydejack.no_drawer     | default:site.disable_drawer     | default:false }};
+  w._noNavbar = {{    site.hydejack.no_navbar     | default:false }};
+  w._noToc = {{       site.hydejack.no_toc        | default:false }};
+  w._noSearch = {{    site.hydejack.no_search     | default:false }};
+  w._advertise = {% if site.hydejack.advertise %}true{% else %}false{% endif %};
+  w._search = {
+    DATA_URL: '{{ "/assets/sitedata.json?no-cache" | relative_url }}',
+    STORAGE_KEY: 'mini-search{{ "/" | relative_url }}',
+    INDEX_KEY: 'index--{{ site.time | date_to_xmlschema }}',
+  };
+}(window);</script>
+
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
+
+<!-- pageview -->
+<script async src = "//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+{% include head/math.html %}

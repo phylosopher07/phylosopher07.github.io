@@ -1,0 +1,11 @@
+css: https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css
+js: https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js
+contrib:
+  auto-render:
+    js: https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js
+  copy-tex:
+    js: https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/copy-tex.min.js
+  mhchem:
+    js: https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/mhchem.min.js
+  mathtex-script-type:
+    js: https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/mathtex-script-type.min.js

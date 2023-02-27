@@ -1,0 +1,133 @@
+basics:
+  name: "Jiho Jun"
+  label: "Student"
+  picture: /assets/img/piano.png
+  email: "pianoforte0203@gmail.com"
+  phone: "(+82) 10-9124-8985"
+  website: "https://phylosopher07.github.io"
+  summary: >
+    Hello, I'm Jiho Jun from South Korea.<br>
+    I'm attending to GSHS (Gyeonggi Science High School) and I'm 2nd grader. <br>
+    I'm interested in quantum field theory and front-end development right now. <br>
+    I'd like to describe myself as an enthusiast; <br>
+    I am confident in understanding new knowledge quickly.
+  location:
+  #   address: "2712 Broadway St"
+  #   postalCode: "CA 94115"
+    city: "Dongtan"
+    countryCode: "KR"
+    region: "Hwasung"
+  profiles:
+    - network: "Github"
+      username: "phylosopher07"
+      url: "https://github.com/phylosopher07"
+    - network: "Facebook"
+      username: Jiho Jun
+      url: "https://www.facebook.com/profile.php?id=100078342350761"
+    #- network: "LinkedIn"
+    #  username: "DaeIn Lee"
+    #  url: "https://www.linkedin.com/in/daein-lee-3b6ba9139/"
+work:
+  - company: "SAP Labs Korea"
+    position: "HANA Core Developer"
+    website: https://www.sap.com/korea/about/labs-korea.html"
+    startDate: "2021-01-11"
+    endDate: "2023-02-03"
+    summary: >
+      SAP Labs Korea, a cornerstone of SAP HANA, now aims to bring the in-memory technology to the cloud where it acts as a single gateway to data of any size to harness the power of data wherever it resides and ensure the platform for intelligent enterprise.
+    highlights: Hello
+volunteer:
+  #- organization: "Hanyang Mentoring Program"
+  #  position: "Mentor"
+  #  website: ""
+  #  startDate: "2018-03-02"
+  #  endDate: "2018-12-21"
+  #  summary: "Mentoring for the major courses of CSE with juniors"
+  #  highlights:
+  #    - "Data Structure; Teaching & helping sophomores on the data structure course."
+  #    - "Database Systems; Teaching & helping sophomores on the database system course."
+  #    - "Awarded 'Hanyang Best Mentor' for mentoring Database Systems course."
+education:
+  - institution: "GSHS (Gyeonggi Science High School), Suwon"
+    area: "Secondary educations"
+    studyType: "Bachelor"
+    startDate: "2022-03-02"
+    endDate: "2024, expected"
+    gpa: "4.07 / 4.3"
+    courses:
+      - "alallala"
+  - certificate: "PongPong"
+    date: "2022-12-22"
+projects:
+  - title: "Visualizations of atomic orbitals of the Hydrogen atom"
+    startDate: "2018-08-01"
+    endDate: "2019-10-31"
+    summary: "Evaluating cache / multi thread Performance of <a href='https://github.com/wangziqi2013/BwTree'>Open Bw-Tree</a> to find bottleneck and improvement performance."
+    url: "https://lazyren.github.io/tag-bwtree/"
+    highlights:
+      - "Implementing update function based on the <a href='https://hyeontaek.com/papers/openbwtree-sigmod2018.pdf'>page</a>."
+awards:
+  - title: "RnE Excellence Award"
+    awarder: "GSHS"
+    date: ""
+    highlights:
+      - "2022, basic RnE (physics) "
+    summary: ""
+  - title: "2023 KYPT Bronze Medal"
+    date: "2023-02-02"
+
+publications:
+  - name: "Minimum Potential Problem at Specific Boundary Conditions"
+    publisher: "Jiho Jun and Yongje Lee"
+    releaseDate: "2022-12-08"
+    website: "naver.com"
+    summary: "Numerical computations to find the n-dimensional equivalent of the catenary, as well as to explore the minimal-potential problem of two-dimensional surfaces with various boundaries."
+  - name: "The Method Determining Dyson Slingshot Trajectory of a Spacecraft Following a Rectilinear Path Using Dynamic Discrete Gradient Descent"
+    publisher: "Myeong Yoon, Jiho Jun et al"
+    releaseDate: "2022-11-15"
+    website: "naver.com"
+    summary: "The way to find the most efficient slingshot trajectory at the binary-star system, using DDGD (Dynamic Discrete Gradient Descent)."
+skills:
+  - name: "Algorithm"
+    level: "Intermediate"
+  - name: "document preparation"
+    level: "Intermediate"
+    keywords:
+      - "LaTeX"
+  - name: "Web Development"
+    level: "Junior"
+    keywords:
+      - "HTML"
+      - "CSS"
+      - "Javascript"
+      - "Liquid"
+  - name: "Sociability"
+    level: "Intermediate"
+    keywords:
+      - "Affable"
+languages:
+  - language: "Korean"
+    fluency: "Native speaker"
+  - language: "English"
+    fluency: "Fluent"
+interests:
+  - name: "Activity"
+    keywords:
+      - "Piano"
+      - "Soccer"
+      - "Basketball"
+      - "Cycling"
+  - name: "Comics"
+    keywords:
+      - ""
+  - name: "Gaming"
+    keywords:
+      - "Board Games"
+      - "<a href='https://steamcommunity.com/id/lazyren'>Pikachu Volleyball</a>"
+# references:
+#   - name: "Erlich Bachman"
+#     reference: >
+#       It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
+#       Company proved that he will be a valuable addition to any company.
+
+# <https://jsonresume.org/>
