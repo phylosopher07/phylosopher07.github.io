@@ -5,7 +5,14 @@ subtitle: "qm1.2"
 classification: "Quantum Mechanics 1.2"
 categories: physics
 tags: quantum-mechanics
+image:
+    path: /assets/img/physics/quantum-mechanics/Sakurai.svg
 ---
+
+from J.J. Sakurai
+{:.figcaption}
+
+> Bras & Kets, the most basic and important notation in quantum mechanics.
 
 <!--more-->
 * this unordered seed list will be replaced by the toc
@@ -19,14 +26,14 @@ an element of **$L^2$ complex Hilbert space $\mathcal{H}$**.
 See [$C^*$ formalism](https://math.uchicago.edu/~may/VIGRE/VIGRE2009/REUPapers/Gleason.pdf) who wants exactness.)
 We denote the dual (covector) of the state vector as $\bra{\Psi}$. Psi is mainly used for the vectors.
 
-$\ket{\Psi}$ is called a **ket**, and $\bra{\Psi}$ is called a **bra**.
+$\ket{\Psi}$ is called a **`ket`**, and $\bra{\Psi}$ is called a **`bra`**.
 This nomenclature is derived from _bra-c-ket_〈 〉.
-$^\dagger$ denotes the hermitian conjugate.
+$^\dagger$ denotes the _hermitian conjugate_.
 
 * $ \ket{\Psi} \in \mathcal{H},\; \bra{\Psi} \in \mathcal{H}^* $
 * $ \bra{\Psi}^\dagger=\ket{\Psi},\; \ket{\Psi}^\dagger=\bra{\Psi} $
 
-An inner product is expressed as follows, where $^\ast$ denotes the complex conjugate.
+An inner product is expressed as follows, where $^\ast$ denotes the _complex conjugate_.
 * $ \brkt{\phi}{\psi} = \brkt{\psi}{\phi}^\ast  $
 * $ \brkt{\phi}{c_1\psi_1+c_2\psi_2} = c_1\brkt{\phi}{\psi_1}+c_2\brkt{\phi}{\psi_2} $
 * $ \brkt{c_1\phi_1+c_2\phi_2}{\psi} = c_1^\ast \brkt{\phi_1}{\psi}+c_2^\ast \brkt{\phi_2}{\psi} $
@@ -78,7 +85,7 @@ The $\ket{\b{r}}$ are the basis vectors, which are orthonormal so their inner pr
 * $ \brkt{\b{r}\rq}{\b{r}} = \delta^3(\b{r}\rq-\b{r}) $
 
 Thus, starting from any ket $\ket{\Psi}$ in this Hilbert space,
-one may define a complex scalar function $\Psi(\b{r})$, known as a **wavefunction** :
+one may define a complex scalar function $\Psi(\b{r})$, known as a **`wavefunction`** :
 * $ \Psi(\b{r}) \coloneqq \brkt{\b{r}}{\Psi} $
 * $ \dps \ket{\Psi} = \int d^3\b{r}\; \Psi(\b{r})\ket{\b{r}} $
 * $ \hat{A}(\b{r})\Psi(\b{r}) = \brktop{\b{r}}{\hat{A}}{\Psi} $

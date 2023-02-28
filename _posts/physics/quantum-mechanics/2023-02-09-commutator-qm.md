@@ -5,7 +5,14 @@ subtitle: "qm1.4"
 classification: "Quantum Mechanics 1.4"
 categories: physics
 tags: quantum-mechanics
+image:
+   path: /assets/img/physics/quantum-mechanics/Sakurai.svg
 ---
+
+from J.J. Sakurai
+{:.figcaption}
+
+> Commutators not only imply the non-commutativity of operators. You should look further.
 
 <!--more-->
 * this unordered seed list will be replaced by the toc
@@ -14,13 +21,13 @@ tags: quantum-mechanics
 ## Commutator
 
 For operators $\hat{A}$ and $\hat{B}$ acting on wavefunctions,
-the following operator is called the **commutator** of $\hat{A}$ and $\hat{B}$.
+the following operator is called the **`commutator`** of $\hat{A}$ and $\hat{B}$.
 
 \\[
 \com{\hat{A}}{\hat{B}} \coloneqq \hat{A}\hat{B}-\hat{B}\hat{A}
 \\]
 
-If $\com{\hat{A}}{\hat{B}}=0$, we say that, $\hat{A}$ and $\hat{B}$ **commute**.
+If $\com{\hat{A}}{\hat{B}}=0$, we say that, $\hat{A}$ and $\hat{B}$ ***commute***.
 In other words, there is no difference between the result of acting $\hat{A}$ after acting $\hat{B}$,
 and the result of acting $\hat{B}$ after acting $\hat{A}$.
 

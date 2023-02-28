@@ -5,7 +5,14 @@ subtitle: "qm1.3"
 classification: "Quantum Mechanics 1.3"
 categories: physics
 tags: quantum-mechanics
+image:
+    path: /assets/img/physics/quantum-mechanics/Sakurai.svg
 ---
+
+from J.J. Sakurai
+{:.figcaption}
+
+> What we should consider are the _Hermitians_.
 
 <!--more-->
 * this unordered seed list will be replaced by the toc
@@ -13,7 +20,7 @@ tags: quantum-mechanics
 
 ## Hermitian operator
 
-A **Hermitian operator**, or **self-adjoint operator** is an operator that is equal to its own hermitian conjugate.
+A **`Hermitian operator`**, or **`self-adjoint operator`** is an operator that is equal to its own hermitian conjugate.
 * $ \hat{A}=\hat{A}^\dag $
 
 Since operators with such properties are treated very importantly in quantum mechanics,
@@ -34,10 +41,10 @@ we're going to summarize their properties from now on.
 \therefore\; \expct{\hat{A}} = \expct{\hat{A}}^\ast
 \\]
 
-This implies that the physical quantities of Hermitian operators are observable;
-in this respect, Hermitian operators are called **observables**.
+This implies that the physical quantities of Hermitian operators are observable (since it's _real_);
+in this respect, Hermitian operators are called **`observables`**.
 
-## Orthogonality of eigenfunctions
+## _Orthogonality_ of eigenfunctions
 
 \\[
 \begin{cases}
@@ -57,7 +64,7 @@ in this respect, Hermitian operators are called **observables**.
 
 ### Measurements and probabilities
 The result above implies that any wavefunction can be represented as the sum of eigenfunctions of an observable,
-which are elements of an orthogonal basis.
+which are elements of an _orthogonal basis_.
 
 \\[ \ket{\psi}=\sum_n c_n\ket{\psi_n} \; \left( \sum_n \|c_n\|^2=\brkt{\psi}{\psi} \right) \\]
 
@@ -83,7 +90,7 @@ Then we can **normalize** any state vectors using _phase factors_ $e^{iz}$, of w
 ### Wavefunction collapse
 
 The measurement transforms the system to become an eigenvector for the measured value,
-which is called a **wavefunction collapse**.
+which is called a **`wavefunction collapse`**.
 (It can be understood that it collapses the probability of an eigenvalue different from the measured value.)
 
 \\[

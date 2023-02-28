@@ -5,7 +5,14 @@ subtitle: "qm1.1"
 classification: "Quantum Mechanics 1.1"
 categories: physics
 tags: quantum-mechanics
+image:
+    path: /assets/img/physics/quantum-mechanics/Sakurai.svg
 ---
+
+from J.J. Sakurai
+{:.figcaption}
+
+> The fundamental postulates to describe quantum mechanics.
 
 <!--more-->
 * this unordered seed list will be replaced by the toc
@@ -13,11 +20,11 @@ tags: quantum-mechanics
 
 ## Introduction
 
-***Quantum Mechanics*** is a fundamental theory in physics that provides a description of the physical properties
+**`Quantum Mechanics`** is a fundamental theory in physics that provides a description of the physical properties
 of nature at the scale of atoms and subatomic particles.
 Classical physics, the collection of theories that existed before the advent of quantum mechanics,
 describes many aspects of nature at an ordinary (macroscopic) scale,
-but is not sufficient for describing them at small (atomic and subatomic) scales.
+but is not sufficient for describing them at small (_atomic and subatomic_) scales.
 
 ## The postulates of quantum mechanics
 

@@ -4,7 +4,7 @@ type: category
 title: Mathematics
 slug: mathematics
 sidebar: true
-order: 1
+order: 2
 description: >
     The foundation of all academic disciplines
 ---

@@ -81,6 +81,12 @@ table.centered {
   margin-right: auto;
 }
 
+audio.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 // iframe
 
 .iframe-container {
@@ -120,6 +126,43 @@ div.highlight {
 /*
 Fancy Codeblock Scrollbar
  */
+
+html {
+  &::-webkit-scrollbar {
+    width: 13px;
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    background-color: var(--scrollbar-bg-color);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
+    background-color: var(--scrollbar-color);
+  }
+}
+
+#markdown-toc {
+  &::-webkit-scrollbar {
+    width: 20px;
+  }
+  &::-webkit-scrollbar-track {
+    background-clip: padding-box;
+    border: 7px solid transparent;
+    border: 11px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    background-color: var(--scrollbar-bg-color);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    border-radius: 9px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
+    background-color: var(--scrollbar-color);
+  }
+}
 
 pre {
   border-color: transparent;

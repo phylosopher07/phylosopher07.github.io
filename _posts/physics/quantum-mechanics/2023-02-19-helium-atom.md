@@ -2,10 +2,17 @@
 layout: post
 title: "Helium Atom"
 subtitle: "qm3.1"
-classification: "Quantum Mechanics 3.1"
+classification: "Quantum Mechanics Unclassified"
 categories: physics
 tags: quantum-mechanics
+image:
+    path: /assets/img/physics/quantum-mechanics/Sakurai.svg
 ---
+
+from J.J. Sakurai
+{:.figcaption}
+
+> Understanding the Helium atom by variational method.
 
 <!--more-->
 * this unordered seed list will be replaced by the toc
