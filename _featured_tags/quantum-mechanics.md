@@ -8,3 +8,7 @@ sidebar: true
 description: >
     Quantum mechanics
 ---
+
+\\[ \Huge \fcolorbox{transparent}{transparent}{ $$ \dps
+\hat{\hamiltonian}(t)\ket{\psi(t)} = i\hbar\frac{\partial}{\partial t}\ket{\psi(t)}
+$$ }\\]
