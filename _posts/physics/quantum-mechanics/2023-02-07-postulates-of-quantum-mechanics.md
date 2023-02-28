@@ -9,7 +9,7 @@ image:
     path: /assets/img/physics/quantum-mechanics/Sakurai.svg
 ---
 
-from J.J. Sakurai
+from **「Modern Quantum Mechanics」**: _Sakurai, J. J._
 {:.figcaption}
 
 > The fundamental postulates to describe quantum mechanics.

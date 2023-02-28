@@ -9,7 +9,7 @@ image:
    path: /assets/img/physics/quantum-mechanics/Sakurai.svg
 ---
 
-from J.J. Sakurai
+from **「Modern Quantum Mechanics」**: _Sakurai, J. J._
 {:.figcaption}
 
 > Commutators not only imply the non-commutativity of operators. You should look further.

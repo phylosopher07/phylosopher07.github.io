@@ -9,7 +9,7 @@ image:
     path: /assets/img/physics/quantum-mechanics/Sakurai.svg
 ---
 
-from J.J. Sakurai
+from **「Modern Quantum Mechanics」**: _Sakurai, J. J._
 {:.figcaption}
 
 > What we should consider are the _Hermitians_.
