@@ -6,5 +6,9 @@ slug: linear-algebra
 category: mathematics
 sidebar: true
 description: >
-    The base of every algebra
+    Linear algebra
 ---
+
+\\[ \Huge \fcolorbox{transparent}{transparent}{ $$ \dps
+f(\b{u})+f(\b{v})=f(\b{u}+\b{v})
+$$ }\\]

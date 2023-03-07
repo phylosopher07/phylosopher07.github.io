@@ -5,12 +5,17 @@ subtitle: "cm1.1"
 classification: "Classical Mechanics 1.1"
 categories: physics
 tags: classical-mechanics
+image:
+    path: /assets/img/physics/classical-mechanics/Halliday.png
 ---
+
+from **「Principle of Physics」**: _Halliday & Rensick_
+{:.figcaption}
 
 <!--more-->
 * this unordered seed list will be replaced by the toc
 {:toc}
-
+    
 ## Physical property
 
 A **physical property** is any property that is _measurable_, whose value describes a state of a physical system.
