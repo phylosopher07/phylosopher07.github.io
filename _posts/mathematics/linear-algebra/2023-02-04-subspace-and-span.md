@@ -44,7 +44,9 @@ is defined as the set of all possible linear combinations of the vectors in $S$.
 * $ \span(S) \coloneqq \Set{ \dsum_{i=1}^k \lambda_i\b{v}_i \| k\in\N,\; \b{v}_i\in S,\; \lambda_i\in F} $
 
 ![Span](https://upload.wikimedia.org/wikipedia/commons/4/40/Linear_span_of_two_vectors.svg)
-_Two vectors(black arrows) spanning the blue plane_
+{:.centered}
+Two vectors(black arrows) spanning the blue plane
+{:.figcaption}
 
 To express that a vector space $V$ is a linear span of a subset $S$, one commonly uses the following phrases:
  - $S$ spans $V$

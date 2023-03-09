@@ -32,7 +32,9 @@ To emphasize that an order has been chosen, one speaks of an **ordered basis**,
 which is therefore not simply an unstructured set, but a sequence; an indexed family.
 
 ![Basis](https://upload.wikimedia.org/wikipedia/commons/f/f4/3d_two_bases_same_vector.svg)
-_The same vector can be represented in two different bases (purple and red arrows)._
+{:.centered}
+The same vector can be represented in two different bases (purple and red arrows).
+{:.figcaption}
 
 
 ### Properties
@@ -54,7 +56,7 @@ It is so easy to prove that the dimension is well-defined; read Wikipedia for th
 
 ### Properties
 * $ W \le V \Rightarrow \dim{W} \le \dim{V} $
-* For a vector space $V$ on a field $F$, <br>
+* For a vector space $V$ on a field $F$, <br><br>
 $ \card{V}= \begin{cases}
 \card{F}^{\dim{V}} & :\text{finite} \newline
 \max(\card{F},\dim V) & :\text{infinite}
