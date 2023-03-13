@@ -146,19 +146,19 @@ html {
 
 #markdown-toc {
   &::-webkit-scrollbar {
-    width: 20px;
+    width: 21px;
   }
   &::-webkit-scrollbar-track {
     background-clip: padding-box;
-    border: 7px solid transparent;
-    border: 11px;
+    border: 1px solid transparent;
+    border-radius: 9px;
     -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
     background-color: var(--scrollbar-bg-color);
   }
   &::-webkit-scrollbar-thumb {
     background-clip: padding-box;
-    border: 4px solid transparent;
-    border-radius: 9px;
+    border: 5px solid transparent;
+    border-radius: 13px;
     -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
     background-color: var(--scrollbar-color);
   }
