@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Helium Atom"
-subtitle: "qm3.1"
+subtitle: "qmun"
 classification: "Quantum Mechanics Unclassified"
 categories: physics
 tags: quantum-mechanics
