@@ -92,77 +92,129 @@ Substituting $I_1$ and $I_2$ to $\ref{2}$, we finally get the Kramers' relation.
 
 \\[ \therefore \frac{s+1}{n^2}\expct{r^s} -(2s+1)\left(\frac{a_0}{Z}\right)\expct{r^{s-1}} + \frac{s}{4}\left[ (2l+1)^2-s^2 \right]\left(\frac{a_0}{Z}\right)^2\expct{r^{s-2}} = 0 \\]
 
-
 ## Expectation values
 
 By using **Hellmann–Feynman theorem** and **Kramers' relation**, we can induce various expectation values of hydrogen-like atoms.
 
-1. $ \Expct{\dfrac{1}{r}} = \dfrac{Z}{n^2a_0}     \label{1.}$
-  <br><br>
-  Let's use the fundamental charge $e$ as a parameter for the Hellman-Feynman theorem.
-  \\[ \hat{\hamiltonian}(e) = -\frac{\hbar^2}{2\mu}\nabla^2 - \frac{Ze^2}{4\pi\epzro r} \\]
-  Then,
-  \\[ \frac{\partial\hat{\hamiltonian}}{\partial e} = -\frac{Ze}{2\pi\epzro r} \\]
-  The energy of the electron dependent on $e$ is:
-  \\[ E_n(e) = -\frac{\mu}{2\hbar^2}\left( \frac{Ze^2}{4\pi\epzro} \right)^2 \\]
-  Then,
-  \\[ \frac{\partial E_n}{\partial e} = -\frac{1}{2\pi\epzro}\frac{Z^2}{n^2a_0} \\]
-  By the Hellmann-Feynman theorem, we get:
-  \\[ \begin{align\*}
-  \frac{\partial E_n}{\partial e} 
-  &= \Expct{\frac{\partial\hat{\hamiltonian}}{\partial e}} \nl
-  &= -\frac{Ze}{2\pi\epzro}\Expct{\frac{1}{r}}
-  \end{align\*} \\]
-  Therefore,
-  \\[ \therefore \Expct{\frac{1}{r}} = \frac{Z}{n^2a_0} \\]
-  It can be also derived from substituting $s=0$ to the Kramers' relation.
-  <br><br>
-2. $ \Expct{\dfrac{1}{r^2}} = \dfrac{2Z^2}{(2l+1)n^3a_0^2} $
-  <br><br>
-  Let's use the angular momentum quantum number $l$ as a parameter for the Hellman-Feynman theorem.
-  \\[ \hat{\hamiltonian}(l) = \frac{\hbar^2}{2\mu r}\frac{\partial^2}{\partial r^2}r + \frac{\hbar^2l(l+1)}{2\mu r^2} - \frac{Ze^2}{4\pi\epzro r} \\]
-  Then,
-  \\[ \frac{\partial\hat{\hamiltonian}}{\partial l} = \frac{\hbar^2(2l+1)}{2\mu r^2} \\]
-  We showed that the principle quantum number $n$ and the angular momentum quantum number $l$
-  has the following relationship finding the eigenfunction of hydrogen-like atoms:
-  \\[ n=l+N+1 \;(N\in\N_0) \\]
-  The energy of the electron dependent on $l$ is:
-  \\[ E_n(l) = -\frac{\hbar^2}{2\mu} \frac{Z^2}{(l+N+1)^2a_0^2} \\]
-  Then,
-  \\[ \frac{\partial E_n}{\partial l} = \frac{\hbar^2}{\mu} \frac{Z^2}{(l+N+1)^3a_0^2} \\]
-  By the Hellmann-Feynman theorem, we get:
-  \\[ \begin{align\*}
-  \frac{\partial E_n}{\partial l}
-  &= \Expct{\frac{\partial\hat{\hamiltonian}}{\partial l}} \nl
-  &= \frac{\hbar^2(2l+1)}{2\mu} \Expct{\frac{1}{r^2}}
-  \end{align\*} \\]
-  Therefore,
-  \\[ \therefore \Expct{\frac{1}{r^2}} = \frac{2Z^2}{(2l+1)n^3a_0^2} \\]
-  <br><br>
-3. $ \Expct{\dfrac{1}{r^3}} = \dfrac{1}{l(l+\frac{1}{2})(l+1)} \dfrac{Z^3}{n^3a_0^3} $
-  <br><br>
-  Let's put $s=-1$ for the Kramers' relation.
-  \\[ \frac{a_0}{Z}\Expct{\frac{1}{r^2}} - \frac{1}{4}\left[ (2l+1)^2-1 \right]\left(\frac{a_0}{Z}\right)^2\Expct{\frac{1}{r^3}} = 0  \\]
-  \\[ \therefore \Expct{\frac{1}{r^3}} = \frac{1}{l(l+\frac{1}{2})(l+1)} \frac{Z^3}{n^3a_0^3} \\]
-  <br><br>
-4. $ \expct{r} = \dfrac{1}{2}\Big[ 3n^2-l(l+1) \Big]\dfrac{a_0}{Z} $
-  <br><br>
-  It can be similarly shown by the Kramers' relation.
-  <br><br>
-5. $ \expct{r^2} = \dfrac{1}{2}\Big[ 5n^2+1-3l(l+1) \Big]\dfrac{n^2a_0^2}{Z^2} $
-  <br><br>
-  Either.
-  <br><br>
-6. $ \Expct{\hamiltonian} = -\dfrac{Z^2e^2}{8\pi\epzro n^2a_0} $
-  <br><br>
-  We showed it _[here](/blog/posts/hydrogen-atom-schrodinger/)_.
-  <br><br>
-7. $ \Expct{V} = -\dfrac{Z^2e^2}{4\pi\epzro n^2a_0} $
-  <br><br>
-  It is trivial from 1.
-  <br><br>
-8. $ \Expct{T} = \dfrac{Z^2e^2}{8\pi\epzro n^2a_0} $
-  <br><br>
-  It is trivial from 6 and 7.
+\1. $ \Expct{\dfrac{1}{r}} = \dfrac{Z}{n^2a_0} $
+<details markdown="1"> <summary> Proof </summary>
+
+Let's use the fundamental charge $e$ as a parameter for the Hellman-Feynman theorem.
+
+\\[ \hat{\hamiltonian}(e) = -\frac{\hbar^2}{2\mu}\nabla^2 - \frac{Ze^2}{4\pi\epzro r} \\]
+  
+Then,
+  
+\\[ \frac{\partial\hat{\hamiltonian}}{\partial e} = -\frac{Ze}{2\pi\epzro r} \\]
+  
+The energy of the electron dependent on $e$ is:
+  
+\\[ E_n(e) = -\frac{\mu}{2\hbar^2}\left( \frac{Ze^2}{4\pi\epzro} \right)^2 \\]
+  
+Then,
+  
+\\[ \frac{\partial E_n}{\partial e} = -\frac{1}{2\pi\epzro}\frac{Z^2}{n^2a_0} \\]
+  
+By the Hellmann-Feynman theorem, we get:
+  
+\\[ \begin{align\*}
+\frac{\partial E_n}{\partial e} 
+&= \Expct{\frac{\partial\hat{\hamiltonian}}{\partial e}} \nl
+&= -\frac{Ze}{2\pi\epzro}\Expct{\frac{1}{r}}
+\end{align\*} \\]
+
+Therefore,
+
+\\[ \therefore \Expct{\frac{1}{r}} = \frac{Z}{n^2a_0} \\]
+
+It can be also derived from substituting $s=0$ to the Kramers' relation.
+
+</details> <br>
+
+
+\2. $ \Expct{\dfrac{1}{r^2}} = \dfrac{2Z^2}{(2l+1)n^3a_0^2} $
+<details markdown="1"> <summary> Proof </summary>
+
+Let's use the angular momentum quantum number $l$ as a parameter for the Hellman-Feynman theorem.
+
+\\[ \hat{\hamiltonian}(l) = \frac{\hbar^2}{2\mu r}\frac{\partial^2}{\partial r^2}r + \frac{\hbar^2l(l+1)}{2\mu r^2} - \frac{Ze^2}{4\pi\epzro r} \\]
+
+Then,
+
+\\[ \frac{\partial\hat{\hamiltonian}}{\partial l} = \frac{\hbar^2(2l+1)}{2\mu r^2} \\]
+
+We showed that the principle quantum number $n$ and the angular momentum quantum number $l$ 
+has the following relationship finding the eigenfunction of hydrogen-like atoms:
+
+\\[ n=l+N+1 \;(N\in\N_0) \\]
+
+The energy of the electron dependent on $l$ is:
+
+\\[ E_n(l) = -\frac{\hbar^2}{2\mu} \frac{Z^2}{(l+N+1)^2a_0^2} \\]
+
+Then,
+
+\\[ \frac{\partial E_n}{\partial l} = \frac{\hbar^2}{\mu} \frac{Z^2}{(l+N+1)^3a_0^2} \\]
+
+By the Hellmann-Feynman theorem, we get:
+
+\\[ \begin{align\*}
+\frac{\partial E_n}{\partial l}
+&= \Expct{\frac{\partial\hat{\hamiltonian}}{\partial l}} \nl
+&= \frac{\hbar^2(2l+1)}{2\mu} \Expct{\frac{1}{r^2}}
+\end{align\*} \\]
+
+Therefore,
+
+\\[ \therefore \Expct{\frac{1}{r^2}} = \frac{2Z^2}{(2l+1)n^3a_0^2} \\]
+
+It can be also derived from substituting $s=1$ to the Kramers' relation.
+</details> <br>
+
+\3. $ \Expct{\dfrac{1}{r^3}} = \dfrac{1}{l(l+\frac{1}{2})(l+1)} \dfrac{Z^3}{n^3a_0^3} $
+<details markdown="1"> <summary> Proof </summary>
+
+Let's put $s=-1$ for the Kramers' relation.
+
+\\[ \frac{a_0}{Z}\Expct{\frac{1}{r^2}} - \frac{1}{4}\left[ (2l+1)^2-1 \right]\left(\frac{a_0}{Z}\right)^2\Expct{\frac{1}{r^3}} = 0  \\]
+
+\\[ \therefore \Expct{\frac{1}{r^3}} = \frac{1}{l(l+\frac{1}{2})(l+1)} \frac{Z^3}{n^3a_0^3} \\]
+
+</details> <br>
+
+\4. $ \expct{r} = \dfrac{1}{2}\Big[ 3n^2-l(l+1) \Big]\dfrac{a_0}{Z} $
+<details markdown="1"> <summary> Proof </summary>
+
+It can be similarly shown by the Kramers' relation.
+
+</details> <br>
+
+\5. $ \expct{r^2} = \dfrac{1}{2}\Big[ 5n^2+1-3l(l+1) \Big]\dfrac{n^2a_0^2}{Z^2} $
+<details markdown="1"> <summary> Proof </summary>
+
+Either.
+
+</details> <br>
+
+\6. $ \Expct{\hamiltonian} = -\dfrac{Z^2e^2}{8\pi\epzro n^2a_0} $
+<details markdown="1"> <summary> Proof </summary>
+
+We showed it _[here](/physics/hydrogen-atom-schrodinger.html)_.
+
+</details> <br>
+
+\7. $ \Expct{V} = -\dfrac{Z^2e^2}{4\pi\epzro n^2a_0} $
+<details markdown="1"> <summary> Proof </summary>
+
+It is trivial from 1.
+
+</details> <br>
+
+\8. $ \Expct{T} = \dfrac{Z^2e^2}{8\pi\epzro n^2a_0} $
+<details markdown="1"> <summary> Proof </summary>
+
+It is trivial from 6 and 7.
+
+</details> <br>
 
 We can also check that classical _virial theorem_, which is here $ \expct{T}=-\dfrac{1}{2}\expct{V} $, is satisfied.
