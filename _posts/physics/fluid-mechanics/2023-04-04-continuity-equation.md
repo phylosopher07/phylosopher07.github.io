@@ -51,12 +51,12 @@ Defining the vector $\b{j}$ as $\rho\b{u}$, we can write the continuity equation
 
 \\[ \frac{\partial\rho}{\partial t} + \nabla\cdot\b{j} = 0 \\]
 
-Here $\b{j}$ is called the **mass flux density**. Its direction is that of the motion of the fluid,
+Here $\b{j}$ is called the **momentum density**. Its direction is that of the motion of the fluid,
 while its magnitude equals the mass of fluid flowing in unit time through unit area perpendicular to the velocity.
 
 ### Interpretation
 
-Expanding the expression for the mass flux density, we have:
+Expanding the expression for the momentum density, we have:
 
 \\[ \frac{\partial\rho}{\partial t} + \rho\nabla\cdot\b{u} + (\nabla\rho)\cdot\b{u} = 0 \\]
 
@@ -66,7 +66,7 @@ We can simplyfy the equation by the _material derivative_,
 
 we get the following equation.
 
-\\[ \frac{D\rho}{Dt} + \rho\b{u}\cdot\nabla\b{u} = 0 \\]
+\\[ \frac{D\rho}{Dt} + \rho\nabla\cdot\b{u} = 0 \\]
 
 A change in the density over time should be proportional to the divergence of the velocity field.
 So if the fluid is _incompressible_, the divergence of the velocity field must be zero, which is expressed as:

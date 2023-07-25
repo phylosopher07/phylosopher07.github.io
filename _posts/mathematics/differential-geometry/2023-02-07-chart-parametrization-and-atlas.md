@@ -57,4 +57,7 @@ Therefore, it's possible to talk about the _continuity_ and _differentiability_ 
 
 
 ![Transition map](https://upload.wikimedia.org/wikipedia/commons/0/06/Two_coordinate_charts_on_a_manifold.svg)
-_An image describing transition map_
+{:.centered}
+
+An image describing transition map
+{:.figcaption}

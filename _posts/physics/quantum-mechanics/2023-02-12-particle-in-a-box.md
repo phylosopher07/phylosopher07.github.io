@@ -36,8 +36,11 @@ The potential energy in this model is given as
 \\[ V(x) = \begin{cases} 0 &(0<x<L) \nl \infty &(\text{otherwise}) \end{cases}\\]
 
 ![Infinite potential wall](https://upload.wikimedia.org/wikipedia/commons/1/13/Infinite_potential_well-en.svg)
-_The barriers outside a one-dimensional box have infinitely large potential,
-while the interior of the box has a constant, zero potential._
+{:.centered}
+
+The barriers outside a one-dimensional box have infinitely large potential,
+while the interior of the box has a constant, zero potential.
+{:.figcaption}
 
 Using the time-independent Schrödinger equation,
 
@@ -86,7 +89,10 @@ The results are summarized as follows.
 \\[ E_n=\frac{n^2\pi^2\hbar^2}{2mL^2} \\]
 
 ![Solutions](https://upload.wikimedia.org/wikipedia/commons/f/f0/Particle-in-a-box-wave-functions.svg)
-_Examples of eigen-wavefunction_
+{:.centered}
+
+Examples of eigen-wavefunction
+{:.figcaption}
 
 The formula shows that the energy of a particle is **quantized** (not continuous).
 Also, in the **ground state**, the energy of the particle is not zero, meaning that the particle can never "sit still".
@@ -135,7 +141,10 @@ Since the particle has movement in both $+x$ and $-x$ directions, the average mo
 ### Correspondence principle
 
 ![Correspondence principle](https://w.namu.la/s/107f7879227979921b03e5968eec1bc821e49e7f220406c63cf0bf2b49c922987b2ef292b3e21f339d280e38cac3b1f09f89309ef3784169fd84ef8a1e697cd8a3a167318271131d108405c8dd4a763b3416202833bc9a743af3f00ba967bcdb){: w="500" }
-_Comparison of probability density at very large quantum number $n$ with classical mechanics_ 
+{:.centered}
+
+Comparison of probability density at very large quantum number $n$ with classical mechanics
+{:.figcaption}
 
 \\[ P_\text{CM}=\frac{1}{L} \\]
 
@@ -182,7 +191,10 @@ Note that at $(n_x,n_y)=(a,b)$ and $(n_x,n_y)=(b,a)$, the wavefunctions are diff
 This is called a **degeneration**, and such states are called **degenerated states**.
 
 ![2D well](https://upload.wikimedia.org/wikipedia/commons/6/6d/Particle2D.svg)
-_The wavefunction of a 2D well with $(n_x,n_y)=(4,4)$_
+{:.centered}
+
+The wavefunction of a 2D well with $(n_x,n_y)=(4,4)$
+{:.figcaption}
 
 ### Three-dimensional solution
 
@@ -270,4 +282,7 @@ The results are summarized as follows.
 \\[ E_{mn}=\frac{j_{mn}^2\hbar^2}{2mR^2} \\]
 
 ![Circular infinite well](https://w.namu.la/s/bf6f8a245a2e4549a157543fb331ee98567a64739a0d1d4222833ff48aacdf2460214b445f5aec2b29ef79b81031c38e3a5568054bdba29ddbcba6ab3a322906a0faa067682a0a8fd6722b3443bc7d45b41451d06a3553031f84e2cf304b53af0e6828c4c8389cc55af8eb7c45687094)
-_Probability density function for $(n,m)=(1,2)$._
+{:.centered}
+
+Probability density function for $(n,m)=(1,2)$.
+{:.figcaption}
