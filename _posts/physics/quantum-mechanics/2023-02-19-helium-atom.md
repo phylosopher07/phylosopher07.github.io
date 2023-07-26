@@ -24,7 +24,7 @@ The Hamiltonian of the system is; ignoring the motion of the nucleus (Born–Opp
 
 $ \global\def\Zef{Z\rq} $
 
-\\[ \hamiltonian = -\frac{\hbar^2}{2m_e}(\nabla_1^2+\nabla_2^2) -\frac{e^2}{4\pi\epzro}\left[ \frac{2}{r_1}+\frac{2}{r_2}-\frac{1}{\abs{\b{r}_1-\b{r}_2}} \right] \\]
+\\[ H = -\frac{\hbar^2}{2m_e}(\nabla_1^2+\nabla_2^2) -\frac{e^2}{4\pi\vpmt}\left[ \frac{2}{r_1}+\frac{2}{r_2}-\frac{1}{\abs{\b{r}_1-\b{r}_2}} \right] \\]
 
 Let's set the trial wavefunction as the product of the ground state wavefunction of the hydrogenic atom system,
 ignoring the interaction of electrons, which are regarded as identical. Here we add a parameter $\Zef$ for the variation.
@@ -36,9 +36,9 @@ ignoring the interaction of electrons, which are regarded as identical. Here we 
 
 Then, let's change the Hamiltonian to the following form for simple calculations.
 
-\\[ \hamiltonian =
-\left( -\frac{\hbar^2}{2m_e}\nabla_1^2-\frac{\Zef e^2}{4\pi\epzro r_1} \right) + \left( -\frac{\hbar^2}{2m_e}\nabla_2^2-\frac{\Zef e^2}{4\pi\epzro r_2} \right)
-+\frac{e^2}{4\pi\epzro}\left[ \frac{\Zef-2}{r_1}+\frac{\Zef-2}{r_2}+\frac{1}{\abs{\b{r}_1-\b{r}_2}} \right] \\]
+\\[ H =
+\left( -\frac{\hbar^2}{2m_e}\nabla_1^2-\frac{\Zef e^2}{4\pi\vpmt r_1} \right) + \left( -\frac{\hbar^2}{2m_e}\nabla_2^2-\frac{\Zef e^2}{4\pi\vpmt r_2} \right)
++\frac{e^2}{4\pi\vpmt}\left[ \frac{\Zef-2}{r_1}+\frac{\Zef-2}{r_2}+\frac{1}{\abs{\b{r}_1-\b{r}_2}} \right] \\]
 
 We see that the terms inside parentheses are the Hamiltonian of hydrogen-like atoms of atomic number $\Zef$, respectively.
 However, here $\Zef$ doesn't have to be an integer since it's a parameter for the variational method;
@@ -49,10 +49,10 @@ Recall that $\Expct{\dfrac{1}{r}}=\dfrac{\Zef}{a_0}$ is satisfied at the ground 
 The expectation value of the Hamiltonian is, where $E_1$ is the ground state energy of the hydrogen:
 
 \\[ \begin{align\*}
-\expct{\hat{\hamiltonian}}
-&= \Zef^2E_1 + \Zef^2E_1 + \frac{(\Zef-2)e^2}{4\pi\epzro}\left[ \Expct{\frac{1}{r_1}}+\Expct{\frac{1}{r_2}} \right] +
-\frac{e^2}{4\pi\epzro}\Expct{\frac{1}{\abs{\b{r}_1-\b{r}_2}}} \nl
-&= 2\Zef^2E_1-4\Zef(\Zef-2)E_1 + \frac{e^2}{4\pi\epzro}\Expct{\frac{1}{\abs{\b{r}_1-\b{r}_2}}}
+\expct{\hat{H}}
+&= \Zef^2E_1 + \Zef^2E_1 + \frac{(\Zef-2)e^2}{4\pi\vpmt}\left[ \Expct{\frac{1}{r_1}}+\Expct{\frac{1}{r_2}} \right] +
+\frac{e^2}{4\pi\vpmt}\Expct{\frac{1}{\abs{\b{r}_1-\b{r}_2}}} \nl
+&= 2\Zef^2E_1-4\Zef(\Zef-2)E_1 + \frac{e^2}{4\pi\vpmt}\Expct{\frac{1}{\abs{\b{r}_1-\b{r}_2}}}
 \end{align\*} \\]
 
 Let's calculate the expectation value:
@@ -79,30 +79,30 @@ I &= \int_0^\infty\int_0^\infty \exp\left[ -\frac{2\Zef}{a_0}(r_1+r_2) \right] \
 Therefore,
 
 \\[ \begin{align\*}
-\frac{e^2}{4\pi\epzro}\Expct{\frac{1}{\abs{\b{r}_1-\b{r}_2}}} &=
-\frac{e^2}{4\pi\epzro} \left(\frac{\Zef^3}{\pi a_0^3}\right)^2 \frac{5\pi^2}{8\Zef^5}a_0^5 \nl
+\frac{e^2}{4\pi\vpmt}\Expct{\frac{1}{\abs{\b{r}_1-\b{r}_2}}} &=
+\frac{e^2}{4\pi\vpmt} \left(\frac{\Zef^3}{\pi a_0^3}\right)^2 \frac{5\pi^2}{8\Zef^5}a_0^5 \nl
 &= -\frac{5}{4}\Zef E_1
 \end{align\*} \\]
 
 Then we finally get the expectation of the Hamiltonian:
 
 \\[ \begin{align\*}
-\expct{\hat{\hamiltonian}}
+\expct{\hat{H}}
 &= \left( -2\Zef^2+\frac{27}{4}\Zef \right) E_1 \nl
-&= \left( 2\Zef^2-\frac{27}{4}\Zef \right) \Ryd
+&= \left( 2\Zef^2-\frac{27}{4}\Zef \right) \RydE
 \end{align\*} \\]
 
 This value is minimized when $\Zef$ is $\dfrac{27}{16}$.
 
 \\[ \begin{align\*}
-\expct{\hat{\hamiltonian}} &\ge \frac{729}{128}E_1 \nl
+\expct{\hat{H}} &\ge \frac{729}{128}E_1 \nl
 &\approx -77.489 \,\eV
 \end{align\*} \\]
 
 An experimental value is $-78.975 \,\eV$, which shows that our approximation is pretty accurate. (error of $ 1.88\,\% $).
 
 We can also calculate the ionization energy of helium.
-Since the first ionization energy of helium is trivially (and also approximately) $ 4\Ryd=54.423\,\eV $,
+Since the first ionization energy of helium is trivially (and also approximately) $ 4\RydE=54.423\,\eV $,
 we get the second ionization energy naturally, of which value is $23.066\,\eV$.
 Although this isn't accurate enough (over $5\,\%$ of the error to experiments) to use, it still provides us the rough value.
 
@@ -118,7 +118,7 @@ one nucleus with a charge of $Ze$ and just two electrons. ($\ce{H-}$, $\ce{He}$,
 
 The expectation of Hamiltonian can be computed in the same way,
 
-\\[ \expct{\hat{\hamiltonian}} =
+\\[ \expct{\hat{H}} =
 \left( -2\Zef^2+\frac{16Z-5}{4}\Zef \right)E_1 \\]
 
 Therefore,

@@ -22,7 +22,7 @@ from **「Modern Quantum Mechanics」**: _Sakurai, J. J._
 
 **`Generalized Ehrenfest's theorem`**:
 
-\\[\boxed{  \frac{d}{dt}\expct{\hat{Q}} = \frac{i}{\hbar}\expct{\com{ \hat{\mathcal{H}} }{ \hat{Q} }} +
+\\[\boxed{  \frac{d}{dt}\expct{\hat{Q}} = \frac{i}{\hbar}\expct{\comm{ \hat{\mathcal{H}} }{ \hat{Q} }} +
 \Expct{\frac{\partial \hat{Q}}{\partial t}}  }\\]
 
 The equation is the same as the _Heisenberg image_, but let's derive it from the _Schrödinger image_.
@@ -36,7 +36,7 @@ Using the Schrödinger equation $i\hbar\dfrac{\partial}{\partial t}\ket{\psi}=\h
 
 \\[ \frac{d}{dt}\expct{\hat{Q}} = -\frac{1}{i\hbar}\brkt{ \hat{\mathcal{H}}\psi }{ \hat{Q}\psi } + \Expct{\frac{\partial \hat{Q}}{\partial t}} + \frac{1}{i\hbar}\brkt{ \psi }{ \hat{Q}\hat{\mathcal{H}}\psi } \\]
 
-\\[ \therefore \frac{d}{dt}\expct{\hat{Q}} = \frac{i}{\hbar}\expct{\com{ \hat{\mathcal{H}} }{ \hat{Q} }} +
+\\[ \therefore \frac{d}{dt}\expct{\hat{Q}} = \frac{i}{\hbar}\expct{\comm{ \hat{\mathcal{H}} }{ \hat{Q} }} +
 \Expct{\frac{\partial \hat{Q}}{\partial t}} \\]
 
 ### Examples
@@ -50,7 +50,7 @@ Using the Schrödinger equation $i\hbar\dfrac{\partial}{\partial t}\ket{\psi}=\h
 
 If $\hat{Q}$ is not explicit for $t$, by the Ehrenfest's theorem; 
 
-* $ \sigma_\mathcal{H}\sigma_Q \ge \dfrac{1}{2}\abs{\expct{ \com{\hat{\mathcal{H}}}{\hat{Q}} }} =
+* $ \sigma_\mathcal{H}\sigma_Q \ge \dfrac{1}{2}\abs{\expct{ \comm{\hat{\mathcal{H}}}{\hat{Q}} }} =
 \dfrac{\hbar}{2}\abs{ \dfrac{d\expct{\hat{Q}}}{dt} } $
 
 Here we define $\Delta E \coloneqq \sigma_\mathcal{H}$ and $\Delta t \coloneqq \dfrac{\sigma_Q}{\abs{ d\expct{\hat{Q}} / dt }} $.

@@ -32,7 +32,7 @@ and the expectation value of the energy in that state is an upper bound to the g
 $ \global\def\psit{\psi_\text{trial}} $
 $ \global\def\Egs{E_\text{gs}} $
 
-\\[\boxed{ \brktop{\psit}{ \hat{\hamiltonian} }{\psit}\ge \Egs }\\]
+\\[\boxed{ \brktop{\psit}{ \hat{H} }{\psit}\ge \Egs }\\]
 
 Since the wavefunction is an element of Hilbert space, it can be represented as a linear combination of the eigenfunctions of the Hamiltonian.
 
@@ -41,7 +41,7 @@ Since the wavefunction is an element of Hilbert space, it can be represented as 
 Therefore, the expectation value of the Hamiltonian is:
 
 \\[ \begin{align\*}
-\expct{\hat{\hamiltonian}} &= \sum_n \abs{\brkt{\psi_n}{\psit}}^2 E_n \nl
+\expct{\hat{H}} &= \sum_n \abs{\brkt{\psi_n}{\psit}}^2 E_n \nl
 &= \sum_n \abs{\brkt{\psi_n}{\psit}}^2 (E_n-\Egs) + \Egs \nl
 &\ge \Egs
 \end{align\*} \\]
@@ -50,12 +50,12 @@ Also, we can compute an upper bound to the energy level of the _first excited st
 If we fully know the ground state wavefunction $\psi_\text{gs}$ and have the trial wavefunction orthogonal to it,
 i.e. $\brkt{\psi_\text{gs}}{\psit}=0$, we get:
 
-\\[ \expct{\hat{\hamiltonian}} \ge E_\text{fe} \\]
+\\[ \expct{\hat{H}} \ge E_\text{fe} \\]
 
 Trivially,
 
 \\[ \begin{gather\*}
 \begin{cases} \brkt{\psi_\text{gs}}{\psit}=0 \nl \brkt{\psi_\text{fe}}{\psit}=0 \end{cases}
-\Rightarrow \expct{\hat{\hamiltonian}}\ge E_\text{se} \nl
+\Rightarrow \expct{\hat{H}}\ge E_\text{se} \nl
 \vdots
 \end{gather\*} \\]

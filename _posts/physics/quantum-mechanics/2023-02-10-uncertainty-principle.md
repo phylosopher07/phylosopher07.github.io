@@ -62,22 +62,22 @@ We now substitute this back into the equation above and get
 
 \\[ \begin{align\*}
 \sigma_A^2\sigma_B^2 &\ge \abs{\frac{1}{2}\left[ \expct{\hat{A}\hat{B}}+\expct{\hat{B}\hat{A}}-2\expct{\hat{A}}\expct{\hat{B}} \right]}^2 + \abs{\frac{1}{2}\left[ \expct{\hat{A}\hat{B}}-\expct{\hat{B}\hat{A}} \right]}^2 \nl
-&= \abs{\frac{1}{2}\left[ \expct{\acom{\hat{A}}{\hat{B}}}-2\expct{\hat{A}}\expct{\hat{B}} \right]}^2 + \abs{\frac{1}{2}\left[ \expct{\com{\hat{A}}{\hat{B}}} \right]}^2
+&= \abs{\frac{1}{2}\left[ \expct{\acomm{\hat{A}}{\hat{B}}}-2\expct{\hat{A}}\expct{\hat{B}} \right]}^2 + \abs{\frac{1}{2}\left[ \expct{\comm{\hat{A}}{\hat{B}}} \right]}^2
 \end{align\*} \\]
 
 Then we finally get the **`Schrödinger uncertainty relation`**: 
-\\[\boxed{  \sigma_A\sigma_B \ge \frac{1}{2}\sqrt{ \abs{\expct{\acom{\hat{A}}{\hat{B}}}-2\expct{\hat{A}}\expct{\hat{B}}}^2 +
-\abs{\expct{\com{\hat{A}}{\hat{B}}}}^2 }  }\\]
+\\[\boxed{  \sigma_A\sigma_B \ge \frac{1}{2}\sqrt{ \abs{\expct{\acomm{\hat{A}}{\hat{B}}}-2\expct{\hat{A}}\expct{\hat{B}}}^2 +
+\abs{\expct{\comm{\hat{A}}{\hat{B}}}}^2 }  }\\]
 
 
 There is also the **`Robertson uncertainty relation`** that has a slightly weaker condition, a more familiar form.
-\\[\boxed{  \sigma_A\sigma_B \ge \frac{1}{2}\abs{\expct{\com{\hat{A}}{\hat{B}}}}  }\\]
+\\[\boxed{  \sigma_A\sigma_B \ge \frac{1}{2}\abs{\expct{\comm{\hat{A}}{\hat{B}}}}  }\\]
 
 ### Example
 
 Let's find uncertainty about the measurement of position and momentum.
 
-Since $\com{\hat{x}}{\hat{p}}=i\hbar$,
+Since $\comm{\hat{x}}{\hat{p}}=i\hbar$,
 * $ \sigma_x\sigma_p \ge \dfrac{\hbar}{2} $
 
 ## Heisenberg limit

@@ -33,11 +33,11 @@ that have higher negative powers of $r$. Having this relation handy makes a lot 
 
 Let's remind how we solved the Schrödinger equation for hydrogen-like atoms; the radial differential equation is typically written as:
 
-\\[ -\frac{\hbar^2}{2\mu}\frac{\partial^2u}{\partial r^2} + \left[ \frac{\hbar^2l(l+1)}{2\mu r^2}-\frac{Ze^2}{4\pi\epzro r} \right]u = Eu \\]
+\\[ -\frac{\hbar^2}{2\mu}\frac{\partial^2u}{\partial r^2} + \left[ \frac{\hbar^2l(l+1)}{2\mu r^2}-\frac{Ze^2}{4\pi\vpmt r} \right]u = Eu \\]
 
 where $u=rR(r)$. Since
 
-\\[ a_0=\frac{4\pi\epzro\hbar^2}{\mu e^2} ,\; E=-\frac{\hbar^2}{2\mu}\frac{Z^2}{n^2a_0^2} \\]
+\\[ a_0=\frac{4\pi\vpmt\hbar^2}{\mu e^2} ,\; E=-\frac{\hbar^2}{2\mu}\frac{Z^2}{n^2a_0^2} \\]
 
 we can simplify the equation:
 
@@ -101,26 +101,26 @@ By using **Hellmann–Feynman theorem** and **Kramers' relation**, we can induce
 
 Let's use the fundamental charge $e$ as a parameter for the Hellman-Feynman theorem.
 
-\\[ \hat{\hamiltonian}(e) = -\frac{\hbar^2}{2\mu}\nabla^2 - \frac{Ze^2}{4\pi\epzro r} \\]
+\\[ \hat{H}(e) = -\frac{\hbar^2}{2\mu}\nabla^2 - \frac{Ze^2}{4\pi\vpmt r} \\]
   
 Then,
   
-\\[ \frac{\partial\hat{\hamiltonian}}{\partial e} = -\frac{Ze}{2\pi\epzro r} \\]
+\\[ \frac{\partial\hat{H}}{\partial e} = -\frac{Ze}{2\pi\vpmt r} \\]
   
 The energy of the electron dependent on $e$ is:
   
-\\[ E_n(e) = -\frac{\mu}{2\hbar^2}\left( \frac{Ze^2}{4\pi\epzro} \right)^2 \\]
+\\[ E_n(e) = -\frac{\mu}{2\hbar^2}\left( \frac{Ze^2}{4\pi\vpmt} \right)^2 \\]
   
 Then,
   
-\\[ \frac{\partial E_n}{\partial e} = -\frac{1}{2\pi\epzro}\frac{Z^2}{n^2a_0} \\]
+\\[ \frac{\partial E_n}{\partial e} = -\frac{1}{2\pi\vpmt}\frac{Z^2}{n^2a_0} \\]
   
 By the Hellmann-Feynman theorem, we get:
   
 \\[ \begin{align\*}
 \frac{\partial E_n}{\partial e} 
-&= \Expct{\frac{\partial\hat{\hamiltonian}}{\partial e}} \nl
-&= -\frac{Ze}{2\pi\epzro}\Expct{\frac{1}{r}}
+&= \Expct{\frac{\partial\hat{H}}{\partial e}} \nl
+&= -\frac{Ze}{2\pi\vpmt}\Expct{\frac{1}{r}}
 \end{align\*} \\]
 
 Therefore,
@@ -137,11 +137,11 @@ It can be also derived from substituting $s=0$ to the Kramers' relation.
 
 Let's use the angular momentum quantum number $l$ as a parameter for the Hellman-Feynman theorem.
 
-\\[ \hat{\hamiltonian}(l) = \frac{\hbar^2}{2\mu r}\frac{\partial^2}{\partial r^2}r + \frac{\hbar^2l(l+1)}{2\mu r^2} - \frac{Ze^2}{4\pi\epzro r} \\]
+\\[ \hat{H}(l) = \frac{\hbar^2}{2\mu r}\frac{\partial^2}{\partial r^2}r + \frac{\hbar^2l(l+1)}{2\mu r^2} - \frac{Ze^2}{4\pi\vpmt r} \\]
 
 Then,
 
-\\[ \frac{\partial\hat{\hamiltonian}}{\partial l} = \frac{\hbar^2(2l+1)}{2\mu r^2} \\]
+\\[ \frac{\partial\hat{H}}{\partial l} = \frac{\hbar^2(2l+1)}{2\mu r^2} \\]
 
 We showed that the principle quantum number $n$ and the angular momentum quantum number $l$ 
 has the following relationship finding the eigenfunction of hydrogen-like atoms:
@@ -160,7 +160,7 @@ By the Hellmann-Feynman theorem, we get:
 
 \\[ \begin{align\*}
 \frac{\partial E_n}{\partial l}
-&= \Expct{\frac{\partial\hat{\hamiltonian}}{\partial l}} \nl
+&= \Expct{\frac{\partial\hat{H}}{\partial l}} \nl
 &= \frac{\hbar^2(2l+1)}{2\mu} \Expct{\frac{1}{r^2}}
 \end{align\*} \\]
 
@@ -196,21 +196,21 @@ Either.
 
 </details> <br>
 
-\6. $ \Expct{\hamiltonian} = -\dfrac{Z^2e^2}{8\pi\epzro n^2a_0} $
+\6. $ \Expct{H} = -\dfrac{Z^2e^2}{8\pi\vpmt n^2a_0} $
 <details markdown="1"> <summary> Proof </summary>
 
 We showed it _[here](/physics/hydrogen-atom-schrodinger.html)_.
 
 </details> <br>
 
-\7. $ \Expct{V} = -\dfrac{Z^2e^2}{4\pi\epzro n^2a_0} $
+\7. $ \Expct{V} = -\dfrac{Z^2e^2}{4\pi\vpmt n^2a_0} $
 <details markdown="1"> <summary> Proof </summary>
 
 It is trivial from 1.
 
 </details> <br>
 
-\8. $ \Expct{T} = \dfrac{Z^2e^2}{8\pi\epzro n^2a_0} $
+\8. $ \Expct{T} = \dfrac{Z^2e^2}{8\pi\vpmt n^2a_0} $
 <details markdown="1"> <summary> Proof </summary>
 
 It is trivial from 6 and 7.

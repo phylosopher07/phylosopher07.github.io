@@ -91,7 +91,7 @@ Let's find out then how the expectation value of an observable changes over time
 \end{align\*} \\]
 
 \\[\therefore\; \boxed{  \frac{d}{dt}\hat{A}_H(t) =
-\frac{i}{\hbar}\com{\hat{\mathcal{H}}}{\hat{A}_H(t)} + \left(\frac{\partial\hat{A}}{\partial t}\right)_H  }\\]
+\frac{i}{\hbar}\comm{\hat{\mathcal{H}}}{\hat{A}_H(t)} + \left(\frac{\partial\hat{A}}{\partial t}\right)_H  }\\]
 
 In conclusion,
 * Ket state: constant
