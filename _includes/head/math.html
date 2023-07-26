@@ -33,16 +33,35 @@
         /* Mathematics */
         "\\dsum": "\\dps\\sum",
         "\\d": "\\mathrm{d}",
+        "\\dd": "\\,\\d{#1}",
         "\\abs": "\\left\| #1 \\right\|",
         "\\norm": "\\lVert #1 \\rVert",
         "\\card": "\\abs{#1}",
         "\\span": "\\text{span}",
         "\\cross": "\\times",
-        "\\pdv#1#2": "\\frac{\\partial #1}{\\partial #2}",
+        /* -- derivatives */
+        "\\odv": "\\frac{\\d #1}{\\d #2}",
+        "\\odvi": "\\d #1/\\d #2",
+        "\\odvn": "\\frac{\\d^{#1} #2}{\\d #3^{#1}}",
+        "\\odvni": "\\d^{#1} #2/\\d #3^{#1}",
+        "\\pdv": "\\frac{\\partial #1}{\\partial #2}",
+        "\\pdvi": "\\partial #1/\\partial #2",
+        "\\pdvn": "\\frac{\\partial^{#1} #2}{\\partial #3^{#1}}",
+        "\\pdvni": "\\partial^{#1} #2/\\partial #3^{#1}",
+        "\\pdvs": "\\frac{\\partial^2 #1}{\\partial #2 \\partial #3}",
+        "\\pdvsi": "\\partial^2 #1/\\partial #2 \\partial #3",
+        "\\fdv": "\\frac{\\delta #1}{\\delta #2}",
+        "\\fdvi": "\\delta #1/\\delta #2",
+        /* --vector calculus */
+        "\\grad": "\\nabla",
+        "\\curl": "\\nabla \\cross",
+        "\\div": "\\nabla \\cdot",
+        "\\laplacian": "\\nabla^2",
 
         /* Physics */
         "\\hamd": "\\mathcal{H}",
         "\\lagd": "\\mathcal{L}",
+        /* -- Quantum mechanics */
         "\\brkt": "\\braket{#1\|#2}",
         "\\Brkt": "\\Braket{#1\|#2}",
         "\\brktop": "\\braket{#1\|#2\|#3}",

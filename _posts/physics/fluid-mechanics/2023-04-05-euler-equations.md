@@ -34,5 +34,5 @@ Let us consider some volume $V_0$ in the fluid.
 The total force acting on this volume is equal to the surface integral of the pressure.
 It can be transformed to a volume integral by the _divergence theorem_:
 
-\\[ -\oint_{\partial V_0}p\d\b{f} = -\int_{V_0} \nabla p \d V \\]
+\\[ -\oint_{\partial V_0}p \dd{\b{f}} = -\int_{V_0} \nabla p \dd{V} \\]
 

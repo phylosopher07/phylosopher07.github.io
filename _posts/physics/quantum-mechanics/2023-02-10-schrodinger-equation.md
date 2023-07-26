@@ -32,29 +32,29 @@ Since we are considering particles with this duality, let's use wavefunction in 
 ## Induction of time-dependent Schrödinger equation
 
 Then,
-* $ \nabla\psi = i\b{k}\psi = \dfrac{i}{\hbar}\b{p}\psi $
-* $ \b{p}\psi=-i\hbar\nabla\psi $
+* $ \grad\psi = i\b{k}\psi = \dfrac{i}{\hbar}\b{p}\psi $
+* $ \b{p}\psi=-i\hbar\grad\psi $
 
 Thus, the **momentum operator** in the position space is as follows. 
 
-\\[ \hat{\b{p}}=-i\hbar\nabla \\]
+\\[ \hat{\b{p}}=-i\hbar\grad \\]
 
 We can write a **Hamiltonian operator** using this result:
-* $ \hat{\mathcal{H}} = \hat{T}+\hat{V} = \dfrac{\hat{p}^2}{2m}+\hat{V} = -\dfrac{\hbar^2}{2m}\nabla^2+\hat{V} $
+* $ \hat{H} = \hat{T}+\hat{V} = \dfrac{\hat{p}^2}{2m}+\hat{V} = -\dfrac{\hbar^2}{2m}\laplacian+\hat{V} $
 
 Summarizing,
 
-\\[ \hat{\mathcal{H}} = -\dfrac{\hbar^2}{2m}\nabla^2+\hat{V} \\]
+\\[ \hat{H} = -\dfrac{\hbar^2}{2m}\laplacian + \hat{V} \\]
 
 Also,
-* $ \dfrac{\partial\psi}{\partial t} = -i\omega\psi = -\dfrac{i}{\hbar}E\psi $
-* $ E\psi = i\hbar\dfrac{\partial}{\partial t}\psi $
+* $ \dps \pdv{\psi}{t} = -i\omega\psi = -\frac{i}{\hbar}E\psi $
+* $ \dps E\psi = i\hbar\pdv{ }{t}\psi $
 
 Since the eigenvalue of a Hamiltonian operator is energy,
 we finally get **`time-dependent Schrödinger equation`**.
 Let's rewrite the wavefunction $\psi$ to the state vector $\ket{\Psi(t)}$.
 
-\\[\boxed{  i\hbar\frac{\partial}{\partial t}\ket{\Psi(t)} = \hat{\mathcal{H}}\ket{\Psi(t)}  }\\]
+\\[\boxed{  i\hbar\pdv{ }{t}\ket{\Psi(t)} = \hat{H}\ket{\Psi(t)}  }\\]
 
 ## Induction of time-independent Schrödinger equation
 
@@ -63,17 +63,17 @@ assuming that the Hamiltonian is _independent_ for time.
 * $ \ket{\Psi(t)}=T(t)\ket{\psi} $
 
 Then we get **`time-independent Schrödinger equation`**.
-\\[\boxed{  \hat{\mathcal{H}}\ket{\psi}=E\ket{\psi}  }\\]
+\\[\boxed{  \hat{H}\ket{\psi}=E\ket{\psi}  }\\]
 
 The solutions (_eigenfunctions of the Hamiltonian_) obtained through the separation of variables are not all solutions of the Schrödinger equation,
 but all solutions can be expressed by the basis containing those eigenfunctions.
 
 \\[ \begin{align\*}
-i\hbar\frac{\partial}{\partial t}\ket{\Psi(t)} &= i\hbar\frac{\partial T}{\partial t}\ket{\psi} \nl
-= \hat{\mathcal{H}}\ket{\Psi(t)} &= ET\ket{\psi}
+i\hbar\pdv{ }{t}\ket{\Psi(t)} &= i\hbar\pdv{T}{t}\ket{\psi} \nl
+= \hat{H}\ket{\Psi(t)} &= ET\ket{\psi}
 \end{align\*} \\]
 
-\\[ \Rightarrow  i\hbar\frac{\partial T}{\partial t}=ET \\]
+\\[ \Rightarrow  i\hbar\pdv{T}{t}=ET \\]
 
 \\[ T(t) = e^{-i\frac{E}{\hbar}t} \\]
 $T$ is called a **`time-evolution operator`** or a **`propagator`**.

@@ -30,34 +30,34 @@ The Hamiltonian of a _hydrogen-like atom_ with the atomic number $Z$ is the radi
 between $Z$ positive protons and a negative electron. Using the time-independent Schrödinger equation, ignoring all spin-coupling interactions, and using the reduced mass
 $ \mu=\dfrac{m_em_N}{m_e+m_N} $, the equation is written as:
 
-\\[ \left( -\frac{\hbar^2}{2\mu}\nabla^2-\frac{Ze^2}{4\pi\vpmt r} \right)\psi = E\psi\\]
+\\[ \left( -\frac{\hbar^2}{2\mu}\laplacian-\frac{Ze^2}{4\pi\vpmt r} \right)\psi = E\psi\\]
 
 Expanding the Laplacian in spherical coordinates:
 
-\\[ \left[ -\frac{\hbar^2}{2\mu}\left\\{ \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r}\right) +
-\frac{1}{r^2\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right) +
-\frac{1}{r^2\sin^2\theta}\frac{\partial^2}{\partial\varphi^2} \right\\} - \frac{Ze^2}{4\pi\vpmt r} \right] \psi = E\psi  \\]
+\\[ \left[ -\frac{\hbar^2}{2\mu}\left\\{ \frac{1}{r^2}\pdv{ }{r}\left(r^2\pdv{ }{r}\right) +
+\frac{1}{r^2\sin\theta}\pdv{ }{\theta}\left(\sin\theta\pdv{ }{\theta}\right) +
+\frac{1}{r^2\sin^2\theta}\pdvn{2}{ }{\varphi} \right\\} - \frac{Ze^2}{4\pi\vpmt r} \right] \psi = E\psi  \\]
 
 This is a separable, partial differential equation that can be solved in terms of special functions. When the wavefunction is separated as a product of functions
 $R(r)$, $\Theta(\theta)$ and $\Phi(\varphi)$ three independent differential functions appears:
 
 \\[ \psi(r,\theta,\varphi) = CR(r)Y(\theta,\varphi)=CR(r)\Theta(\theta)\Phi(\varphi) \\]
 
-\\[ \frac{1}{R}\frac{d}{dr}\left(r^2\frac{dR}{dr}\right) - \frac{2\mu r^2}{\hbar^2}\left(-\frac{Ze^2}{4\pi\vpmt r}-E\right) = 
--\frac{1}{Y}\left[ \frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial Y}{\partial \theta}\right) + 
-\frac{1}{\sin^2\theta}\frac{\partial^2 Y}{\partial \varphi^2} \right]  \\]
+\\[ \frac{1}{R}\odv{ }{r}\left(r^2\odv{R}{r}\right) - \frac{2\mu r^2}{\hbar^2}\left(-\frac{Ze^2}{4\pi\vpmt r}-E\right) = 
+-\frac{1}{Y}\left[ \frac{1}{\sin\theta}\pdv{ }{\theta}\left(\sin\theta\pdv{Y}{\theta}\right) + 
+\frac{1}{\sin^2\theta}\pdvn{2}{Y}{\varphi} \right]  \\]
 
 Since the left and right sides consist of only variables respectively, the whole term is constant. Let's put it $l(l+1)$.
 
-\\[ \frac{1}{\Theta}\left[\sin\theta\frac{d}{d\theta}\left(\sin\theta\frac{d\Theta}{d\theta}\right)\right] + l(l+1)\sin^2\theta = 
--\frac{1}{\Phi}\frac{d^2\Phi}{d\varphi^2} \\]
+\\[ \frac{1}{\Theta}\left[\sin\theta\odv{ }{\theta}\left(\sin\theta\odv{\Theta}{\theta}\right)\right] + l(l+1)\sin^2\theta = 
+-\frac{1}{\Phi}\odvn{2}{\Phi}{\varphi} \\]
 
 With the same logic, let's put the whole term $m_l^2$. Remark that $l$ and $m_l$ are complex numbers. We finally get three differential equations:
 
 \\[ \therefore \begin{cases}
-\dps \frac{1}{R}\frac{d}{dr}\left(r^2\frac{dR}{dr}\right) - \frac{2\mu r^2}{\hbar^2}\left(-\frac{Ze^2}{4\pi\vpmt r}-E\right) = l(l+1) \nl\nl
-\dps \frac{1}{\Theta}\left[\sin\theta\frac{d}{d\theta}\left(\sin\theta\frac{d\Theta}{d\theta}\right)\right] + l(l+1)\sin^2\theta = m_l^2 \nl\nl
-\dps \frac{1}{\Phi}\frac{d^2\Phi}{d\varphi^2} = -m_l^2
+\dps \frac{1}{R}\odv{ }{r}\left(r^2\odv{R}{r}\right) - \frac{2\mu r^2}{\hbar^2}\left(-\frac{Ze^2}{4\pi\vpmt r}-E\right) = l(l+1) \nl\nl
+\dps \frac{1}{\Theta}\left[\sin\theta\odv{ }{\theta}\left(\sin\theta\odv{\Theta}{\theta}\right)\right] + l(l+1)\sin^2\theta = m_l^2 \nl\nl
+\dps \frac{1}{\Phi}\odvn{2}{\Phi}{\varphi} = -m_l^2
 \end{cases} \\]
 
 We know the solution for $\Phi$ and $\Theta$, where $P_l^{m_l}$ is the **associated Legendre function**.
@@ -80,11 +80,11 @@ Therefore, $Y(\theta,\varphi)$ becomes the **spherical harmonic function** by se
 
 Let's then take a look at $R$.
 
-\\[ \frac{d}{dr}\left(r^2\frac{dR}{dr}\right) - \frac{2\mu r^2}{\hbar^2}\left( -\frac{Ze^2}{4\pi\vpmt r} -E\right)R = l(l+1)R  \\]
+\\[ \odv{ }{r}\left(r^2\odv{R}{r}\right) - \frac{2\mu r^2}{\hbar^2}\left( -\frac{Ze^2}{4\pi\vpmt r} -E\right)R = l(l+1)R  \\]
 
 Let's define a new function $u(r) \coloneqq rR(r)$:
 
-\\[ -\frac{\hbar^2}{2\mu}\frac{d^2u}{dr^2} + \left[ -\frac{Ze^2}{4\pi\vpmt r}+\frac{\hbar^2}{2\mu}\frac{l(l+1)}{r^2} \right]u = Eu \\]
+\\[ -\frac{\hbar^2}{2\mu}\odvn{2}{u}{r} + \left[ -\frac{Ze^2}{4\pi\vpmt r}+\frac{\hbar^2}{2\mu}\frac{l(l+1)}{r^2} \right]u = Eu \\]
 
 We can simplify the equation by _nondimensionalization_:
 
@@ -94,7 +94,7 @@ We can simplify the equation by _nondimensionalization_:
 \rho & \coloneqq \kappa r
 \end{align\*} \\]
 
-\\[ \Rightarrow \frac{d^2u}{d\rho^2} = \left[ 1-\frac{\lambda}{\rho}+\frac{l(l+1)}{\rho^2} \right]u \\]
+\\[ \Rightarrow \odvn{2}{u}{\rho} = \left[ 1-\frac{\lambda}{\rho}+\frac{l(l+1)}{\rho^2} \right]u \\]
 
 It is hard to solve this differential equation directly; let's try an _asymptotic analysis_.
 We should find converging solutions.
@@ -110,7 +110,7 @@ Therefore, it is possible to reset $u$ using a new function $L(\rho)$.
 
 We then get a differential equation of $L$.
 
-\\[ \rho\frac{d^2L}{d\rho^2} + 2(l+1-\rho)\frac{dL}{d\rho} + \left\\{\lambda-2(l+1)\right\\}L = 0 \\]
+\\[ \rho\odvn{2}{L}{\rho} + 2(l+1-\rho)\odv{L}{\rho} + \left\\{\lambda-2(l+1)\right\\}L = 0 \\]
 
 Let's use the _Frobenius method_ to solve this equation.
 
@@ -139,7 +139,7 @@ This implies the condition for $\lambda$.
 
 Let's get back to the differential equation. By changing the variable as $x \coloneqq 2\rho$:
 
-\\[ x\frac{d^2L}{dx^2} + (2l+2-x)\frac{dL}{dx} + (n-l-1)L = 0 \\]
+\\[ x\odvn{2}{L}{x} + (2l+2-x)\odv{L}{x} + (n-l-1)L = 0 \\]
 
 This is the equation for **generalized Laguerre function**.
 
@@ -165,7 +165,7 @@ It's almost done.
 
 We should normalize the wavefunction. By some complex calculations, we get:
 
-\\[ \oint_{\Omega}\int_0^\infty \abs{\psi}^2 r^2\, drd\Omega = 1 \\]
+\\[ \oint_{\Omega}\int_0^\infty \abs{\psi}^2 r^2 \,\d r\d\Omega = 1 \\]
 
 \\[ \begin{align\*}
 \therefore \psi_{nlm_l}(r,\theta,\varphi) &= \sqrt{\left(\frac{2Z}{na_0}\right)^3 \frac{(n-l-1)!}{2n \cdot (n+l)!}}

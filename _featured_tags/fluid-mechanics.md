@@ -10,5 +10,5 @@ description: >
 ---
 
 \\[ \huge \fcolorbox{transparent}{transparent}{ $$ \dps
-\frac{\partial}{\partial t}(\rho\b{u})+\nabla\cdot(\rho\b{u}\otimes\b{u}+p\rm{I})=\nabla\cdot\tau+\rho\b{g}
+\pdv{ }{t}(\rho\b{u})+\div(\rho\b{u}\otimes\b{u}+p\rm{I})=\div\tau+\rho\b{g}
 $$ }\\]

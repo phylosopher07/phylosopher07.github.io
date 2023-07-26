@@ -33,4 +33,4 @@ Similarly, we can describe the wavefunction in momentum space, too.
 Let's discuss eigenstate and eigenvalue of the momentum operator at 1-dimensional position space.
 We cet get such differential equation:
 
-\\[ p\brkt{x}{p} = -i\hbar\pdv{}{x} \\]
+\\[ p\brkt{x}{p} = -i\hbar\pdv{ }{x} \\]

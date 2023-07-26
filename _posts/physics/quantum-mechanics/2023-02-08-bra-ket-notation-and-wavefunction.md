@@ -87,11 +87,11 @@ The $\ket{\b{r}}$ are the basis vectors, which are orthonormal so their inner pr
 Thus, starting from any ket $\ket{\Psi}$ in this Hilbert space,
 one may define a complex scalar function $\Psi(\b{r})$, known as a **`wavefunction`** :
 * $ \Psi(\b{r}) \coloneqq \brkt{\b{r}}{\Psi} $
-* $ \dps \ket{\Psi} = \int d^3\b{r}\; \Psi(\b{r})\ket{\b{r}} $
+* $ \dps \ket{\Psi} = \int \d^3\b{r}\; \Psi(\b{r})\ket{\b{r}} $
 * $ \hat{A}(\b{r})\Psi(\b{r}) = \brktop{\b{r}}{\hat{A}}{\Psi} $
 
 Let's re-write the properties of state vectors with wavefunctions.
-* $ \dps \brkt{\phi}{\psi} = \int \phi(\b{r})^\ast \psi(\b{r}) d^3\b{r} $
-* $ \dps \brkt{\psi}{\psi} = \int \| \psi(\b{r}) \|^2 d^3\b{r} \enspace$ ($1$ if _normalized_)
+* $ \dps \brkt{\phi}{\psi} = \int \phi(\b{r})^\ast \psi(\b{r}) \,\d^3\b{r} $
+* $ \dps \brkt{\psi}{\psi} = \int \| \psi(\b{r}) \|^2 \,\d^3\b{r} \enspace$ ($1$ if _normalized_)
 
 We'll talk about _momentum space_ later.

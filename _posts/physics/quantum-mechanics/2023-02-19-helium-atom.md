@@ -24,7 +24,7 @@ The Hamiltonian of the system is; ignoring the motion of the nucleus (Born–Opp
 
 $ \global\def\Zef{Z\rq} $
 
-\\[ H = -\frac{\hbar^2}{2m_e}(\nabla_1^2+\nabla_2^2) -\frac{e^2}{4\pi\vpmt}\left[ \frac{2}{r_1}+\frac{2}{r_2}-\frac{1}{\abs{\b{r}_1-\b{r}_2}} \right] \\]
+\\[ H = -\frac{\hbar^2}{2m_e}(\laplacian_1+\laplacian_2) -\frac{e^2}{4\pi\vpmt}\left[ \frac{2}{r_1}+\frac{2}{r_2}-\frac{1}{\abs{\b{r}_1-\b{r}_2}} \right] \\]
 
 Let's set the trial wavefunction as the product of the ground state wavefunction of the hydrogenic atom system,
 ignoring the interaction of electrons, which are regarded as identical. Here we add a parameter $\Zef$ for the variation.
@@ -37,7 +37,7 @@ ignoring the interaction of electrons, which are regarded as identical. Here we 
 Then, let's change the Hamiltonian to the following form for simple calculations.
 
 \\[ H =
-\left( -\frac{\hbar^2}{2m_e}\nabla_1^2-\frac{\Zef e^2}{4\pi\vpmt r_1} \right) + \left( -\frac{\hbar^2}{2m_e}\nabla_2^2-\frac{\Zef e^2}{4\pi\vpmt r_2} \right)
+\left( -\frac{\hbar^2}{2m_e}\laplacian_1-\frac{\Zef e^2}{4\pi\vpmt r_1} \right) + \left( -\frac{\hbar^2}{2m_e}\laplacian_2-\frac{\Zef e^2}{4\pi\vpmt r_2} \right)
 +\frac{e^2}{4\pi\vpmt}\left[ \frac{\Zef-2}{r_1}+\frac{\Zef-2}{r_2}+\frac{1}{\abs{\b{r}_1-\b{r}_2}} \right] \\]
 
 We see that the terms inside parentheses are the Hamiltonian of hydrogen-like atoms of atomic number $\Zef$, respectively.
@@ -66,7 +66,7 @@ By the orthogonality of the spherical harmonic functions, we get:
 \\[ \begin{align\*}
 I &= \int_0^\infty\int_0^\infty \exp\left[ -\frac{2\Zef}{a_0}(r_1+r_2) \right] \sum_{l=0}^\infty\sum_{m=-l}^l
 \frac{4\pi}{2l+1}\frac{r_<^l}{r_>^{l+1}} r_1^2r_2^2 \,\d r_1\d r_2
-\oint_{\Omega_1}\oint_{\Omega_2} Y_l^{m\ast}(\theta_1,\varphi_1) Y_l^m(\theta_2,\varphi_2) \d\Omega_2 \d\Omega_1 \nl
+\oint_{\Omega_1}\oint_{\Omega_2} Y_l^{m\ast}(\theta_1,\varphi_1) Y_l^m(\theta_2,\varphi_2) \,\d\Omega_2\,\d\Omega_1 \nl
 &= \int_0^\infty\int_0^\infty \exp\left[ -\frac{2\Zef}{a_0}(r_1+r_2) \right] \sum_{l=0}^\infty\sum_{m=-l}^l
 \frac{4\pi}{2l+1}\frac{r_<^l}{r_>^{l+1}} r_1^2r_2^2 \,\d r_1 \d r_2 \cdot
 4\pi \oint_{\Omega_1} Y_l^{m\ast}(\theta_1,\varphi_1)Y_0^0(\theta_1,\varphi_1)\d\Omega_1 \oint_{\Omega_2} Y_0^{0\ast}(\theta_2,\varphi_2)Y_l^m(\theta_2,\varphi_2)\d\Omega_2 \nl

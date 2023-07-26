@@ -22,41 +22,41 @@ from **「Modern Quantum Mechanics」**: _Sakurai, J. J._
 
 **`Generalized Ehrenfest's theorem`**:
 
-\\[\boxed{  \frac{d}{dt}\expct{\hat{Q}} = \frac{i}{\hbar}\expct{\comm{ \hat{\mathcal{H}} }{ \hat{Q} }} +
-\Expct{\frac{\partial \hat{Q}}{\partial t}}  }\\]
+\\[\boxed{  \odv{ }{t}\expct{\hat{Q}} = \frac{i}{\hbar}\expct{\comm{ \hat{H} }{ \hat{Q} }} +
+\Expct{\pdv{\hat{Q}}{t}}  }\\]
 
 The equation is the same as the _Heisenberg image_, but let's derive it from the _Schrödinger image_.
 
 \\[ \begin{align\*}
-\frac{d}{dt}\expct{\hat{Q}} &= \frac{d}{dt}\brktop{\psi}{\hat{Q}}{\psi} \nl
-&= \Brktop{\frac{\partial\psi}{\partial t}}{\hat{Q}}{\psi} + \Brktop{\psi}{\frac{\partial \hat{Q}}{\partial t}}{\psi} + \Brktop{\psi}{\hat{Q}}{\frac{\partial\psi}{\partial t}}
+\odv{ }{t}\expct{\hat{Q}} &= \odv{ }{t}\brktop{\psi}{\hat{Q}}{\psi} \nl
+&= \Brktop{\pdv{\psi}{t}}{\hat{Q}}{\psi} + \Brktop{\psi}{\pdv{\hat{Q}}{t}}{\psi} + \Brktop{\psi}{\hat{Q}}{\pdv{\psi}{t}}
 \end{align\*} \\]
 
-Using the Schrödinger equation $i\hbar\dfrac{\partial}{\partial t}\ket{\psi}=\hat{\mathcal{H}}\ket{\psi}$,
+Using the Schrödinger equation $\dps i\hbar\pdv{ }{t}\ket{\psi}=\hat{H}\ket{\psi}$,
 
-\\[ \frac{d}{dt}\expct{\hat{Q}} = -\frac{1}{i\hbar}\brkt{ \hat{\mathcal{H}}\psi }{ \hat{Q}\psi } + \Expct{\frac{\partial \hat{Q}}{\partial t}} + \frac{1}{i\hbar}\brkt{ \psi }{ \hat{Q}\hat{\mathcal{H}}\psi } \\]
+\\[ \odv{ }{t}\expct{\hat{Q}} = -\frac{1}{i\hbar}\brkt{ \hat{H}\psi }{ \hat{Q}\psi } + \Expct{\pdv{\hat{Q}}{t}} + \frac{1}{i\hbar}\brkt{ \psi }{ \hat{Q}\hat{H}\psi } \\]
 
-\\[ \therefore \frac{d}{dt}\expct{\hat{Q}} = \frac{i}{\hbar}\expct{\comm{ \hat{\mathcal{H}} }{ \hat{Q} }} +
-\Expct{\frac{\partial \hat{Q}}{\partial t}} \\]
+\\[ \therefore \odv{ }{t}\expct{\hat{Q}} = \frac{i}{\hbar}\expct{\comm{ \hat{H} }{ \hat{Q} }} +
+\Expct{\pdv{\hat{Q}}{t}} \\]
 
 ### Examples
 
-* $ m\dfrac{d\expct{ \b{r} }}{dt} = \expct{\b{p}} $
+* $\dps m\odv{\expct{\b{r}}}{t} = \expct{\b{p}} $
 
-* $ \dfrac{d\expct{ \b{p} }}{dt} = -\Expct{ \nabla V(\b{r}) } $
+* $\dps \odv{\expct{\b{p}}}{t} = -\Expct{ \nabla V(\b{r}) } $
 
 
 ## Time-energy uncertainty relation
 
 If $\hat{Q}$ is not explicit for $t$, by the Ehrenfest's theorem; 
 
-* $ \sigma_\mathcal{H}\sigma_Q \ge \dfrac{1}{2}\abs{\expct{ \comm{\hat{\mathcal{H}}}{\hat{Q}} }} =
-\dfrac{\hbar}{2}\abs{ \dfrac{d\expct{\hat{Q}}}{dt} } $
+* $\dps \sigma_H\sigma_Q \ge \frac{1}{2}\abs{\expct{ \comm{\hat{H}}{\hat{Q}} }} =
+\frac{\hbar}{2}\abs{ \odv{\expct{\hat{Q}}}{t} } $
 
-Here we define $\Delta E \coloneqq \sigma_\mathcal{H}$ and $\Delta t \coloneqq \dfrac{\sigma_Q}{\abs{ d\expct{\hat{Q}} / dt }} $.
+Here we define $\Delta E \coloneqq \sigma_H$ and $\Delta t \coloneqq \dfrac{\sigma_Q}{\abs{ \odvi{\expct{\hat{Q}}}{t} }} $.
 
 Then we get, time **time-energy uncertainty relation**: 
-* $ \Delta E\Delta t \ge \dfrac{\hbar}{2} $
+* $\dps \Delta E\Delta t \ge \frac{\hbar}{2} $
 
 The _'uncertainty' in time_ is expressed as the average time taken, starting in state $\ket{\psi}$,
 for the expectation of some arbitrary observable $\hat{Q}$ to change by its standard deviation.

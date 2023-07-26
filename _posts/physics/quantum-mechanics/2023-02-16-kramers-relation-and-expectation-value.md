@@ -33,7 +33,7 @@ that have higher negative powers of $r$. Having this relation handy makes a lot 
 
 Let's remind how we solved the Schrödinger equation for hydrogen-like atoms; the radial differential equation is typically written as:
 
-\\[ -\frac{\hbar^2}{2\mu}\frac{\partial^2u}{\partial r^2} + \left[ \frac{\hbar^2l(l+1)}{2\mu r^2}-\frac{Ze^2}{4\pi\vpmt r} \right]u = Eu \\]
+\\[ -\frac{\hbar^2}{2\mu}\pdvn{2}{u}{r} + \left[ \frac{\hbar^2l(l+1)}{2\mu r^2}-\frac{Ze^2}{4\pi\vpmt r} \right]u = Eu \\]
 
 where $u=rR(r)$. Since
 
@@ -50,35 +50,35 @@ If we multiply both sides by $r^s$, then we’ll get exactly the powers of $r$ t
 Now what we need to do is multiply both sides by $u^\ast=u$ and integrate.
 We'll get the expected value on RHS since variables are separated, and each is normalized.
 
-\\[ \int_0^\infty ur^su\rq\rq dr = l(l+1)\expct{r^{s-2}}-\frac{2Z}{a_0}\expct{r^{s-1}}+\frac{Z^2}{n^2a_0^2}\expct{r^s}     \label{2}\tag{2}\\]
+\\[ \int_0^\infty ur^su\rq\rq \d r = l(l+1)\expct{r^{s-2}}-\frac{2Z}{a_0}\expct{r^{s-1}}+\frac{Z^2}{n^2a_0^2}\expct{r^s}     \label{2}\tag{2}\\]
 
 Let's integrate $\ref{2}$ in parts.
 
 \\[ \begin{align\*}
-\int_0^\infty ur^su\rq\rq dr
-&= \bigg[ ur^s u\rq \bigg]_0^\infty -\int_0^\infty \left( u\rq r^s+sur^{s-1} \right)u\rq dr \nl
-&= \underbrace{ -\int_0^\infty u\rq r^s u\rq dr } _{\dps I_1} + \underbrace{ -s\int_0^\infty ur^{s-1}u\rq dr } _{\dps I_2}
+\int_0^\infty ur^su\rq\rq \d r
+&= \bigg[ ur^s u\rq \bigg]_0^\infty -\int_0^\infty \left( u\rq r^s+sur^{s-1} \right)u\rq \d r \nl
+&= \underbrace{ -\int_0^\infty u\rq r^s u\rq \d r } _{\dps I_1} + \underbrace{ -s\int_0^\infty ur^{s-1}u\rq \d r } _{\dps I_2}
 \end{align\*} \\]
 
 Let's calculate $I_1$ integrating by parts.
 
 \\[ \begin{align\*}
-I_1 &= -\left[ \frac{r^{s+1}}{s+1} u\rq^2 \right]_0^\infty + \frac{2}{s+1}\int_0^\infty r^{s+1}u\rq u\rq\rq dr \nl
-&= \frac{2}{s+1}\int_0^\infty r^{s+1}u\rq u\rq\rq dr
+I_1 &= -\left[ \frac{r^{s+1}}{s+1} u\rq^2 \right]_0^\infty + \frac{2}{s+1}\int_0^\infty r^{s+1}u\rq u\rq\rq \d r \nl
+&= \frac{2}{s+1}\int_0^\infty r^{s+1}u\rq u\rq\rq \d r
 \end{align\*} \\]
 
 Here, we substitute $\ref{1}$ to $u\rq\rq$.
 
-\\[ I_1 = \frac{2}{s+1}\int_0^\infty u\rq\left[ l(l+1)r^{s-1}-\frac{2Z}{a_0}r^s-\frac{Z^2}{n^2a_0^2}r^{s+1} \right]u dr \\]
+\\[ I_1 = \frac{2}{s+1}\int_0^\infty u\rq\left[ l(l+1)r^{s-1}-\frac{2Z}{a_0}r^s-\frac{Z^2}{n^2a_0^2}r^{s+1} \right]u \d r \\]
 
 Meanwhile,
 
 \\[ \begin{align\*}
-\int_0^\infty r^s uu\rq dr &= \bigg[r^su^2\bigg]_0^\infty -\int_0^\infty\left( sr^{s-1}u^2 + r^s uu\rq \right)dr \nl
-&= -s\expct{r^{s-1}} -\int_0^\infty r^s uu\rq dr
+\int_0^\infty r^s uu\rq \d r &= \bigg[r^su^2\bigg]_0^\infty -\int_0^\infty\left( sr^{s-1}u^2 + r^s uu\rq \right)\d r \nl
+&= -s\expct{r^{s-1}} -\int_0^\infty r^s uu\rq \d r
 \end{align\*} \\]
 
-\\[ \therefore \int_0^\infty r^suu\rq dr = -\frac{s}{2}\expct{r^{s-1}}  \label{3}\tag{3} \\]
+\\[ \therefore \int_0^\infty r^suu\rq \d r = -\frac{s}{2}\expct{r^{s-1}}  \label{3}\tag{3} \\]
 
 According to $\ref{3}$, we get $I_1$:
 
@@ -101,11 +101,11 @@ By using **Hellmann–Feynman theorem** and **Kramers' relation**, we can induce
 
 Let's use the fundamental charge $e$ as a parameter for the Hellman-Feynman theorem.
 
-\\[ \hat{H}(e) = -\frac{\hbar^2}{2\mu}\nabla^2 - \frac{Ze^2}{4\pi\vpmt r} \\]
+\\[ \hat{H}(e) = -\frac{\hbar^2}{2\mu}\laplacian - \frac{Ze^2}{4\pi\vpmt r} \\]
   
 Then,
   
-\\[ \frac{\partial\hat{H}}{\partial e} = -\frac{Ze}{2\pi\vpmt r} \\]
+\\[ \pdv{\hat{H}}{e} = -\frac{Ze}{2\pi\vpmt r} \\]
   
 The energy of the electron dependent on $e$ is:
   
@@ -113,13 +113,13 @@ The energy of the electron dependent on $e$ is:
   
 Then,
   
-\\[ \frac{\partial E_n}{\partial e} = -\frac{1}{2\pi\vpmt}\frac{Z^2}{n^2a_0} \\]
+\\[ \pdv{E_n}{e} = -\frac{1}{2\pi\vpmt}\frac{Z^2}{n^2a_0} \\]
   
 By the Hellmann-Feynman theorem, we get:
   
 \\[ \begin{align\*}
-\frac{\partial E_n}{\partial e} 
-&= \Expct{\frac{\partial\hat{H}}{\partial e}} \nl
+\pdv{E_n}{e} 
+&= \Expct{\pdv{\hat{H}}{e}} \nl
 &= -\frac{Ze}{2\pi\vpmt}\Expct{\frac{1}{r}}
 \end{align\*} \\]
 
@@ -137,11 +137,11 @@ It can be also derived from substituting $s=0$ to the Kramers' relation.
 
 Let's use the angular momentum quantum number $l$ as a parameter for the Hellman-Feynman theorem.
 
-\\[ \hat{H}(l) = \frac{\hbar^2}{2\mu r}\frac{\partial^2}{\partial r^2}r + \frac{\hbar^2l(l+1)}{2\mu r^2} - \frac{Ze^2}{4\pi\vpmt r} \\]
+\\[ \hat{H}(l) = \frac{\hbar^2}{2\mu r}\pdvn{2}{ }{r}r + \frac{\hbar^2l(l+1)}{2\mu r^2} - \frac{Ze^2}{4\pi\vpmt r} \\]
 
 Then,
 
-\\[ \frac{\partial\hat{H}}{\partial l} = \frac{\hbar^2(2l+1)}{2\mu r^2} \\]
+\\[ \pdv{\hat{H}}{l} = \frac{\hbar^2(2l+1)}{2\mu r^2} \\]
 
 We showed that the principle quantum number $n$ and the angular momentum quantum number $l$ 
 has the following relationship finding the eigenfunction of hydrogen-like atoms:
@@ -154,13 +154,13 @@ The energy of the electron dependent on $l$ is:
 
 Then,
 
-\\[ \frac{\partial E_n}{\partial l} = \frac{\hbar^2}{\mu} \frac{Z^2}{(l+N+1)^3a_0^2} \\]
+\\[ \pdv{E_n}{l} = \frac{\hbar^2}{\mu} \frac{Z^2}{(l+N+1)^3a_0^2} \\]
 
 By the Hellmann-Feynman theorem, we get:
 
 \\[ \begin{align\*}
-\frac{\partial E_n}{\partial l}
-&= \Expct{\frac{\partial\hat{H}}{\partial l}} \nl
+\pdv{E_n}{l}
+&= \Expct{\pdv{\hat{H}}{l}} \nl
 &= \frac{\hbar^2(2l+1)}{2\mu} \Expct{\frac{1}{r^2}}
 \end{align\*} \\]
 

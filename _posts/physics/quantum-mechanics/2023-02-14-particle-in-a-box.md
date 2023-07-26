@@ -44,7 +44,7 @@ while the interior of the box has a constant, zero potential.
 
 Using the time-independent Schrödinger equation,
 
-\\[ -\frac{\hbar^2}{2m}\frac{\partial^2\psi}{\partial x^2}+V\psi=E\psi \\]
+\\[ -\frac{\hbar^2}{2m}\pdvn{2}{\psi}{x}+V\psi=E\psi \\]
 
 The two potential barriers result in two boundary conditions:
 
@@ -53,7 +53,7 @@ The two potential barriers result in two boundary conditions:
 Since the particle can only exist at $0<x<L$, where the potential $V(x)$ is $0$,
 the equation becomes simpler:
 
-\\[ -\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2}=E\psi  \\]
+\\[ -\frac{\hbar^2}{2m}\odvn{2}{\psi}{x}=E\psi  \\]
 
 The solution to this equation is:
 
@@ -169,17 +169,17 @@ The potential energy is given as
 
 Using the time-independent Schrödinger equation,
 
-\\[ -\frac{\hbar^2}{2m}\nabla^2\psi=E\psi  \\]
+\\[ -\frac{\hbar^2}{2m}\laplacian\psi=E\psi  \\]
 
 By the separation of variables, we get differential equations for $x$ and $y$, assuming that $E=E_x+E_y$.
 
 \\[ \psi(x,y)=X(x)Y(y) \\]
 
-\\[ -\frac{\hbar^2}{2m}\left(\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}\right)\psi = E\psi \\]
+\\[ -\frac{\hbar^2}{2m}\left(\pdvn{2}{ }{x}+\pdvn{2}{ }{y}\right)\psi = E\psi \\]
 
 \\[ \Rightarrow \begin{cases}
--\dfrac{\hbar^2}{2m}\dfrac{d^2 X}{dx^2} = E_x X \nl \nl
--\dfrac{\hbar^2}{2m}\dfrac{d^2 Y}{dy^2}=  E_y Y
+\dps -\frac{\hbar^2}{2m}\odvn{2}{X}{x} = E_x X \nl \nl
+\dps -\frac{\hbar^2}{2m}\odvn{2}{Y}{y}=  E_y Y
 \end{cases} \\]
 
 This differential equation is identical to the one-dimensional box, so we get:
@@ -222,9 +222,9 @@ The potential energy of a particle confined in a circular infinite well is given
 Using the time-independent Schrödinger equation,
 
 \\[ \begin{align\*}
--\frac{\hbar^2}{2m}\nabla^2\psi &=
--\frac{\hbar^2}{2m}\left[ \frac{1}{\rho}\frac{\partial}{\partial\rho}\left(\rho\frac{\partial}{\partial\rho}\right) +
-\frac{1}{\rho^2}\frac{\partial^2}{\partial\phi^2} \right] \psi \nl
+-\frac{\hbar^2}{2m}\laplacian\psi &=
+-\frac{\hbar^2}{2m}\left[ \frac{1}{\rho}\pdv{ }{\rho}\left(\rho\pdv{ }{\rho}\right) +
+\frac{1}{\rho^2}\pdvn{2}{ }{\phi} \right] \psi \nl
 &= E\psi
 \end{align\*} \\]
 
@@ -232,8 +232,8 @@ By the separation of variables, we get differential equations for $\rho$ and $\p
 
 \\[ \psi(\rho,\phi)=C\Rho(\rho)\Phi(\phi) \\]
 
-\\[ \frac{\rho}{\Rho}\frac{d}{d\rho}\left(\rho\frac{d\Rho}{d\rho}\right) + 
-\frac{1}{\Phi}\frac{d^2\Phi}{d\phi^2} + k^2\rho^2 = 0  \\]
+\\[ \frac{\rho}{\Rho}\odv{ }{\rho}\left(\rho\odv{\Rho}{\rho}\right) + 
+\frac{1}{\Phi}\odvn{2}{\Phi}{\phi} + k^2\rho^2 = 0  \\]
 
 Let's assume that:
 
@@ -247,7 +247,7 @@ Since it has to satisfy the spherical symmetry $\Phi(\phi)=\Phi(\phi+2\pi)$, we 
 
 The differential equation of $\rho$ is:
 
-\\[ \rho\frac{d}{d\rho}\left(\rho\frac{d\Rho}{d\rho}\right) + (k^2\rho^2-m^2)\Rho = 0 \\]
+\\[ \rho\odv{ }{\rho}\left(\rho\odv{\Rho}{\rho}\right) + (k^2\rho^2-m^2)\Rho = 0 \\]
 
 The solutions of this differential equation are the _Bessel function_ $J_m(k\rho)$ and the _Neumann function_ $Y_m(k\rho)$.
 However, Neumman functions cannot be the solution to this problem since $\dps \lim_{x\to0}Y_m(x)=-\infty$.
@@ -270,8 +270,8 @@ Therefore, we can determine the energy and the wavefunction.
 Let's normalize it. By the orthogonality of the Bessel function,
 
 \\[ \begin{align\*}
-\int_0^{2\pi} \int_0^R \abs{\psi_{mn}}^2 \rho \, d\rho d\phi
-&= \abs{C_{mn}}^2 \int_0^{2\pi}d\phi \int_0^R \rho J_m\left(\frac{j_{mn}\rho}{R}\right)^2 d\rho \nl
+\int_0^{2\pi} \int_0^R \abs{\psi_{mn}}^2 \rho \,\d\rho \,\d\phi
+&= \abs{C_{mn}}^2 \int_0^{2\pi}\d\phi \int_0^R \rho J_m\left(\frac{j_{mn}\rho}{R}\right)^2 \d\rho \nl
 &= \pi\abs{C_{mn}}^2 J_m\rq(j_{mn})^2 \nl
 &= 1
 \end{align\*} \\]

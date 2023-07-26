@@ -87,8 +87,8 @@ Considering only the first-term for $\bs{\beta}$,
 
 \\[ \begin{align\*}
 \b{B} &\approx -\bs{\beta}\cross\b{E} \nl
-&= -\frac{\b{p}}{m_ec} \cross \left( -\frac{d\Phi}{dr}\hat{\b{r}} \right) \nl
-&= \frac{1}{m_ec}\left( \frac{1}{r} \frac{d\Phi}{dr} \right) \b{L} \nl
+&= -\frac{\b{p}}{m_ec} \cross \left( -\odv{\Phi}{r}\hat{\b{r}} \right) \nl
+&= \frac{1}{m_ec}\left( \frac{1}{r} \odv{\Phi}{r} \right) \b{L} \nl
 &= \frac{1}{m_ec}\left( -\frac{Ze}{4\pi\vpmt r^3} \right) \b{L}
 \end{align\*} \\]
 

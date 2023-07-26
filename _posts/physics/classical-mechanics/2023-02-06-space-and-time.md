@@ -43,12 +43,12 @@ The first two derivatives are frequently encountered in physics.
 ### Velocity
 **Velocity** is the rate of change of the velocity of an object with respect to time.
 
-$ \b{v} = \dfrac{d\b{s}}{dt} $
+$\dps \b{v} = \odv{\b{s}}{t} $
 
 ### Acceleration
 **Acceleration** is the rate of change of the velocity of an object with respect to time.
 
-$ \b{a} = \dfrac{d\b{v}}{dt}  = \dfrac{d^2\b{s}}{dt^2} $
+$\dps \b{a} = \odv{\b{v}}{t}  = \odvn{2}{\b{s}}{t} $
 
 ### Speed
 **Speed** is the magnitude of velocity.
