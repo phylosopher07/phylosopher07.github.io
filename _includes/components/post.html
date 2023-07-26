@@ -76,45 +76,6 @@
     {% include components/message.html text=post.description hide=hide_description alt=alt %}
   </header>
 
-  $
-  % Environments
-  \gdef\nl{ \newline }
-  \gdef\nt{ \nl \ \nl }
-  \gdef\dps{ \displaystyle }
-
-
-  % Mathematics
-  \gdef\b{ \bold }
-  \gdef\d{ \mathrm{d} }
-  \gdef\dsum{ \dps\sum }
-  \gdef\abs#1{ \left| #1 \right| }
-  \gdef\norm#1{ \lVert #1 \rVert }
-  \gdef\card#1{ \abs{#1} }
-  \gdef\span{ \text{span} }
-  \gdef\pdv#1#2{ \frac{\partial #1}{\partial #2} }
-
-  % Physics
-  \gdef\hamd{ \mathcal{H} }
-  \gdef\lagd{ \mathcal{L} }
-  \gdef\brkt#1#2{ \braket{#1|#2} }
-  \gdef\Brkt#1#2{ \Braket{#1|#2} }
-  \gdef\brktop#1#2#3{ \braket{#1|#2|#3} }
-  \gdef\Brktop#1#2#3{ \Braket{#1|#2|#3} }
-  \gdef\expct#1{ \langle #1 \rangle }
-  \gdef\Expct#1{ \left\langle #1 \right\rangle }
-  \gdef\comm#1#2{ [#1,#2] }
-  \gdef\Comm#1#2{ \left[ #1,#2 \right] }
-  \gdef\acomm#1#2{ \{#1,#2\} }
-  \gdef\Acomm#1#2{ \left\{ #1,#2 \right\} }
-
-  % Constants
-  \gdef\vpmt{ \varepsilon_0 }
-  \gdef\RydE{ \mathcal{R}_{\text{y}} }
-
-  % Units
-  \gdef\eV{ \text{eV} }
-  $
-
   {% if no_excerpt %}
     {{ post.content }}
   {% else %}

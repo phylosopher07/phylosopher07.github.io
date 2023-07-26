@@ -23,9 +23,43 @@
         "\\ref": "\\href{###1}{\\text{#1}}",
         "\\label": "\\htmlId{#1}{}",
 
-        /* Fundamentals */
+        /* Environments */
+        "\\nl": "\\newline",
+        "\\nt": "\\nl \\ \\nl",
+        "\\dps": "\\displaystyle",
+        "\\b": "\\bold",
         "\\bs": "\\boldsymbol",
+
+        /* Mathematics */
+        "\\dsum": "\\dps\\sum",
+        "\\d": "\\mathrm{d}",
+        "\\abs": "\\left\| #1 \\right\|",
+        "\\norm": "\\lVert #1 \\rVert",
+        "\\card": "\\abs{#1}",
+        "\\span": "\\text{span}",
         "\\cross": "\\times",
+        "\\pdv#1#2": "\\frac{\\partial #1}{\\partial #2}",
+
+        /* Physics */
+        "\\hamd": "\\mathcal{H}",
+        "\\lagd": "\\mathcal{L}",
+        "\\brkt": "\\braket{#1\|#2}",
+        "\\Brkt": "\\Braket{#1\|#2}",
+        "\\brktop": "\\braket{#1\|#2\|#3}",
+        "\\Brktop": "\\Braket{#1\|#2\|#3}",
+        "\\expct": "\\langle #1 \\rangle",
+        "\\Expct": "\\left\\langle #1 \\right\\rangle",
+        "\\comm": "[#1,#2]",
+        "\\Comm": "\\left[ #1,#2 \\right]",
+        "\\acomm": "\{#1,#2\}",
+        "\\Acomm": "\\left\{ #1,#2 \\right\}",
+
+        /* Constants */
+        "\\vpmt": "\\varepsilon_0",
+        "\\RydE": "\\mathcal{R}_{\\text{y}}",
+
+        /* Units */
+        "\\eV": "\\text{eV}"
       }
     });
   });
