@@ -28,9 +28,9 @@ to produce the ket at some other time $t$:
 ### Properties
 
 1. Unitarity
-  * $ \hat{U}^\dag(t,t_0)\hat{U}(t,t_0)=I $
+  * $ \hat{U}^\dag(t,t_0)\hat{U}(t,t_0) = \mathbb{I} $
 2. Identity
-  * $ \hat{U}(t_0,t_0)=I $
+  * $ \hat{U}(t_0,t_0) = \mathbb{I} $
 3. Closure
   * $ \hat{U}(t,t_0)=\hat{U}(t,t_1)\hat{U}(t_1,t_0) $
 
@@ -59,7 +59,7 @@ where $\mathcal{T}$ is **time-ordering operator**, which is sometimes known as t
 
 \\[ \hat{U}(t) = \mathcal{T}\exp\left( -\frac{i}{\hbar}\int_0^t\hat{H}(t\rq)dt\rq  \right) \\]
 
-See the wiki for more information. ([Dyson series](https://en.wikipedia.org/wiki/Dyson_series))
+See the wiki for more information. ([Dyson series](/physics/dyson-series.html))
 
 
 ## Dynamical pictures
