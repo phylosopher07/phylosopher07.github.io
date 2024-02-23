@@ -66,7 +66,7 @@ The time-ordering operator $\mathcal{T}$ is an operator that orders the operator
 It isn't actually an operator, since it just rearranges the sequence of the product. However, it is often called a meta-operator.
 The time-ordering operator is defined as follows.
 
-\\[ \mathcal{T} \left[ \prod_{i=1}^n \hat{H}(t_i) \right] = \prod_{i=1}^n \hat{H}_ {\sigma(i)} \quad
+\\[ \mathcal{T} \left[ \prod_{i=1}^n \hat{H}(t_i) \right] = \prod_{i=1}^n \hat{H}( t_{\sigma(i)} ) \quad
 ( t_{\sigma(1)} \ge \cdots \ge t_{\sigma(n)}) \\]
 
 where $\sigma$ is a permutation.
