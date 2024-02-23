@@ -7,10 +7,8 @@ basics:
   website: "https://phylosopher07.github.io"
   summary: >
     Hello, I'm Jiho Jun from South Korea.<br>
-    I'm attending to GSHS (Gyeonggi Science High School) and I'm 2nd grader. <br>
-    I'm interested in quantum field theory and front-end development right now. <br>
-    I'd like to describe myself as an enthusiast; <br>
-    I am confident in understanding new knowledge quickly.
+    I'm attending to GSHS (Gyeonggi Science High School) and I'm 3rd grader. <br>
+    This blog is my note for my study and my life, so that I can remember what I've done and what I've thought. <br>
   location:
   #   address: "2712 Broadway St"
   #   postalCode: "CA 94115"
@@ -28,14 +26,14 @@ basics:
     #  username: "DaeIn Lee"
     #  url: "https://www.linkedin.com/in/daein-lee-3b6ba9139/"
 work:
-  - company: "SAP Labs Korea"
-    position: "HANA Core Developer"
-    website: https://www.sap.com/korea/about/labs-korea.html"
-    startDate: "2021-01-11"
-    endDate: "2023-02-03"
-    summary: >
-      SAP Labs Korea, a cornerstone of SAP HANA, now aims to bring the in-memory technology to the cloud where it acts as a single gateway to data of any size to harness the power of data wherever it resides and ensure the platform for intelligent enterprise.
-    highlights: Hello
+  #- company: "SAP Labs Korea"
+  #  position: "HANA Core Developer"
+  #  website: https://www.sap.com/korea/about/labs-korea.html"
+  #  startDate: "2021-01-11"
+  #  endDate: "2023-02-03"
+  #  summary: >
+  #    SAP Labs Korea, a cornerstone of SAP HANA, now aims to bring the in-memory technology to the cloud where it acts as a single gateway to data of any size to harness the power of data wherever it resides and ensure the platform for intelligent enterprise.
+  #  highlights: Hello
 volunteer:
   #- organization: "Hanyang Mentoring Program"
   #  position: "Mentor"
@@ -53,44 +51,60 @@ education:
     studyType: "Bachelor"
     startDate: "2022-03-02"
     endDate: "2024, expected"
-    gpa: "4.07 / 4.3"
+    gpa: "4.xx / 4.3"
     courses:
-      - "alallala"
-  - certificate: "PongPong"
-    date: "2022-12-22"
+      - "AP Physics"
+      - "AP Calculus"
+      - "AP Linear Algebra"
+      - "AP Computer Programming"
+  #- certificate: "PongPong"
+  #  date: "2022-12-22"
 projects:
-  - title: "Visualizations of atomic orbitals of the Hydrogen atom"
-    startDate: "2018-08-01"
-    endDate: "2019-10-31"
-    summary: "Evaluating cache / multi thread Performance of <a href='https://github.com/wangziqi2013/BwTree'>Open Bw-Tree</a> to find bottleneck and improvement performance."
-    url: "https://lazyren.github.io/tag-bwtree/"
-    highlights:
-      - "Implementing update function based on the <a href='https://hyeontaek.com/papers/openbwtree-sigmod2018.pdf'>page</a>."
-awards:
-  - title: "RnE Excellence Award"
-    awarder: "GSHS"
-    date: ""
-    highlights:
-      - "2022, basic RnE (physics) "
+  - title: "3d Rendering on 2d Screen"
+    startDate: "2019-08-01"
+    endDate: "2020-10-31"
     summary: ""
-  - title: "2023 KYPT Bronze Medal"
+awards:
+  - title: "R&E Excellence Award"
+    awarder: "GSHS"
+    date: "2022-12-22"
+    highlights:
+      - "2022, basic R&E (physics) "
+    summary: ""
+  - title: "2023 KYPT(Korea Young Physicists' Tournament) Bronze Medal"
     date: "2023-02-02"
+  - title: "2023 KOI(Korea Olympiad in Informatics) Bronze Medal"
+    date: "2023-07-15"
+    summary: ""
+  - title: "Samsung Humantech Paper Award"
+    date: "2024-1-27"
+
 
 publications:
   - name: "Minimum Potential Problem at Specific Boundary Conditions"
     publisher: "Jiho Jun and Yongje Lee"
     releaseDate: "2022-12-08"
-    website: "naver.com"
+    website: "https://google.com"
     summary: "Numerical computations to find the n-dimensional equivalent of the catenary, as well as to explore the minimal-potential problem of two-dimensional surfaces with various boundaries."
   - name: "The Method Determining Dyson Slingshot Trajectory of a Spacecraft Following a Rectilinear Path Using Dynamic Discrete Gradient Descent"
     publisher: "Myeong Yoon, Jiho Jun et al"
     releaseDate: "2022-11-15"
-    website: "naver.com"
+    website: "https://google.com"
     summary: "The way to find the most efficient slingshot trajectory at the binary-star system, using DDGD (Dynamic Discrete Gradient Descent)."
+  - name: "Solitons in a Trapped Bose-Einstein Condensate: Breathers Approaching to Stationary Solution"
+    publisher: "Myeong Yoon, Jiho Jun"
+    releaseDate: "2023-12-08"
+    website: "https://google.com"
+    summary: "Developed Potential Growing Method from SSFM(Split-Step Fourier Method) to find the soliton solutions of the Gross-Pitaevskii equation, and the numerical computations to find the breather solutions of the equation."
+  - name: "Dynamical Color Correction for Color Vision Deficiency"
+    publisher: "Junseok Lee, Jiho Jun et al"
+    releaseDate: "2023-12-08"
+    website: "https://google.com"
+    summary: "Image re-coloring algorithm for both color vision deficiency and normal vision, using color potential model and interpolation."
 skills:
   - name: "Algorithm"
     level: "Intermediate"
-  - name: "document preparation"
+  - name: "documentation"
     level: "Intermediate"
     keywords:
       - "LaTeX"
@@ -123,7 +137,7 @@ interests:
   - name: "Gaming"
     keywords:
       - "Board Games"
-      - "<a href='https://steamcommunity.com/id/lazyren'>Pikachu Volleyball</a>"
+      - "<a href='https://gorisanson.github.io/pikachu-volleyball/ko/'>Pikachu Volleyball</a>"
 # references:
 #   - name: "Erlich Bachman"
 #     reference: >
