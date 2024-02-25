@@ -10,15 +10,31 @@
   {% endif %}
 {% elsif site.hydejack.use_lsi or site.use_lsi %}
   {% assign related_posts = site.related_posts %}
+{% elsif post.tags.first %}
+  {% assign list_posts = site.tags[post.tags.first] %}
+  {% for item in list_posts %}
+    {% if item.title == post.title %}
+      {% assign idx = forloop.index0 %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% assign related_posts = "" | split: "" %}
+  {% assign start = idx | minus: 2 %}
+  {% assign end = idx | plus: 2 %}
+  {% for i in (start..end) %}
+    {% if i >= 0 and i < list_posts.size and i != idx %}
+      {% assign related_posts = related_posts | push: list_posts[i] %}
+    {% endif %}
+  {% endfor %}
 {% elsif post.categories.first %}
   {% assign related_posts = site.categories[post.categories.first] | where_exp:"post", "post.url != page.url" %}
-{% elsif post.tags.first %}
-  {% assign related_posts = site.tags[post.tags.first] | where_exp:"post", "post.url != page.url" %}
 {% else %}
   {% assign related_posts = site.related_posts %}
 {% endif %}
 
 {% if related_posts.size > 0 %}
+
+<!--
 <aside class="other-projects related mb0" role="complementary">
   <h2>{{ site.data.strings.related_posts | default:"Related Posts" }}</h2>
   <div class="columns">
@@ -32,5 +48,16 @@
       </div>
     {% endfor %}
   </div>
+</aside>
+-->
+
+<aside class="related mb4" role="complementary">
+  <h2 class="hr-bottom">{{ site.data.strings.related_posts | default:"Related Posts" }}</h2>
+
+  <ul class="related-posts">
+    {% for post in related_posts limit:5 %}
+      {% include_cached components/post-list-item.html post=post %}
+    {% endfor %}
+  </ul>
 </aside>
 {% endif %}
