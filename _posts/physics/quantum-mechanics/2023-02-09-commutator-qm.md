@@ -21,7 +21,7 @@ from **「Modern Quantum Mechanics」**: _Sakurai, J. J._
 ## Commutator
 
 For operators $\hat{A}$ and $\hat{B}$ acting on wavefunctions,
-the following operator is called the **`commutator`** of $\hat{A}$ and $\hat{B}$.
+the following operator is called the **commutator** of $\hat{A}$ and $\hat{B}$.
 
 \\[
 \comm{\hat{A}}{\hat{B}} \coloneqq \hat{A}\hat{B}-\hat{B}\hat{A}
@@ -46,10 +46,7 @@ and the result of acting $\hat{B}$ after acting $\hat{A}$.
 
 Read [Commutator (ring theory)](https://en.wikipedia.org/wiki/Commutator) for further details.
 
-
-### Condition under which two operators are commutative
-
-* If a common eigenfunction of any two different operators exists, they commute.
+Also, if a common eigenfunction of any two different operators exists, they commute.
 
 \\[ \begin{cases}
 A\psi=a\psi \nl

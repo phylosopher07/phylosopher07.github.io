@@ -26,7 +26,7 @@ an element of **$L^2$ complex Hilbert space $\mathcal{H}$**.
 See [$C^*$ formalism](https://math.uchicago.edu/~may/VIGRE/VIGRE2009/REUPapers/Gleason.pdf) who wants exactness.)
 We denote the dual (covector) of the state vector as $\bra{\Psi}$. Psi is mainly used for the vectors.
 
-$\ket{\Psi}$ is called a **`ket`**, and $\bra{\Psi}$ is called a **`bra`**.
+$\ket{\Psi}$ is called a **ket**, and $\bra{\Psi}$ is called a **bra**.
 This nomenclature is derived from _bra-c-ket_〈 〉.
 $^\dagger$ denotes the _hermitian conjugate_.
 
@@ -85,7 +85,7 @@ The $\ket{\b{r}}$ are the basis vectors, which are orthonormal so their inner pr
 * $ \brkt{\b{r}\rq}{\b{r}} = \delta^3(\b{r}\rq-\b{r}) $
 
 Thus, starting from any ket $\ket{\Psi}$ in this Hilbert space,
-one may define a complex scalar function $\Psi(\b{r})$, known as a **`wavefunction`** :
+one may define a complex scalar function $\Psi(\b{r})$, known as a **wavefunction** :
 * $ \Psi(\b{r}) \coloneqq \brkt{\b{r}}{\Psi} $
 * $ \dps \ket{\Psi} = \int \d^3\b{r}\; \Psi(\b{r})\ket{\b{r}} $
 * $ \hat{A}(\b{r})\Psi(\b{r}) = \brktop{\b{r}}{\hat{A}}{\Psi} $

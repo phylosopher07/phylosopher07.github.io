@@ -20,7 +20,7 @@ from **「Modern Quantum Mechanics」**: _Sakurai, J. J._
 
 ## Time-evolution operator
 
-The **`time-evolution operator`** $U(t,t_0)$ is defined as the operator which acts on the ket at time $t_0$
+The **time-evolution operator** $U(t,t_0)$ is defined as the operator which acts on the ket at time $t_0$
 to produce the ket at some other time $t$:
 * $ \ket{\Psi(t)}=\hat{U}(t,t_0)\ket{\Psi(t_0)} $
 * $ \bra{\Psi(t)}=\bra{\Psi(t_0)}\hat{U}^\dag(t,t_0) $
@@ -64,19 +64,19 @@ See the wiki for more information. ([Dyson series](/physics/dyson-series.html))
 
 ## Dynamical pictures
 
-**`Dynamical pictures`** (or representations) are the multiple equivalent ways to mathematically formulate
+**Dynamical pictures** (or representations) are the multiple equivalent ways to mathematically formulate
 the dynamics of a quantum system.
 
 ### Schrödinger picture
 
-**`Schrödinger picture`** is a method of fixing the observable and interpreting the state vector to change over time.
+**Schrödinger picture** is a method of fixing the observable and interpreting the state vector to change over time.
 
 * Ket state: $ \ket{\Psi_S(t)}=\hat{U}(t)\ket{\Psi_S(0)} $
 * Observable: constant
 
 ### Heisenberg picture
 
-**`Heisenberg picture`** is a method of fixing the state vector and interpreting that the observable changes over time.
+**Heisenberg picture** is a method of fixing the state vector and interpreting that the observable changes over time.
 
 * $ \expct{\hat{A}}_t = \brktop{\Psi(t)}{\hat{A}}{\Psi(t)} =
 \brktop{\Psi(0)}{\hat{U}^\dag(t)\hat{A}\hat{U}(t)}{\Psi(0)} $

@@ -20,7 +20,7 @@ from **「Modern Quantum Mechanics」**: _Sakurai, J. J._
 
 ## Introduction
 
-**`Quantum Mechanics`** is a fundamental theory in physics that provides a description of the physical properties
+**Quantum Mechanics** is a fundamental theory in physics that provides a description of the physical properties
 of nature at the scale of atoms and subatomic particles.
 Classical physics, the collection of theories that existed before the advent of quantum mechanics,
 describes many aspects of nature at an ordinary (macroscopic) scale,

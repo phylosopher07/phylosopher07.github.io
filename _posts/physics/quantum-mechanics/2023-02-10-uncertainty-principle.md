@@ -65,13 +65,13 @@ We now substitute this back into the equation above and get
 &= \abs{\frac{1}{2}\left[ \expct{\acomm{\hat{A}}{\hat{B}}}-2\expct{\hat{A}}\expct{\hat{B}} \right]}^2 + \abs{\frac{1}{2}\left[ \expct{\comm{\hat{A}}{\hat{B}}} \right]}^2
 \end{align\*} \\]
 
-Then we finally get the **`Schrödinger uncertainty relation`**: 
-\\[\boxed{  \sigma_A\sigma_B \ge \frac{1}{2}\sqrt{ \abs{\expct{\acomm{\hat{A}}{\hat{B}}}-2\expct{\hat{A}}\expct{\hat{B}}}^2 +
-\abs{\expct{\comm{\hat{A}}{\hat{B}}}}^2 }  }\\]
+Then we finally get the **Schrödinger uncertainty relation**: 
+\\[  \sigma_A\sigma_B \ge \frac{1}{2}\sqrt{ \abs{\expct{\acomm{\hat{A}}{\hat{B}}}-2\expct{\hat{A}}\expct{\hat{B}}}^2 +
+\abs{\expct{\comm{\hat{A}}{\hat{B}}}}^2 }  \\]
 
 
-There is also the **`Robertson uncertainty relation`** that has a slightly weaker condition, a more familiar form.
-\\[\boxed{  \sigma_A\sigma_B \ge \frac{1}{2}\abs{\expct{\comm{\hat{A}}{\hat{B}}}}  }\\]
+There is also the **Robertson uncertainty relation** that has a slightly weaker condition, a more familiar form.
+\\[  \sigma_A\sigma_B \ge \frac{1}{2}\abs{\expct{\comm{\hat{A}}{\hat{B}}}}  \\]
 
 ### Example
 
@@ -82,7 +82,7 @@ Since $\comm{\hat{x}}{\hat{p}}=i\hbar$,
 
 ## Heisenberg limit
 
-In quantum metrology, and especially interferometry, the **`Heisenberg limit`** is the optimal rate
+In quantum metrology, and especially interferometry, the **Heisenberg limit** is the optimal rate
 at which the accuracy of a measurement can scale with the energy used in the measurement.
 Typically, this is the measurement of a phase (applied to one arm of a beam-splitter)
 and the energy is given by the number of photons used in an interferometer.

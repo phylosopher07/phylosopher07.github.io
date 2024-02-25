@@ -20,10 +20,10 @@ from **「Modern Quantum Mechanics」**: _Sakurai, J. J._
 
 ## Ehrenfest's theorem
 
-**`Generalized Ehrenfest's theorem`**:
+**Generalized Ehrenfest's theorem**:
 
-\\[\boxed{  \odv{ }{t}\expct{\hat{Q}} = \frac{i}{\hbar}\expct{\comm{ \hat{H} }{ \hat{Q} }} +
-\Expct{\pdv{\hat{Q}}{t}}  }\\]
+\\[ \odv{ }{t}\expct{\hat{Q}} = \frac{i}{\hbar}\expct{\comm{ \hat{H} }{ \hat{Q} }} +
+\Expct{\pdv{\hat{Q}}{t}}  \\]
 
 The equation is the same as the _Heisenberg image_, but let's derive it from the _Schrödinger image_.
 

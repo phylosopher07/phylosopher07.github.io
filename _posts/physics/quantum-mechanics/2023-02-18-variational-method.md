@@ -32,7 +32,7 @@ and the expectation value of the energy in that state is an upper bound to the g
 $ \global\def\psit{\psi_\text{trial}} $
 $ \global\def\Egs{E_\text{gs}} $
 
-\\[\boxed{ \brktop{\psit}{ \hat{H} }{\psit}\ge \Egs }\\]
+\\[ \brktop{\psit}{ \hat{H} }{\psit}\ge \Egs \\]
 
 Since the wavefunction is an element of Hilbert space, it can be represented as a linear combination of the eigenfunctions of the Hamiltonian.
 

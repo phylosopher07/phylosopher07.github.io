@@ -23,7 +23,7 @@ from **「Modern Quantum Mechanics」**: _Sakurai, J. J._
 **Kramers’ relation**, named after the Dutch physicist _Hans Kramers_,
 is a relationship between expectation values of _nearby_ powers of $r$ for the hydrogen-like atoms:
 
-\\[\boxed{ \frac{s+1}{n^2}\expct{r^s} -(2s+1)\left(\frac{a_0}{Z}\right)\expct{r^{s-1}} + \frac{s}{4}\left[ (2l+1)^2-s^2 \right]\left(\frac{a_0}{Z}\right)^2\expct{r^{s-2}} = 0 }\\]
+\\[ \frac{s+1}{n^2}\expct{r^s} -(2s+1)\left(\frac{a_0}{Z}\right)\expct{r^{s-1}} + \frac{s}{4}\left[ (2l+1)^2-s^2 \right]\left(\frac{a_0}{Z}\right)^2\expct{r^{s-2}} = 0 \\]
 
 The relation is very important when computing, specifically, perturbative corrections to the hydrogen spectrum,
 as those computations require expectation values of the radial Hamiltonian and potentially perturbative corrections

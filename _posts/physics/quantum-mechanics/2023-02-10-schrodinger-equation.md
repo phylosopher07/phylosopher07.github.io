@@ -51,10 +51,10 @@ Also,
 * $ \dps E\psi = i\hbar\pdv{ }{t}\psi $
 
 Since the eigenvalue of a Hamiltonian operator is energy,
-we finally get **`time-dependent Schrödinger equation`**.
+we finally get **time-dependent Schrödinger equation**.
 Let's rewrite the wavefunction $\psi$ to the state vector $\ket{\Psi(t)}$.
 
-\\[\boxed{  i\hbar\pdv{ }{t}\ket{\Psi(t)} = \hat{H}\ket{\Psi(t)}  }\\]
+\\[  i\hbar\pdv{ }{t}\ket{\Psi(t)} = \hat{H}\ket{\Psi(t)}  \\]
 
 ## Induction of time-independent Schrödinger equation
 
@@ -62,8 +62,8 @@ Now let's separate the state vector into terms for time and terms for Hamiltonia
 assuming that the Hamiltonian is _independent_ for time.
 * $ \ket{\Psi(t)}=T(t)\ket{\psi} $
 
-Then we get **`time-independent Schrödinger equation`**.
-\\[\boxed{  \hat{H}\ket{\psi}=E\ket{\psi}  }\\]
+Then we get **time-independent Schrödinger equation**.
+\\[ \hat{H}\ket{\psi}=E\ket{\psi}  \\]
 
 The solutions (_eigenfunctions of the Hamiltonian_) obtained through the separation of variables are not all solutions of the Schrödinger equation,
 but all solutions can be expressed by the basis containing those eigenfunctions.
@@ -76,7 +76,7 @@ i\hbar\pdv{ }{t}\ket{\Psi(t)} &= i\hbar\pdv{T}{t}\ket{\psi} \nl
 \\[ \Rightarrow  i\hbar\pdv{T}{t}=ET \\]
 
 \\[ T(t) = e^{-i\frac{E}{\hbar}t} \\]
-$T$ is called a **`time-evolution operator`** or a **`propagator`**.
+$T$ is called a **time-evolution operator** or a **propagator**.
 
 \\[ \therefore  \ket{\Psi(t)}=e^{-i\frac{E}{\hbar}t}\ket{\psi} \\]
 

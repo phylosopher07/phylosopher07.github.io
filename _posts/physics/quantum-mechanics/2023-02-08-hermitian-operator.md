@@ -20,13 +20,13 @@ from **「Modern Quantum Mechanics」**: _Sakurai, J. J._
 
 ## Hermitian operator
 
-A **`Hermitian operator`**, or **`self-adjoint operator`** is an operator that is equal to its own hermitian conjugate.
+A **Hermitian operator**, or **self-adjoint operator** is an operator that is equal to its own hermitian conjugate.
 * $ \hat{A}=\hat{A}^\dag $
 
 Since operators with such properties are treated very importantly in quantum mechanics,
 we're going to summarize their properties from now on.
 
-## Expectation value of Hermitian operator is real
+## Real expectation values
 
 \\[
 \expct{\hat{A}} = \brkt{\psi}{\hat{A}\psi}
@@ -42,7 +42,7 @@ we're going to summarize their properties from now on.
 \\]
 
 This implies that the physical quantities of Hermitian operators are observable (since it's _real_);
-in this respect, Hermitian operators are called **`observables`**.
+in this respect, Hermitian operators are called **observables**.
 
 ## _Orthogonality_ of eigenfunctions
 
@@ -90,7 +90,7 @@ Then we can **normalize** any state vectors using _phase factors_ $e^{iz}$, of w
 ### Wavefunction collapse
 
 The measurement transforms the system to become an eigenvector for the measured value,
-which is called a **`wavefunction collapse`**.
+which is called a **wavefunction collapse**.
 (It can be understood that it collapses the probability of an eigenvalue different from the measured value.)
 
 \\[
