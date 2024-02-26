@@ -6,5 +6,5 @@ slug: physics
 sidebar: true
 order: 3
 description: >
-    The nature of everything
+    The intrinsic nature of the universe
 ---

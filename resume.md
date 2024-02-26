@@ -6,7 +6,7 @@ description: >
   Hi, I'm DaeIn Lee, SW engineer at Samsung Research.
 hide_description: true
 sidebar: true
-order: 6
+order: 7
 left_column:
  - work
  - education

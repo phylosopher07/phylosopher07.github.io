@@ -75,10 +75,18 @@ img.centered {
   margin-right: auto;
 }
 
+img.mermaid {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 50%;
+}
+
 table.centered {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: fit-content !important;
 }
 
 audio.centered {
