@@ -1,5 +1,6 @@
 <script src="/assets/js/sidebar-folder.js"></script>
 <script src="/assets/js/clap-button.js"></script>
+<script src="/assets/js/katex.js"></script>
 {% if site.lightbox %}
   <script src="/assets/js/lightbox.js"></script>
 {% endif %}
@@ -10,5 +11,10 @@
     .addEventListener("hy-push-state-load", function () {
       get_clap_count();
       apply_lightbox();
+    });
+  document
+    .getElementById("_pushState")
+    .addEventListener("hy-push-state-after", function () {
+      render_KaTeX();
     });
 </script>

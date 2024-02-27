@@ -90,7 +90,7 @@ excerpt_separator:     <!--more-->
 
 # Sidebar image and theme color of the site.
 accent_image:
-  background:          center / cover url(/assets/img/chicago.jpg)
+  background:          center / cover url(/assets/img/note.jpg)
   overlay:             false
 accent_color:          rgb(0,174,239)
 
