@@ -7,20 +7,10 @@ accent_image:
   overlay: false
 ---
 
-{ % youtube "https://www.youtube.com/watch?v=gset79KMmt0" % }
-
-{ % include embed/youtube.html id='gset79KMmt0' % }
-
-<iframe
-class="embed-video youtube lazyload"
-src="https://www.youtube.com/embed/gset79KMmt0"
-title="YouTube video player"
+<div class="iframe-container">
+<iframe src="https://www.youtube.com/embed/LLbpQl1cCl8"
+width="100%" height=500
 frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
-
-<iframe
-src="https://www.youtube.com/embed/LLbpQl1cCl8"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
+</div>
