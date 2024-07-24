@@ -120,10 +120,13 @@ skills:
     keywords:
       - "Affable"
 languages:
-  - language: "Korean"
+  - language: "한국어"
     fluency: "Native speaker"
   - language: "English"
     fluency: "Fluent"
+  - language: "Русский"
+    fluency: "Elementary proficiency"
+
 interests:
   - name: "Activity"
     keywords:
@@ -136,6 +139,7 @@ interests:
       - ""
   - name: "Gaming"
     keywords:
+      - "<a href='https://store.steampowered.com/app/427520/Factorio/'>Factorio</a>"
       - "Board Games"
       - "<a href='https://gorisanson.github.io/pikachu-volleyball/ko/'>Pikachu Volleyball</a>"
 # references:
