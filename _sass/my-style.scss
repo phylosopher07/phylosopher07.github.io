@@ -221,6 +221,10 @@ table {
 KaTeX scrollbar
  */
 
+.katex-display {
+  padding: 0.3rem !important;
+}
+
 .katex-display > .katex {
   display: block;
   max-width: 100%;
