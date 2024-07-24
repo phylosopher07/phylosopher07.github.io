@@ -222,7 +222,7 @@ KaTeX scrollbar
  */
 
 .katex-display {
-  padding: 0.3rem !important;
+  padding: 0.25rem !important;
 }
 
 .katex-display > .katex {
@@ -230,24 +230,24 @@ KaTeX scrollbar
   max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
-  padding: 0.7rem;
+  padding: 0.75rem;
 }
 
 .katex-display > .katex {
   &::-webkit-scrollbar {
-    height: 19px;
+    height: 13px;
   }
   &::-webkit-scrollbar-track {
     background-clip: padding-box;
-    border: 5px solid transparent;
+    border: 1px solid transparent;
     border-radius: 8px;
     background-color: var(--scrollbar-bg-color);
   }
   &::-webkit-scrollbar-thumb {
     background-clip: padding-box;
-    border: 8px solid transparent;
+    border: 4px solid transparent;
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, .3);
     background-color: var(--scrollbar-color);
   }
 }
