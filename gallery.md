@@ -2,7 +2,7 @@
 layout: projects
 title: Gallery
 sidebar: true
-order: 7
+order: 8
 description: >
   Photographs and videos.
 grouped: true

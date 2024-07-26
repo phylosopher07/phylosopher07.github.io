@@ -5,7 +5,7 @@ permalink: /resume/
 description: 
 hide_description: true
 sidebar: true
-order: 8
+order: 9
 left_column:
  - work
  - education

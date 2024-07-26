@@ -39,7 +39,7 @@ keywords:              ["Development", "C++", "Rust", "Jekyll"]
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/note.png
+logo:                  /assets/img/gtjump2.jpeg
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -185,6 +185,8 @@ kramdown:
 
 # 3rd Party Integrations
 # ----------------------------------------------------------------------------------------
+
+mermaid: true
 
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Analytics from your page, remove the line below.
@@ -495,7 +497,7 @@ jekyll-spaceship:
   processors:
     - table-processor
     - plantuml-processor
-    - mermaid-processor
+    #- mermaid-processor
     - polyfill-processor
     - media-processor
     - emoji-processor
