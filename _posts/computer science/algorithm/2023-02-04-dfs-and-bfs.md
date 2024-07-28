@@ -24,7 +24,7 @@ The algorithm starts at the root node (selecting some arbitrary node as the root
 and explores as far as possible along each branch before backtracking.
 
 ### Explanation
-```mermaid!
+```mermaid
 graph TD
 
 f1((1)); f2((2)); f3((3)); f4((4)); f5((5)); f6((6)); f7((7)); f8((8)); f9((9)); f10((10)); f11((11));
@@ -86,7 +86,7 @@ to moving on to the nodes at the next depth level.
 Extra memory, usually a queue, is needed to track the child nodes encountered but not yet explored.
 
 ### Explanation
-```mermaid!
+```mermaid
 graph TD
 
 f1((1)); f2((2)); f3((3)); f4((4)); f5((5)); f6((6)); f7((7)); f8((8)); f9((9)); f10((10)); f11((11));

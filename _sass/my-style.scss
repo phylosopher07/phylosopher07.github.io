@@ -172,6 +172,10 @@ html {
   }
 }
 
+code.language-mermaid {
+  @extend .centered;
+}
+
 pre {
   border-color: transparent;
   transition: border-color 0.5s ease;
