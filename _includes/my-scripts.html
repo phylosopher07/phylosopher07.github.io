@@ -5,6 +5,22 @@
   <script src="/assets/js/lightbox.js"></script>
 {% endif %}
 
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+  let config = {
+    startOnLoad: true,
+    fontFamily: "JetBrains Mono",
+    theme: "neutral"
+  };
+  mermaid.initialize(config);
+  mermaid.run({ querySelector: ".language-mermaid" });
+  document
+    .getElementById("_pushState")
+    .addEventListener("hy-push-state-after", function () {
+      mermaid.run({ querySelector: ".language-mermaid" });
+    });
+</script>
+
 <script>
   document
     .getElementById("_pushState")
@@ -16,23 +32,5 @@
     .getElementById("_pushState")
     .addEventListener("hy-push-state-after", function () {
       render_KaTeX();
-    });
-</script>
-
-<script type="module">
-  {% if site.mermaid %}
-  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-  let config = {
-    startOnLoad: true,
-    fontFamily: "JetBrains Mono",
-    theme: "neutral"
-  };
-  mermaid.initialize(config);
-  mermaid.run({ querySelector: ".language-mermaid" });
-  {% endif %}
-  document
-    .getElementById("_pushState")
-    .addEventListener("hy-push-state-load", function () {
-      {% if site.mermaid %} mermaid.run({ querySelector: ".language-mermaid" }); {% endif %}
     });
 </script>

@@ -154,9 +154,3 @@ void bfs(int root){
 * Finding the depth of a node
 * Ford–Fulkerson method
 * Testing the bipartite-ness of a graph
-
-
-## Conclusion
-
-It's necessary to master these two graph traversing algorithms to implement graph theory computations.
-Maybe PS will help a lot. 😄
