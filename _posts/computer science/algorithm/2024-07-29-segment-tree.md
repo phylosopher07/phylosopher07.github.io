@@ -19,7 +19,7 @@ Segment tree is a data structure for monoids $(M, \ast)$, where $M$ is a set wit
 (Read more about monoids [here](https://en.wikipedia.org/wiki/Monoid).)
 
 Given an array $A=[a_1,\cdots,a_N]$ of size $N$, a segment tree is a binary tree where each node represents an interval $[l,r]$ of the array.
-The root node represents the entire array $[1,N]$, and each leaf node represents a single element of the array.
+The root node represents the entire array $[1:N]$, and each leaf node represents a single element of the array.
 Every parent node has left and right children, which represent the left and right halves of the parent's interval.
 You can see that the segment tree is a _full binary tree_.
 
