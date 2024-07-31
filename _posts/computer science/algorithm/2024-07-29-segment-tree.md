@@ -68,6 +68,7 @@ Node tree[TREE_SIZE];
 
 Node merge(Node a,Node b){ /* merge two nodes */ }
 Node f(data a){ /* convert data to node */ }
+Node identity(){ /* return identity node */ }
 
 Node init(int nd,int l,int r){
     if(l==r) return tree[nd] = f(A[l]);
