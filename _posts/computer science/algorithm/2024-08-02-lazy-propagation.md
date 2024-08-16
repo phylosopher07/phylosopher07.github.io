@@ -31,7 +31,148 @@ Segment tree with lazy propagation can carry out two types of queries in $O(\log
 2. **Range update**: Given a range $[l,r]$ and a function $f\in F$, update all elements in the range by applying the function $f$ to them:
     $[\cdots,a_l,\cdots,a_r,\cdots] \to [\cdots, f(a_l), \cdots, f(a_r),\cdots]$
 
-⚠️**Writing**⚠️
+The idea is to store the updates in the nodes of the segment tree and apply them only when needed.
+Such new tree nodes are called **lazy nodes** and the updates are called **lazy updates**.
+
+```mermaid
+graph TD
+    subgraph s1 ["1/[1:4]"];
+        f1(4); l1( ):::lazy;
+    end;
+    subgraph s2 ["2/[1:2]"];
+        f2(2); l2( ):::lazy;
+    end;
+    subgraph s3 ["3/[3:4]"];
+        f3(2); l3( ):::lazy;
+    end;
+    subgraph s4 ["4/[1]"];
+        f4(1); l4( ):::lazy;
+    end;
+    subgraph s5 ["5/[2]"];
+        f5(1); l5( ):::lazy;
+    end;
+    subgraph s6 ["6/[3]"];
+        f6(1); l6( ):::lazy;
+    end;
+    subgraph s7 ["7/[4]"];
+        f7(1); l7( ):::lazy;
+    end;
+
+    s1:::round---s2:::round & s3:::round;
+    s2---s4:::round & s5:::round;
+    s3---s6:::round & s7:::round;
+
+    classDef lazy fill:#ccf;
+    classDef round rx:10,ry:10,fill:#ffe;
+```
+
+The binary tree above is an example of a segment tree with lazy propagation for the array $[1,1,1,1]$.
+In each subgraph, the left node represents the sum of all elements in the range, and the right node represents the lazy update.
+
+When we update the range $[2:4]$ by adding $1$ to all elements, the segment tree will be updated as follows.
+
+```mermaid
+graph TD
+    subgraph s1 ["1/[1:4]"];
+        f1(7); l1( ):::lazy;
+    end;
+    subgraph s2 ["2/[1:2]"];
+        f2(3); l2( ):::lazy;
+    end;
+    subgraph s3 ["3/[3:4]"];
+        f3(4); l3(1):::lazy;
+    end;
+    subgraph s4 ["4/[1]"];
+        f4(1); l4( ):::lazy;
+    end;
+    subgraph s5 ["5/[2]"];
+        f5(2); l5(1):::lazy;
+    end;
+    subgraph s6 ["6/[3]"];
+        f6(1); l6( ):::lazy;
+    end;
+    subgraph s7 ["7/[4]"];
+        f7(1); l7( ):::lazy;
+    end;
+
+    s1:::round---s2:::round & s3:::round;
+    s2---s4:::round & s5:::round;
+    s3---s6:::round & s7:::round;
+
+    classDef lazy fill:#ccf;
+    classDef round rx:10,ry:10,fill:#ffe;
+```
+
+When we update the range $[1:3]$ by adding $1$ to all elements, the segment tree will be updated as follows.
+
+```mermaid
+graph TD
+    subgraph s1 ["1/[1:4]"];
+        f1(10); l1( ):::lazy;
+    end;
+    subgraph s2 ["2/[1:2]"];
+        f2(5); l2(1):::lazy;
+    end;
+    subgraph s3 ["3/[3:4]"];
+        f3(5); l3( ):::lazy;
+    end;
+    subgraph s4 ["4/[1]"];
+        f4(1); l4( ):::lazy;
+    end;
+    subgraph s5 ["5/[2]"];
+        f5(2); l5(1):::lazy;
+    end;
+    subgraph s6 ["6/[3]"];
+        f6(3); l6(2):::lazy;
+    end;
+    subgraph s7 ["7/[4]"];
+        f7(2); l7(1):::lazy;
+    end;
+
+    s1:::round---s2:::round & s3:::round;
+    s2---s4:::round & s5:::round;
+    s3---s6:::round & s7:::round;
+
+    classDef lazy fill:#ccf;
+    classDef round rx:10,ry:10,fill:#ffe;
+```
+
+When we query the sum of the elements in the range $[3,4]$, the segment tree will be updated
+and the nodes will be visited as follows.
+
+```mermaid
+graph TD
+    subgraph s1 ["1/[1:4]"];
+        f1(10); l1( ):::lazy;
+    end;
+    subgraph s2 ["2/[1:2]"];
+        f2(5); l2( ):::lazy;
+    end;
+    subgraph s3 ["3/[3:4]"];
+        f3(5); l3( ):::lazy;
+    end;
+    subgraph s4 ["4/[1]"];
+        f4(2); l4(1):::lazy;
+    end;
+    subgraph s5 ["5/[2]"];
+        f5(3); l5(2):::lazy;
+    end;
+    subgraph s6 ["6/[3]"];
+        f6(3); l6(2):::lazy;
+    end;
+    subgraph s7 ["7/[4]"];
+        f7(2); l7(1):::lazy;
+    end;
+
+    s1:::round---s2:::round & s3:::round;
+    s2---s4:::round & s5:::round;
+    s3---s6:::round & s7:::round;
+    s5:::highlight; s6:::highlight;
+
+    classDef lazy fill:#ccf;
+    classDef round rx:10,ry:10,fill:#ffe;
+    classDef highlight fill:#888,stroke:#444,stroke-width:2px;
+```
 
 ### Code
 Let's see the sample code.

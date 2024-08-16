@@ -32,32 +32,91 @@ Segment tree can carry out two types of queries in $O(\log N)$ time complexity:
 
 ```mermaid
 graph TD
-f1("1 <br> [1:11]"); f2("2 <br> [1:6]");
-f3("3 <br> [7:11]"); f4("4 <br> [1:3]");
-f5("5 <br> [4:6]"); f6("6 <br> [7:9]");
-f7("7 <br> [10:11]"); f8("8 <br> [1:2]");
-f9("9 <br> [3]"); f10("10 <br> [4:5]");
-f11("11 <br> [6]"); f12("12 <br> [7:8]");
-f13("13 <br> [9]"); f14("14 <br> [10]");
-f15("15 <br> [11]"); f16("16 <br> [1]");
-f17("17 <br> [2]"); f20("20 <br> [4]");
-f21("21 <br> [5]"); f24("24 <br> [7]");
-f25("25 <br> [8]");
+    f1("1 <br> [1:11]"); f2("2 <br> [1:6]");
+    f3("3 <br> [7:11]"); f4("4 <br> [1:3]");
+    f5("5 <br> [4:6]"); f6("6 <br> [7:9]");
+    f7("7 <br> [10:11]"); f8("8 <br> [1:2]");
+    f9("9 <br> [3]"); f10("10 <br> [4:5]");
+    f11("11 <br> [6]"); f12("12 <br> [7:8]");
+    f13("13 <br> [9]"); f14("14 <br> [10]");
+    f15("15 <br> [11]"); f16("16 <br> [1]");
+    f17("17 <br> [2]"); f20("20 <br> [4]");
+    f21("21 <br> [5]"); f24("24 <br> [7]");
+    f25("25 <br> [8]");
 
-f1---f2 & f3;
-f2---f4 & f5;
-f3---f6 & f7;
-f4---f8 & f9;
-f5---f10 & f11;
-f6---f12 & f13;
-f7---f14 & f15;
-f8---f16 & f17;
-f10---f20 & f21;
-f12---f24 & f25;
+    f1---f2 & f3;
+    f2---f4 & f5;
+    f3---f6 & f7;
+    f4---f8 & f9;
+    f5---f10 & f11;
+    f6---f12 & f13;
+    f7---f14 & f15;
+    f8---f16 & f17;
+    f10---f20 & f21;
+    f12---f24 & f25;
 ```
 
 The binary tree above is an example of a segment tree for the array with 11 elements.
 Each node is written in the form of node index and the interval it represents.
+When we update the 5th element of the array, the segment tree will be updated as follows.
+
+```mermaid
+graph TD
+    f1("1 <br> [1:11]"):::highlight ; f2("2 <br> [1:6]"):::highlight;
+    f3("3 <br> [7:11]"); f4("4 <br> [1:3]");
+    f5("5 <br> [4:6]"):::highlight; f6("6 <br> [7:9]");
+    f7("7 <br> [10:11]"); f8("8 <br> [1:2]");
+    f9("9 <br> [3]"); f10("10 <br> [4:5]"):::highlight;
+    f11("11 <br> [6]"); f12("12 <br> [7:8]");
+    f13("13 <br> [9]"); f14("14 <br> [10]");
+    f15("15 <br> [11]"); f16("16 <br> [1]");
+    f17("17 <br> [2]"); f20("20 <br> [4]");
+    f21("21 <br> [5]"):::highlight; f24("24 <br> [7]");
+    f25("25 <br> [8]");
+
+    f1---f2 & f3;
+    f2---f4 & f5;
+    f3---f6 & f7;
+    f4---f8 & f9;
+    f5---f10 & f11;
+    f6---f12 & f13;
+    f7---f14 & f15;
+    f8---f16 & f17;
+    f10---f20 & f21;
+    f12---f24 & f25;
+
+    classDef highlight fill:#888,stroke:#444,stroke-width:2px;
+```
+
+When we query the sum of the elements in the range $[3,8]$, following nodes will be visited.
+
+```mermaid
+graph TD
+    f1("1 <br> [1:11]"); f2("2 <br> [1:6]");
+    f3("3 <br> [7:11]"); f4("4 <br> [1:3]");
+    f5("5 <br> [4:6]"):::highlight;; f6("6 <br> [7:9]");
+    f7("7 <br> [10:11]"); f8("8 <br> [1:2]");
+    f9("9 <br> [3]"):::highlight;; f10("10 <br> [4:5]");
+    f11("11 <br> [6]"); f12("12 <br> [7:8]"):::highlight;;
+    f13("13 <br> [9]"); f14("14 <br> [10]");
+    f15("15 <br> [11]"); f16("16 <br> [1]");
+    f17("17 <br> [2]"); f20("20 <br> [4]");
+    f21("21 <br> [5]"); f24("24 <br> [7]");
+    f25("25 <br> [8]");
+
+    f1---f2 & f3;`
+    f2---f4 & f5;
+    f3---f6 & f7;
+    f4---f8 & f9;
+    f5---f10 & f11;
+    f6---f12 & f13;
+    f7---f14 & f15;
+    f8---f16 & f17;
+    f10---f20 & f21;
+    f12---f24 & f25;
+
+    classDef highlight fill:#888,stroke:#444,stroke-width:2px;
+```
 
 ### Code
 Let's see the sample code.
